@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="hella3000_blue.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="8" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="7" filename="$data/shared/assets/lights/hella/hellaWorkingLightRound_02_normal.dds"/>
+    <File fileId="4" filename="textures/alpha.dds"/>
+    <File fileId="3" filename="textures/cubemap.dds"/>
+    <File fileId="5" filename="textures/glass.dds"/>
+    <File fileId="1" filename="textures/hella.dds"/>
+    <File fileId="13" filename="textures/rearLightCircleRed_02_normal.dds"/>
+    <File fileId="14" filename="textures/rearLightCircleRed_02_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="alpha" materialId="5">
+      <Texture fileId="4"/>
+    </Material>
+    <Material name="chrom" materialId="6">
+      <Texture fileId="3"/>
+    </Material>
+    <Material name="cubemap" materialId="7" alphaBlending="true">
+      <Texture fileId="5"/>
+    </Material>
+    <Material name="hella" materialId="8" specularColor="1 1 1">
+      <Texture fileId="1"/>
+    </Material>
+    <Material name="pasted__sideMarker_08Orange_mat1" materialId="9" diffuseColor="0.494118 0.494118 0.494118 1" alphaBlending="true" customShaderId="8" customShaderVariation="staticLight">
+      <Normalmap fileId="7"/>
+      <CustomParameter name="colorMat0" value="1 1 1 2"/>
+      <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+      <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+    </Material>
+    <Material name="staticLight_blue" materialId="11" diffuseColor="0.8 0.8 0.8 1" customShaderId="8" customShaderVariation="staticLight">
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="14"/>
+      <CustomParameter name="colorMat0" value="1 1 1 2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="hella3000_blue.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="HellaRally3000" nodeId="22" materialIds="8,6,5,7" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="2" name="innerPartStatic014" translation="-0.00372593 -0.0500979 -0.0792378" rotation="90 -0 0" scale="2.33854 2.33854 2.33854" clipDistance="35" nodeId="23" materialIds="9" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="3" name="innerPartStatic_blue" rotation="90 -0 0" scale="1 1.31579 1" nodeId="26" materialIds="11"/>
+      </Shape>
+  </Scene>
+
+</i3D>

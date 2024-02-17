@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="60">
+    
+	<author>DennisK</author>
+    
+	<version>1.0.0.0</version>
+    
+	<title>
+        <en>Mack Pinnacle DK edit</en>
+    </title>
+    
+	<description>
+        <en>My Mod Description</en>
+    </description>
+    
+	<iconFilename>icons/icon_pinnacle.png</iconFilename>
+    
+	<storeItems>
+        <storeItem xmlFilename="xml/pinnacle.xml"/>
+    </storeItems>
+	
+	<multiplayer supported="true"/>
+	
+	<extraSourceFiles>
+        <sourceFile filename="scripts/categorizer.lua"/>
+    </extraSourceFiles>
+	
+	<newcategory name="DennisKvehicles" title="DennisK" type="VEHICLE" img="Categories/CategoryVehicles.png" />
+	
+</modDesc>

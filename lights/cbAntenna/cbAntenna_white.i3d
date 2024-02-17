@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="cbAntenna_white.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="2" filename="$data/shared/assets/gps_normal.dds"/>
+    <File fileId="3" filename="$data/shared/assets/gps_vmask.dds"/>
+    <File fileId="9" filename="$data/vehicles/johnDeere/xuv865M/xuv865MDecals1_diffuse.png"/>
+    <File fileId="10" filename="$data/vehicles/johnDeere/xuv865M/xuv865MDecals1_normal.png"/>
+    <File fileId="11" filename="$data/vehicles/johnDeere/xuv865M/xuv865MDecals1_vmask.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="antennaWhite" materialId="57" diffuseColor="0.8 0.8 0.8 1" customShaderId="4" customShaderVariation="staticLight">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="colorMat1" value="0.5 0.5 0.5 4"/>
+      <CustomParameter name="lightControl" value="10 0 0 0"/>
+    </Material>
+    <Material name="embout_mat" materialId="33" diffuseColor="0.776471 0.776471 0.776471 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="colorMat0" value="0.025 0.025 0.025 1"/>
+      <CustomParameter name="colorMat1" value="0.025 0.025 0.025 1"/>
+    </Material>
+    <Material name="pied_mat" materialId="34" diffuseColor="0.713726 0.713726 0.713726 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="colorMat0" value="0.025 0.025 0.025 1"/>
+      <CustomParameter name="colorMat1" value="0.5 0.5 0.5 4"/>
+    </Material>
+    <Material name="ressort02_mat" materialId="35" diffuseColor="0.737255 0.737255 0.737255 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="colorMat0" value="0.025 0.025 0.025 1"/>
+      <CustomParameter name="colorMat1" value="0.005 0.2 0.8 1"/>
+    </Material>
+    <Material name="ressort_mat" materialId="36" customShaderId="4" customShaderVariation="colorMask">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+      <CustomParameter name="colorMat0" value="0.5 0.5 0.5 4"/>
+      <CustomParameter name="colorMat1" value="0.053 0.0529 0.0529 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="cbAntenna_white.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="piedAntenne" translation="0 0.0125162 -0.0439604" clipDistance="150" nodeId="47" materialIds="34" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="2" name="cbAntennaLight_white" translation="0 -0.0125162 0.0439604" rotation="90 -0 0" clipDistance="150" nodeId="60" materialIds="57" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="ressort" clipDistance="160" nodeId="48" materialIds="36" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="4" name="embout" translation="-0.00115679 -0.075 0" clipDistance="150" nodeId="49" materialIds="35" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="embout" translation="0 -0.014035 1.31677e-05" clipDistance="150" nodeId="50" materialIds="35" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="embout" translation="-0.000828527 -0.04 0.0035346" clipDistance="150" nodeId="51" materialIds="33" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="7" name="embout" translation="0 0.244 0" clipDistance="150" nodeId="52" materialIds="33" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="8" name="embout" translation="0 0.132506 0" clipDistance="150" nodeId="53" materialIds="33" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="9" name="embout" clipDistance="150" nodeId="55" materialIds="33" castsShadows="true" receiveShadows="true"/>
+      </Shape>
+  </Scene>
+
+</i3D>

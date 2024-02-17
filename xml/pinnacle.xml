@@ -1,0 +1,2305 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="tractor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    
+	<annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+    
+	<storeData>
+        <name>
+            <en>Pinnacle 6x4</en></name>
+        <specs>
+            <power>425</power>
+            <maxSpeed>80</maxSpeed>
+            <combination xmlFilename="$data/vehicles/demco/sideDump/sideDump.xml"/>
+            <combination xmlFilename="$data/vehicles/wilsonTrailer/pacesetter/pacesetter.xml"/>
+            <combination xmlFilename="$data/vehicles/lodeKing/distinctionTripleHopper/distinctionTripleHopper.xml"/>
+            <combination xmlFilename="$data/vehicles/krampe/sks30_150/sks30_150.xml"/>
+            <combination xmlFilename="$data/vehicles/lodeKing/distinctionSuperB/distinctionSuperB_front.xml"/>
+            <combination xmlFilename="$data/vehicles/meridian/conveyAllCST1550/conveyAllCST1550.xml"/>
+            <combination xmlFilename="$data/vehicles/lizard/moduleX/moduleX.xml"/>
+            <combination xmlFilename="$data/vehicles/kotte/tsa/tsa.xml"/>
+            <combination xmlFilename="$data/vehicles/fliegl/timberRunner/timberRunner.xml"/>
+            <combination xmlFilename="$data/vehicles/lizard/mks32/mks32.xml"/>
+            <combination xmlFilename="$data/vehicles/wilsonTrailer/silverstar/silverstar.xml"/>
+            <combination xmlFilename="$data/vehicles/demco/steelDropDeck/steelDropDeck.xml"/>
+            <combination xmlFilename="$data/vehicles/lodeKing/renownTriAxleBeavertailLowDrop/renownTriAxleBeavertailLowDrop.xml"/>
+            <combination xmlFilename="$data/vehicles/krone/profiLiner/profiLiner.xml"/>
+        </specs>
+        <functions>
+            <function>$l10n_function_truck</function>
+        </functions>
+        <image>icons/store_pinnacle.dds</image>
+        <price>93500</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>MACK</brand>
+        <category>DennisKvehicles</category>
+        <shopTranslationOffset>0 0.073 0</shopTranslationOffset>
+        <shopRotationOffset>0.28 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>11219968</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>2004224</indexBufferMemoryUsage>
+        <textureMemoryUsage>8454144</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>386881</audioMemoryUsage>
+    </storeData>
+    
+	<base>
+        <typeDesc>$l10n_typeDesc_truck</typeDesc>
+        <filename>i3d/pinnacle.i3d</filename>
+        <!-- <sounds filename="$data/vehicles/mack/pinnacle/sounds/pinnacle.xml"/> -->
+        <!-- <sounds filename="sounds/sound.xml"/> -->
+        <sounds filename="sounds/scania/sound.xml"/>
+        <size width="4" length="9" height="4.2" lengthOffset="-1.5"/>
+        <components>
+            <component centerOfMass="0 0.45 -0.5" solverIterationCount="10" mass="6850"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="TRUCK"/>
+        <mapHotspot type="TRUCK"/>
+    </base>
+    
+	<wheels>
+        <wheelConfigurations>
+		
+            <wheelConfiguration name="Default Special" price="0" brand="CONTINENTAL" saveId="CONTINENTAL_DEFAULT_SPECIAL">
+                <wheels autoRotateBackSpeed="2.1">
+                    <wheel filename="wheels/tires/continental/contiCrossTracHS3/385_65R22_5.xml" configId="mackSuperlinerFront" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="2.1" repr="axisFrontLeft" driveNode="wheelFrontLeft" forcePointRatio="0.5" initialCompression="35" suspTravel="0.2" spring="28" damper="40" frictionScale="2.0" yOffset="-0.03"/>
+                    </wheel>
+                    <wheel filename="wheels/tires/continental/contiCrossTracHS3/385_65R22_5.xml" configId="mackSuperlinerFront" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="2.1" repr="axisFrontRight" driveNode="wheelFrontRight" forcePointRatio="0.5" initialCompression="35" suspTravel="0.2" spring="28" damper="40" frictionScale="2.0" yOffset="-0.03"/>
+                    </wheel>
+                    <wheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dual" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="1.2" repr="wheelMiddleLeft" forcePointRatio="0.25" initialCompression="15" suspTravel="0.09" spring="76" damper="250" frictionScale="2.5" yOffset="-0.0256"/>
+                        <additionalWheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dualConnector" isLeft="true" offset="0.09"/>
+                    </wheel>
+                    <wheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dual" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="1.2" repr="wheelMiddleRight" forcePointRatio="0.25" initialCompression="15" suspTravel="0.09" spring="76" damper="250" frictionScale="2.5" yOffset="-0.0256"/>
+                        <additionalWheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dualConnector" isLeft="false" offset="0.09"/>
+                    </wheel>
+                    <wheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dual" isLeft="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="1.2" repr="wheelBackLeft" forcePointRatio="0.25" initialCompression="15" suspTravel="0.09" spring="76" damper="250" frictionScale="2.6" yOffset="-0.032"/>
+                        <additionalWheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dualConnector" isLeft="true" offset="0.09"/>
+                    </wheel>
+                    <wheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dual" isLeft="false" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="1.2" repr="wheelBackRight" forcePointRatio="0.25" initialCompression="15" suspTravel="0.09" spring="76" damper="250" frictionScale="2.6" yOffset="-0.032"/>
+                        <additionalWheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dualConnector" isLeft="false" offset="0.09"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			
+		
+            <wheelConfiguration name="Heavy Duty Special" price="0" brand="CONTINENTAL" saveId="CONTINENTAL_HD_SPECIAL">
+                <wheels autoRotateBackSpeed="2.1">
+                    <wheel filename="wheels/tires/continental/contiCrossTracHS3/385_65R22_5.xml" configId="truckTrailerKrone" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="2.1" repr="axisFrontLeft" driveNode="wheelFrontLeft" forcePointRatio="0.5" initialCompression="35" suspTravel="0.2" spring="28" damper="40" frictionScale="2.0" yOffset="-0.03"/>
+                    </wheel>
+                    <wheel filename="wheels/tires/continental/contiCrossTracHS3/385_65R22_5.xml" configId="truckTrailerKrone" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="2.1" repr="axisFrontRight" driveNode="wheelFrontRight" forcePointRatio="0.5" initialCompression="35" suspTravel="0.2" spring="28" damper="40" frictionScale="2.0" yOffset="-0.03"/>
+                    </wheel>
+                    <wheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dual" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="1.2" repr="wheelMiddleLeft" forcePointRatio="0.25" initialCompression="15" suspTravel="0.09" spring="76" damper="250" frictionScale="2.5" yOffset="-0.0256"/>
+                        <additionalWheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dualConnector" isLeft="true" offset="0.09"/>
+                    </wheel>
+                    <wheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dual" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="1.2" repr="wheelMiddleRight" forcePointRatio="0.25" initialCompression="15" suspTravel="0.09" spring="76" damper="250" frictionScale="2.5" yOffset="-0.0256"/>
+                        <additionalWheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dualConnector" isLeft="false" offset="0.09"/>
+                    </wheel>
+                    <wheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dual" isLeft="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="1.2" repr="wheelBackLeft" forcePointRatio="0.25" initialCompression="15" suspTravel="0.09" spring="76" damper="250" frictionScale="2.6" yOffset="-0.032"/>
+                        <additionalWheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dualConnector" isLeft="true" offset="0.09"/>
+                    </wheel>
+                    <wheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dual" isLeft="false" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="1.2" repr="wheelBackRight" forcePointRatio="0.25" initialCompression="15" suspTravel="0.09" spring="76" damper="250" frictionScale="2.6" yOffset="-0.032"/>
+                        <additionalWheel filename="wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dualConnector" isLeft="false" offset="0.09"/>
+                    </wheel>
+                </wheels>
+				<objectChange node="wheelFrontLeft" 	visibilityActive="true" translationActive="0.07 0 0"/>
+				<objectChange node="wheelFrontRight" 	visibilityActive="true" translationActive="-0.07 0 0"/>
+            </wheelConfiguration>
+			
+		
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="CONTINENTAL" saveId="CONTINENTAL_DEFAULT">
+                <wheels autoRotateBackSpeed="2.1">
+                    <wheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/385_65R22_5.xml" configId="mackSuperlinerFront" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="2.1" repr="axisFrontLeft" driveNode="wheelFrontLeft" forcePointRatio="0.5" initialCompression="35" suspTravel="0.2" spring="28" damper="40" frictionScale="2.0" yOffset="-0.03"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/385_65R22_5.xml" configId="mackSuperlinerFront" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="2.1" repr="axisFrontRight" driveNode="wheelFrontRight" forcePointRatio="0.5" initialCompression="35" suspTravel="0.2" spring="28" damper="40" frictionScale="2.0" yOffset="-0.03"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dual" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="1.2" repr="wheelMiddleLeft" forcePointRatio="0.25" initialCompression="15" suspTravel="0.09" spring="76" damper="250" frictionScale="2.5" yOffset="-0.0256"/>
+                        <additionalWheel filename="$data/shared/wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dualConnector" isLeft="true" offset="0.09"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dual" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="1.2" repr="wheelMiddleRight" forcePointRatio="0.25" initialCompression="15" suspTravel="0.09" spring="76" damper="250" frictionScale="2.5" yOffset="-0.0256"/>
+                        <additionalWheel filename="$data/shared/wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dualConnector" isLeft="false" offset="0.09"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dual" isLeft="true" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="1.2" repr="wheelBackLeft" forcePointRatio="0.25" initialCompression="15" suspTravel="0.09" spring="76" damper="250" frictionScale="2.6" yOffset="-0.032"/>
+                        <additionalWheel filename="$data/shared/wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dualConnector" isLeft="true" offset="0.09"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dual" isLeft="false" hasParticles="true">
+                        <physics rotSpeed="0" restLoad="1.2" repr="wheelBackRight" forcePointRatio="0.25" initialCompression="15" suspTravel="0.09" spring="76" damper="250" frictionScale="2.6" yOffset="-0.032"/>
+                        <additionalWheel filename="$data/shared/wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dualConnector" isLeft="false" offset="0.09"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			
+        </wheelConfigurations>
+        <ackermannSteeringConfigurations>
+            <ackermannSteering rotSpeed="35" rotMax="45" rotCenterWheel1="5" rotCenterWheel2="6"/>
+        </ackermannSteeringConfigurations>
+    </wheels>
+    
+	<lights>
+        <sharedLight linkNode="rearLight26Red_01" 			filename="$data/shared/assets/lights/lizard/rearLight26Red.xml"/>
+        <sharedLight linkNode="rearLight26Red_02" 			filename="$data/shared/assets/lights/lizard/rearLight26Red.xml"/>
+        <sharedLight linkNode="rearLight26White_01" 		filename="$data/shared/assets/lights/lizard/rearLight26Reverse.xml"/>
+        <sharedLight linkNode="redRound_03" 				filename="$data/shared/assets/reflectors/lizard/redRound_03.xml"/>
+        <sharedLight linkNode="redRound_04" 				filename="$data/shared/assets/reflectors/lizard/redRound_03.xml"/>
+        <sharedLight linkNode="redRound_05" 				filename="$data/shared/assets/reflectors/lizard/redRound_03.xml"/>
+        <sharedLight linkNode="redRound_06" 				filename="$data/shared/assets/reflectors/lizard/redRound_03.xml"/>
+        <sharedLight linkNode="redRound_07" 				filename="$data/shared/assets/reflectors/lizard/redRound_03.xml"/>
+        <sharedLight linkNode="redRound_08" 				filename="$data/shared/assets/reflectors/lizard/redRound_03.xml"/>
+		
+        <sharedLight linkNode="sideMarkerDC_L01" 			filename="lights/sideMarker05Orange.xml"/>
+        <sharedLight linkNode="sideMarkerDC_L02" 			filename="lights/sideMarker05Orange.xml"/>
+        <sharedLight linkNode="sideMarkerDC_L03" 			filename="lights/sideMarker05Orange.xml"/>
+        <sharedLight linkNode="sideMarkerDC_R01" 			filename="lights/sideMarker05Orange.xml"/>
+        <sharedLight linkNode="sideMarkerDC_R02" 			filename="lights/sideMarker05Orange.xml"/>
+        <sharedLight linkNode="sideMarkerDC_R03" 			filename="lights/sideMarker05Orange.xml"/>
+        <sharedLight linkNode="rearLightDC_01" 				filename="lights/rearLight25.xml"/>
+        <sharedLight linkNode="rearLightDC_02" 				filename="lights/rearLight25.xml"/>
+        <sharedLight linkNode="rearLightDC_03" 				filename="lights/rearLight25.xml"/>
+        <sharedLight linkNode="rearLightDCF_01" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="rearLightDCF_02" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="rearLightDCF_03" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="rearLightDCF_04" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="rearLightDCF_05" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="rearLightDCF_06" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="rearLightDCF_07" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="rearLightDCF_08" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="rearLightDCF_09" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="rearLightDCF_10" 			filename="lights/rearLight60Red.xml"/>
+		
+        <sharedLight linkNode="sideMarkerS48_L01" 			filename="lights/sideMarker05Orange.xml"/>
+        <sharedLight linkNode="sideMarkerS48_L02" 			filename="lights/sideMarker05Orange.xml"/>
+        <sharedLight linkNode="sideMarkerS48_R01" 			filename="lights/sideMarker05Orange.xml"/>
+        <sharedLight linkNode="sideMarkerS48_R02" 			filename="lights/sideMarker05Orange.xml"/>
+        <sharedLight linkNode="rearLightS48_01" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="rearLightS48_02" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="rearLightS48_03" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="rearLightS48_04" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="rearLightS48_05" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="rearLightS48_06" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="rearLightS48_07" 			filename="lights/rearLight25.xml"/>
+        <sharedLight linkNode="rearLightS48_08" 			filename="lights/rearLight25.xml"/>
+        <sharedLight linkNode="rearLightS48_09" 			filename="lights/rearLight25.xml"/>
+        <sharedLight linkNode="rearLightS48F_01" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="rearLightS48F_02" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="rearLightS48F_03" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="rearLightS48F_04" 			filename="lights/rearLight60Red.xml"/>
+		
+        <sharedLight linkNode="sideMarkerS70_L01" 			filename="lights/sideMarker05Orange.xml"/>
+        <sharedLight linkNode="sideMarkerS70_R01" 			filename="lights/sideMarker05Orange.xml"/>
+        <sharedLight linkNode="rearLightS70_01" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="rearLightS70_02" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="rearLightS70_03" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="rearLightS70_04" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="rearLightS70_05" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="rearLightS70_06" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="rearLightS70_07" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="rearLightS70_08" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="rearLightS70_09" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="rearLightS70_10" 			filename="lights/rearLight60Red.xml"/>	
+		
+        <sharedLight linkNode="highBeamL" 					filename="lights/frontLight11_HB.xml"/>		
+        <sharedLight linkNode="highBeamR" 					filename="lights/frontLight11_HB.xml"/>		
+		
+        <sharedLight linkNode="sideMarker_blue_01" 			filename="lights/sideMarkerLights/sideMarker_blue.xml"/>		
+        <sharedLight linkNode="sideMarker_blue_02" 			filename="lights/sideMarkerLights/sideMarker_blue.xml"/>		
+        <sharedLight linkNode="sideMarker_blue_03" 			filename="lights/sideMarkerLights/sideMarker_blue.xml"/>		
+        <sharedLight linkNode="sideMarker_blue_04" 			filename="lights/sideMarkerLights/sideMarker_blue.xml"/>		
+        <sharedLight linkNode="sideMarker_blue_05" 			filename="lights/sideMarkerLights/sideMarker_blue.xml"/>		
+        <sharedLight linkNode="sideMarker_blue_06" 			filename="lights/sideMarkerLights/sideMarker_blue.xml"/>		
+        <sharedLight linkNode="sideMarker_blue_07" 			filename="lights/sideMarkerLights/sideMarker_blue.xml"/>		
+        <sharedLight linkNode="sideMarker_blue_08" 			filename="lights/sideMarkerLights/sideMarker_blue.xml"/>		
+        <sharedLight linkNode="sideMarker_blue_09" 			filename="lights/sideMarkerLights/sideMarker_blue.xml"/>		
+        <sharedLight linkNode="sideMarker_blue_10" 			filename="lights/sideMarkerLights/sideMarker_blue.xml"/>	
+        <sharedLight linkNode="sideMarker_blue_11" 			filename="lights/sideMarkerLights/sideMarker_blue.xml"/>	
+        <sharedLight linkNode="sideMarker_blue_12" 			filename="lights/sideMarkerLights/sideMarker_blue.xml"/>	
+        <sharedLight linkNode="sideMarker_blue_13" 			filename="lights/sideMarkerLights/sideMarker_blue.xml"/>	
+        <sharedLight linkNode="sideMarker_blue_14" 			filename="lights/sideMarkerLights/sideMarker_blue.xml"/>	
+        <sharedLight linkNode="sideMarker_blue_15" 			filename="lights/sideMarkerLights/sideMarker_blue.xml"/>	
+        <sharedLight linkNode="sideMarker_blue_16" 			filename="lights/sideMarkerLights/sideMarker_blue.xml"/>
+        <sharedLight linkNode="cbAntennaL_blue" 			filename="lights/cbAntenna/cbAntenna_blue.xml"/>
+        <sharedLight linkNode="cbAntennaR_blue" 			filename="lights/cbAntenna/cbAntenna_blue.xml"/>
+		
+        <sharedLight linkNode="DC_roofTop_blue_01" 			filename="lights/usRooftops/roofLight_blue.xml"/>
+        <sharedLight linkNode="DC_roofTop_blue_02" 			filename="lights/usRooftops/roofLight_blue.xml"/>
+        <sharedLight linkNode="DC_roofTop_blue_03" 			filename="lights/usRooftops/roofLight_blue.xml"/>
+        <sharedLight linkNode="DC_roofTop_blue_04" 			filename="lights/usRooftops/roofLight_blue.xml"/>
+        <sharedLight linkNode="DC_roofTop_blue_05" 			filename="lights/usRooftops/roofLight_blue.xml"/>
+        <sharedLight linkNode="DC_workingLight_blue_01" 	filename="lights/Hella3000/hella3000_blue.xml"/>
+        <sharedLight linkNode="DC_workingLight_blue_02" 	filename="lights/Hella3000/hella3000_blue.xml"/>
+		
+        <sharedLight linkNode="DCF_roofTop_blue_01" 		filename="lights/usRooftops/roofLight_blue.xml"/>
+        <sharedLight linkNode="DCF_roofTop_blue_02" 		filename="lights/usRooftops/roofLight_blue.xml"/>
+        <sharedLight linkNode="DCF_roofTop_blue_03" 		filename="lights/usRooftops/roofLight_blue.xml"/>
+        <sharedLight linkNode="DCF_roofTop_blue_04" 		filename="lights/usRooftops/roofLight_blue.xml"/>
+        <sharedLight linkNode="DCF_roofTop_blue_05" 		filename="lights/usRooftops/roofLight_blue.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_blue_01" 		filename="lights/sideMarkerLights/sideMarker_blue.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_blue_02" 		filename="lights/sideMarkerLights/sideMarker_blue.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_blue_03" 		filename="lights/sideMarkerLights/sideMarker_blue.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_blue_04" 		filename="lights/sideMarkerLights/sideMarker_blue.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_blue_05" 		filename="lights/sideMarkerLights/sideMarker_blue.xml"/>
+        <sharedLight linkNode="DCF_workingLight_blue_01" 	filename="lights/Hella3000/hella3000_blue.xml"/>
+        <sharedLight linkNode="DCF_workingLight_blue_02" 	filename="lights/Hella3000/hella3000_blue.xml"/>
+        <sharedLight linkNode="DCF_workingLight_blue_03" 	filename="lights/Hella3000/hella3000_blue.xml"/>
+        <sharedLight linkNode="DCF_workingLight_blue_04" 	filename="lights/Hella3000/hella3000_blue.xml"/>
+			
+        <sharedLight linkNode="S48_roofTop_blue_01" 		filename="lights/usRooftops/roofLight_blue.xml"/>
+        <sharedLight linkNode="S48_roofTop_blue_02" 		filename="lights/usRooftops/roofLight_blue.xml"/>
+        <sharedLight linkNode="S48_roofTop_blue_03" 		filename="lights/usRooftops/roofLight_blue.xml"/>
+        <sharedLight linkNode="S48_roofTop_blue_04" 		filename="lights/usRooftops/roofLight_blue.xml"/>
+        <sharedLight linkNode="S48_roofTop_blue_05" 		filename="lights/usRooftops/roofLight_blue.xml"/>
+        <sharedLight linkNode="S48_workingLight_blue_01" 	filename="lights/Hella3000/hella3000_blue.xml"/>
+        <sharedLight linkNode="S48_workingLight_blue_02" 	filename="lights/Hella3000/hella3000_blue.xml"/>
+		
+        <sharedLight linkNode="S48F_roofTop_blue_01" 		filename="lights/usRooftops/roofLight_blue.xml"/>
+        <sharedLight linkNode="S48F_roofTop_blue_02" 		filename="lights/usRooftops/roofLight_blue.xml"/>
+        <sharedLight linkNode="S48F_roofTop_blue_03" 		filename="lights/usRooftops/roofLight_blue.xml"/>
+        <sharedLight linkNode="S48F_roofTop_blue_04" 		filename="lights/usRooftops/roofLight_blue.xml"/>
+        <sharedLight linkNode="S48F_roofTop_blue_05" 		filename="lights/usRooftops/roofLight_blue.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_blue_01" 	filename="lights/sideMarkerLights/sideMarker_blue.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_blue_02" 	filename="lights/sideMarkerLights/sideMarker_blue.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_blue_03" 	filename="lights/sideMarkerLights/sideMarker_blue.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_blue_04" 	filename="lights/sideMarkerLights/sideMarker_blue.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_blue_05" 	filename="lights/sideMarkerLights/sideMarker_blue.xml"/>
+        <sharedLight linkNode="S48F_workingLight_blue_01" 	filename="lights/Hella3000/hella3000_blue.xml"/>
+        <sharedLight linkNode="S48F_workingLight_blue_02" 	filename="lights/Hella3000/hella3000_blue.xml"/>
+        <sharedLight linkNode="S48F_workingLight_blue_03" 	filename="lights/Hella3000/hella3000_blue.xml"/>
+        <sharedLight linkNode="S48F_workingLight_blue_04" 	filename="lights/Hella3000/hella3000_blue.xml"/>
+        
+        <sharedLight linkNode="S70_roofTop_blue_01" 		filename="lights/usRooftops/roofLight_blue.xml"/>
+        <sharedLight linkNode="S70_roofTop_blue_02" 		filename="lights/usRooftops/roofLight_blue.xml"/>
+        <sharedLight linkNode="S70_roofTop_blue_03" 		filename="lights/usRooftops/roofLight_blue.xml"/>
+        <sharedLight linkNode="S70_roofTop_blue_04" 		filename="lights/usRooftops/roofLight_blue.xml"/>
+        <sharedLight linkNode="S70_roofTop_blue_05" 		filename="lights/usRooftops/roofLight_blue.xml"/>
+        <sharedLight linkNode="S70_sideMarker_blue_01" 		filename="lights/sideMarkerLights/sideMarker_blue.xml"/>
+        <sharedLight linkNode="S70_sideMarker_blue_02" 		filename="lights/sideMarkerLights/sideMarker_blue.xml"/>
+        <sharedLight linkNode="S70_sideMarker_blue_03" 		filename="lights/sideMarkerLights/sideMarker_blue.xml"/>
+        <sharedLight linkNode="S70_sideMarker_blue_04" 		filename="lights/sideMarkerLights/sideMarker_blue.xml"/>
+        <sharedLight linkNode="S70_sideMarker_blue_05" 		filename="lights/sideMarkerLights/sideMarker_blue.xml"/>
+        <sharedLight linkNode="S70_workingLight_blue_01" 	filename="lights/Hella3000/hella3000_blue.xml"/>
+        <sharedLight linkNode="S70_workingLight_blue_02" 	filename="lights/Hella3000/hella3000_blue.xml"/>
+        <sharedLight linkNode="S70_workingLight_blue_03" 	filename="lights/Hella3000/hella3000_blue.xml"/>
+        <sharedLight linkNode="S70_workingLight_blue_04" 	filename="lights/Hella3000/hella3000_blue.xml"/>
+		
+				
+        <sharedLight linkNode="sideMarker_green_01" 		filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="sideMarker_green_02" 		filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="sideMarker_green_03" 		filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="sideMarker_green_04" 		filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="sideMarker_green_05" 		filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="sideMarker_green_06" 		filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="sideMarker_green_07" 		filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="sideMarker_green_08" 		filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="sideMarker_green_09" 		filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="sideMarker_green_10" 		filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="sideMarker_green_11" 		filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="sideMarker_green_12" 		filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="sideMarker_green_13" 		filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="sideMarker_green_14" 		filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="sideMarker_green_15" 		filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="sideMarker_green_16" 		filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="cbAntennaL_green" 			filename="lights/cbAntenna/cbAntenna_green.xml"/>
+        <sharedLight linkNode="cbAntennaR_green" 			filename="lights/cbAntenna/cbAntenna_green.xml"/>
+		
+        <sharedLight linkNode="DC_roofTop_green_01" 		filename="lights/usRooftops/roofLight_green.xml"/>
+        <sharedLight linkNode="DC_roofTop_green_02" 		filename="lights/usRooftops/roofLight_green.xml"/>
+        <sharedLight linkNode="DC_roofTop_green_03" 		filename="lights/usRooftops/roofLight_green.xml"/>
+        <sharedLight linkNode="DC_roofTop_green_04" 		filename="lights/usRooftops/roofLight_green.xml"/>
+        <sharedLight linkNode="DC_roofTop_green_05" 		filename="lights/usRooftops/roofLight_green.xml"/>
+        <sharedLight linkNode="DC_workingLight_green_01" 	filename="lights/Hella3000/hella3000_green.xml"/>
+        <sharedLight linkNode="DC_workingLight_green_02" 	filename="lights/Hella3000/hella3000_green.xml"/>
+		
+        <sharedLight linkNode="DCF_roofTop_green_01" 		filename="lights/usRooftops/roofLight_green.xml"/>
+        <sharedLight linkNode="DCF_roofTop_green_02" 		filename="lights/usRooftops/roofLight_green.xml"/>
+        <sharedLight linkNode="DCF_roofTop_green_03" 		filename="lights/usRooftops/roofLight_green.xml"/>
+        <sharedLight linkNode="DCF_roofTop_green_04" 		filename="lights/usRooftops/roofLight_green.xml"/>
+        <sharedLight linkNode="DCF_roofTop_green_05" 		filename="lights/usRooftops/roofLight_green.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_green_01" 	filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="DCF_sideMarker_green_02" 	filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="DCF_sideMarker_green_03" 	filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="DCF_sideMarker_green_04" 	filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="DCF_sideMarker_green_05" 	filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="DCF_workingLight_green_01" 	filename="lights/Hella3000/hella3000_green.xml"/>
+        <sharedLight linkNode="DCF_workingLight_green_02" 	filename="lights/Hella3000/hella3000_green.xml"/>
+        <sharedLight linkNode="DCF_workingLight_green_03" 	filename="lights/Hella3000/hella3000_green.xml"/>
+        <sharedLight linkNode="DCF_workingLight_green_04" 	filename="lights/Hella3000/hella3000_green.xml"/>
+		
+        <sharedLight linkNode="S48_roofTop_green_01" 		filename="lights/usRooftops/roofLight_green.xml"/>
+        <sharedLight linkNode="S48_roofTop_green_02" 		filename="lights/usRooftops/roofLight_green.xml"/>
+        <sharedLight linkNode="S48_roofTop_green_03" 		filename="lights/usRooftops/roofLight_green.xml"/>
+        <sharedLight linkNode="S48_roofTop_green_04" 		filename="lights/usRooftops/roofLight_green.xml"/>
+        <sharedLight linkNode="S48_roofTop_green_05" 		filename="lights/usRooftops/roofLight_green.xml"/>
+        <sharedLight linkNode="S48_workingLight_green_01" 	filename="lights/Hella3000/hella3000_green.xml"/>
+        <sharedLight linkNode="S48_workingLight_green_02" 	filename="lights/Hella3000/hella3000_green.xml"/>
+		
+        <sharedLight linkNode="S48F_roofTop_green_01" 		filename="lights/usRooftops/roofLight_green.xml"/>
+        <sharedLight linkNode="S48F_roofTop_green_02" 		filename="lights/usRooftops/roofLight_green.xml"/>
+        <sharedLight linkNode="S48F_roofTop_green_03" 		filename="lights/usRooftops/roofLight_green.xml"/>
+        <sharedLight linkNode="S48F_roofTop_green_04" 		filename="lights/usRooftops/roofLight_green.xml"/>
+        <sharedLight linkNode="S48F_roofTop_green_05" 		filename="lights/usRooftops/roofLight_green.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_green_01" 	filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="S48F_sideMarker_green_02" 	filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="S48F_sideMarker_green_03" 	filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="S48F_sideMarker_green_04" 	filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="S48F_sideMarker_green_05" 	filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="S48F_workingLight_green_01" 	filename="lights/Hella3000/hella3000_green.xml"/>
+        <sharedLight linkNode="S48F_workingLight_green_02" 	filename="lights/Hella3000/hella3000_green.xml"/>
+        <sharedLight linkNode="S48F_workingLight_green_03" 	filename="lights/Hella3000/hella3000_green.xml"/>
+        <sharedLight linkNode="S48F_workingLight_green_04" 	filename="lights/Hella3000/hella3000_green.xml"/>
+		
+        <sharedLight linkNode="S70_roofTop_green_01" 		filename="lights/usRooftops/roofLight_green.xml"/>
+        <sharedLight linkNode="S70_roofTop_green_02" 		filename="lights/usRooftops/roofLight_green.xml"/>
+        <sharedLight linkNode="S70_roofTop_green_03" 		filename="lights/usRooftops/roofLight_green.xml"/>
+        <sharedLight linkNode="S70_roofTop_green_04" 		filename="lights/usRooftops/roofLight_green.xml"/>
+        <sharedLight linkNode="S70_roofTop_green_05" 		filename="lights/usRooftops/roofLight_green.xml"/>
+        <sharedLight linkNode="S70_sideMarker_green_01" 	filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="S70_sideMarker_green_02" 	filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="S70_sideMarker_green_03" 	filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="S70_sideMarker_green_04" 	filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="S70_sideMarker_green_05" 	filename="lights/sideMarkerLights/sideMarker_green.xml"/>	
+        <sharedLight linkNode="S70_workingLight_green_01" 	filename="lights/Hella3000/hella3000_green.xml"/>
+        <sharedLight linkNode="S70_workingLight_green_02" 	filename="lights/Hella3000/hella3000_green.xml"/>
+        <sharedLight linkNode="S70_workingLight_green_03" 	filename="lights/Hella3000/hella3000_green.xml"/>
+        <sharedLight linkNode="S70_workingLight_green_04" 	filename="lights/Hella3000/hella3000_green.xml"/>
+		
+		
+        <sharedLight linkNode="sideMarker_orange_01" 		filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="sideMarker_orange_02" 		filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="sideMarker_orange_03" 		filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="sideMarker_orange_04" 		filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="sideMarker_orange_05" 		filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="sideMarker_orange_06" 		filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="sideMarker_orange_07" 		filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="sideMarker_orange_08" 		filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="sideMarker_orange_09" 		filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="sideMarker_orange_10" 		filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="sideMarker_orange_11" 		filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="sideMarker_orange_12" 		filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="sideMarker_orange_13" 		filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="sideMarker_orange_14" 		filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="sideMarker_orange_15" 		filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="sideMarker_orange_16" 		filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="cbAntennaL_orange" 			filename="lights/cbAntenna/cbAntenna_orange.xml"/>
+        <sharedLight linkNode="cbAntennaR_orange" 			filename="lights/cbAntenna/cbAntenna_orange.xml"/>
+		
+        <sharedLight linkNode="DC_roofTop_orange_01" 		filename="lights/usRooftops/roofLight_orange.xml"/>
+        <sharedLight linkNode="DC_roofTop_orange_02" 		filename="lights/usRooftops/roofLight_orange.xml"/>
+        <sharedLight linkNode="DC_roofTop_orange_03" 		filename="lights/usRooftops/roofLight_orange.xml"/>
+        <sharedLight linkNode="DC_roofTop_orange_04" 		filename="lights/usRooftops/roofLight_orange.xml"/>
+        <sharedLight linkNode="DC_roofTop_orange_05" 		filename="lights/usRooftops/roofLight_orange.xml"/>
+        <sharedLight linkNode="DC_workingLight_orange_01" 	filename="lights/Hella3000/hella3000_orange.xml"/>
+        <sharedLight linkNode="DC_workingLight_orange_02" 	filename="lights/Hella3000/hella3000_orange.xml"/>
+		
+        <sharedLight linkNode="DCF_roofTop_orange_01" 		filename="lights/usRooftops/roofLight_orange.xml"/>
+        <sharedLight linkNode="DCF_roofTop_orange_02" 		filename="lights/usRooftops/roofLight_orange.xml"/>
+        <sharedLight linkNode="DCF_roofTop_orange_03" 		filename="lights/usRooftops/roofLight_orange.xml"/>
+        <sharedLight linkNode="DCF_roofTop_orange_04" 		filename="lights/usRooftops/roofLight_orange.xml"/>
+        <sharedLight linkNode="DCF_roofTop_orange_05" 		filename="lights/usRooftops/roofLight_orange.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_orange_01" 	filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_orange_02" 	filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_orange_03" 	filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_orange_04" 	filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_orange_05" 	filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="DCF_workingLight_orange_01" 	filename="lights/Hella3000/hella3000_orange.xml"/>
+        <sharedLight linkNode="DCF_workingLight_orange_02" 	filename="lights/Hella3000/hella3000_orange.xml"/>
+        <sharedLight linkNode="DCF_workingLight_orange_03" 	filename="lights/Hella3000/hella3000_orange.xml"/>
+        <sharedLight linkNode="DCF_workingLight_orange_04" 	filename="lights/Hella3000/hella3000_orange.xml"/>
+		
+        <sharedLight linkNode="S48_roofTop_orange_01" 		filename="lights/usRooftops/roofLight_orange.xml"/>
+        <sharedLight linkNode="S48_roofTop_orange_02" 		filename="lights/usRooftops/roofLight_orange.xml"/>
+        <sharedLight linkNode="S48_roofTop_orange_03" 		filename="lights/usRooftops/roofLight_orange.xml"/>
+        <sharedLight linkNode="S48_roofTop_orange_04" 		filename="lights/usRooftops/roofLight_orange.xml"/>
+        <sharedLight linkNode="S48_roofTop_orange_05" 		filename="lights/usRooftops/roofLight_orange.xml"/>
+        <sharedLight linkNode="S48_workingLight_orange_01" 	filename="lights/Hella3000/hella3000_orange.xml"/>
+        <sharedLight linkNode="S48_workingLight_orange_02" 	filename="lights/Hella3000/hella3000_orange.xml"/>
+		
+        <sharedLight linkNode="S48F_roofTop_orange_01" 		filename="lights/usRooftops/roofLight_orange.xml"/>
+        <sharedLight linkNode="S48F_roofTop_orange_02" 		filename="lights/usRooftops/roofLight_orange.xml"/>
+        <sharedLight linkNode="S48F_roofTop_orange_03" 		filename="lights/usRooftops/roofLight_orange.xml"/>
+        <sharedLight linkNode="S48F_roofTop_orange_04" 		filename="lights/usRooftops/roofLight_orange.xml"/>
+        <sharedLight linkNode="S48F_roofTop_orange_05" 		filename="lights/usRooftops/roofLight_orange.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_orange_01" 	filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_orange_02" 	filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_orange_03" 	filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_orange_04" 	filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_orange_05" 	filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="S48F_workingLight_orange_01" filename="lights/Hella3000/hella3000_orange.xml"/>
+        <sharedLight linkNode="S48F_workingLight_orange_02" filename="lights/Hella3000/hella3000_orange.xml"/>
+        <sharedLight linkNode="S48F_workingLight_orange_03" filename="lights/Hella3000/hella3000_orange.xml"/>
+        <sharedLight linkNode="S48F_workingLight_orange_04" filename="lights/Hella3000/hella3000_orange.xml"/>
+		
+        <sharedLight linkNode="S70_roofTop_orange_01" 		filename="lights/usRooftops/roofLight_orange.xml"/>
+        <sharedLight linkNode="S70_roofTop_orange_02" 		filename="lights/usRooftops/roofLight_orange.xml"/>
+        <sharedLight linkNode="S70_roofTop_orange_03" 		filename="lights/usRooftops/roofLight_orange.xml"/>
+        <sharedLight linkNode="S70_roofTop_orange_04" 		filename="lights/usRooftops/roofLight_orange.xml"/>
+        <sharedLight linkNode="S70_roofTop_orange_05" 		filename="lights/usRooftops/roofLight_orange.xml"/>
+        <sharedLight linkNode="S70_sideMarker_orange_01" 	filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="S70_sideMarker_orange_02" 	filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="S70_sideMarker_orange_03" 	filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="S70_sideMarker_orange_04" 	filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="S70_sideMarker_orange_05" 	filename="lights/sideMarkerLights/sideMarker_orange.xml"/>
+        <sharedLight linkNode="S70_workingLight_orange_01" 	filename="lights/Hella3000/hella3000_orange.xml"/>
+        <sharedLight linkNode="S70_workingLight_orange_02" 	filename="lights/Hella3000/hella3000_orange.xml"/>
+        <sharedLight linkNode="S70_workingLight_orange_03" 	filename="lights/Hella3000/hella3000_orange.xml"/>
+        <sharedLight linkNode="S70_workingLight_orange_04" 	filename="lights/Hella3000/hella3000_orange.xml"/>
+		
+        <sharedLight linkNode="sideMarker_purple_01" 		filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="sideMarker_purple_02" 		filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="sideMarker_purple_03" 		filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="sideMarker_purple_04" 		filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="sideMarker_purple_05" 		filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="sideMarker_purple_06" 		filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="sideMarker_purple_07" 		filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="sideMarker_purple_08" 		filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="sideMarker_purple_09" 		filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="sideMarker_purple_10" 		filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="sideMarker_purple_11" 		filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="sideMarker_purple_12" 		filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="sideMarker_purple_13" 		filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="sideMarker_purple_14" 		filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="sideMarker_purple_15" 		filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="sideMarker_purple_16" 		filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="cbAntennaL_purple" 			filename="lights/cbAntenna/cbAntenna_purple.xml"/>
+        <sharedLight linkNode="cbAntennaR_purple" 			filename="lights/cbAntenna/cbAntenna_purple.xml"/>
+		
+        <sharedLight linkNode="DC_roofTop_purple_01" 		filename="lights/usRooftops/roofLight_purple.xml"/>
+        <sharedLight linkNode="DC_roofTop_purple_02" 		filename="lights/usRooftops/roofLight_purple.xml"/>
+        <sharedLight linkNode="DC_roofTop_purple_03" 		filename="lights/usRooftops/roofLight_purple.xml"/>
+        <sharedLight linkNode="DC_roofTop_purple_04" 		filename="lights/usRooftops/roofLight_purple.xml"/>
+        <sharedLight linkNode="DC_roofTop_purple_05" 		filename="lights/usRooftops/roofLight_purple.xml"/>
+        <sharedLight linkNode="DC_workingLight_purple_01" 	filename="lights/Hella3000/hella3000_purple.xml"/>
+        <sharedLight linkNode="DC_workingLight_purple_02" 	filename="lights/Hella3000/hella3000_purple.xml"/>
+		
+        <sharedLight linkNode="DCF_roofTop_purple_01" 		filename="lights/usRooftops/roofLight_purple.xml"/>
+        <sharedLight linkNode="DCF_roofTop_purple_02" 		filename="lights/usRooftops/roofLight_purple.xml"/>
+        <sharedLight linkNode="DCF_roofTop_purple_03" 		filename="lights/usRooftops/roofLight_purple.xml"/>
+        <sharedLight linkNode="DCF_roofTop_purple_04" 		filename="lights/usRooftops/roofLight_purple.xml"/>
+        <sharedLight linkNode="DCF_roofTop_purple_05" 		filename="lights/usRooftops/roofLight_purple.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_purple_01" 	filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_purple_02" 	filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_purple_03" 	filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_purple_04" 	filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_purple_05" 	filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="DCF_workingLight_purple_01" 	filename="lights/Hella3000/hella3000_purple.xml"/>
+        <sharedLight linkNode="DCF_workingLight_purple_02" 	filename="lights/Hella3000/hella3000_purple.xml"/>
+        <sharedLight linkNode="DCF_workingLight_purple_03" 	filename="lights/Hella3000/hella3000_purple.xml"/>
+        <sharedLight linkNode="DCF_workingLight_purple_04" 	filename="lights/Hella3000/hella3000_purple.xml"/>
+		
+        <sharedLight linkNode="S48_roofTop_purple_01" 		filename="lights/usRooftops/roofLight_purple.xml"/>
+        <sharedLight linkNode="S48_roofTop_purple_02" 		filename="lights/usRooftops/roofLight_purple.xml"/>
+        <sharedLight linkNode="S48_roofTop_purple_03" 		filename="lights/usRooftops/roofLight_purple.xml"/>
+        <sharedLight linkNode="S48_roofTop_purple_04" 		filename="lights/usRooftops/roofLight_purple.xml"/>
+        <sharedLight linkNode="S48_roofTop_purple_05" 		filename="lights/usRooftops/roofLight_purple.xml"/>
+        <sharedLight linkNode="S48_workingLight_purple_01" 	filename="lights/Hella3000/hella3000_purple.xml"/>
+        <sharedLight linkNode="S48_workingLight_purple_02" 	filename="lights/Hella3000/hella3000_purple.xml"/>
+        
+        <sharedLight linkNode="S48F_roofTop_purple_01" 		filename="lights/usRooftops/roofLight_purple.xml"/>
+        <sharedLight linkNode="S48F_roofTop_purple_02" 		filename="lights/usRooftops/roofLight_purple.xml"/>
+        <sharedLight linkNode="S48F_roofTop_purple_03" 		filename="lights/usRooftops/roofLight_purple.xml"/>
+        <sharedLight linkNode="S48F_roofTop_purple_04" 		filename="lights/usRooftops/roofLight_purple.xml"/>
+        <sharedLight linkNode="S48F_roofTop_purple_05" 		filename="lights/usRooftops/roofLight_purple.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_purple_01" 	filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_purple_02" 	filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_purple_03" 	filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_purple_04" 	filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_purple_05" 	filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="S48F_workingLight_purple_01" filename="lights/Hella3000/hella3000_purple.xml"/>
+        <sharedLight linkNode="S48F_workingLight_purple_02" filename="lights/Hella3000/hella3000_purple.xml"/>
+        <sharedLight linkNode="S48F_workingLight_purple_03" filename="lights/Hella3000/hella3000_purple.xml"/>
+        <sharedLight linkNode="S48F_workingLight_purple_04" filename="lights/Hella3000/hella3000_purple.xml"/>
+        
+        <sharedLight linkNode="S70_roofTop_purple_01" 		filename="lights/usRooftops/roofLight_purple.xml"/>
+        <sharedLight linkNode="S70_roofTop_purple_02" 		filename="lights/usRooftops/roofLight_purple.xml"/>
+        <sharedLight linkNode="S70_roofTop_purple_03" 		filename="lights/usRooftops/roofLight_purple.xml"/>
+        <sharedLight linkNode="S70_roofTop_purple_04" 		filename="lights/usRooftops/roofLight_purple.xml"/>
+        <sharedLight linkNode="S70_roofTop_purple_05" 		filename="lights/usRooftops/roofLight_purple.xml"/>
+        <sharedLight linkNode="S70_sideMarker_purple_01" 	filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="S70_sideMarker_purple_02" 	filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="S70_sideMarker_purple_03" 	filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="S70_sideMarker_purple_04" 	filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="S70_sideMarker_purple_05" 	filename="lights/sideMarkerLights/sideMarker_purple.xml"/>
+        <sharedLight linkNode="S70_workingLight_purple_01" 	filename="lights/Hella3000/hella3000_purple.xml"/>
+        <sharedLight linkNode="S70_workingLight_purple_02" 	filename="lights/Hella3000/hella3000_purple.xml"/>
+        <sharedLight linkNode="S70_workingLight_purple_03" 	filename="lights/Hella3000/hella3000_purple.xml"/>
+        <sharedLight linkNode="S70_workingLight_purple_04" 	filename="lights/Hella3000/hella3000_purple.xml"/>
+		
+        <sharedLight linkNode="sideMarker_red_01" 			filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="sideMarker_red_02" 			filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="sideMarker_red_03" 			filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="sideMarker_red_04" 			filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="sideMarker_red_05" 			filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="sideMarker_red_06" 			filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="sideMarker_red_07" 			filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="sideMarker_red_08" 			filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="sideMarker_red_09" 			filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="sideMarker_red_10" 			filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="sideMarker_red_11" 			filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="sideMarker_red_12" 			filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="sideMarker_red_13" 			filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="sideMarker_red_14" 			filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="sideMarker_red_15" 			filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="sideMarker_red_16" 			filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="cbAntennaL_red" 				filename="lights/cbAntenna/cbAntenna_red.xml"/>
+        <sharedLight linkNode="cbAntennaR_red" 				filename="lights/cbAntenna/cbAntenna_red.xml"/>		
+		
+        <sharedLight linkNode="DC_roofTop_red_01" 			filename="lights/usRooftops/roofLight_red.xml"/>
+        <sharedLight linkNode="DC_roofTop_red_02" 			filename="lights/usRooftops/roofLight_red.xml"/>
+        <sharedLight linkNode="DC_roofTop_red_03" 			filename="lights/usRooftops/roofLight_red.xml"/>
+        <sharedLight linkNode="DC_roofTop_red_04" 			filename="lights/usRooftops/roofLight_red.xml"/>
+        <sharedLight linkNode="DC_roofTop_red_05" 			filename="lights/usRooftops/roofLight_red.xml"/>
+        <sharedLight linkNode="DC_workingLight_red_01" 		filename="lights/Hella3000/hella3000_red.xml"/>
+        <sharedLight linkNode="DC_workingLight_red_02" 		filename="lights/Hella3000/hella3000_red.xml"/>
+		
+        <sharedLight linkNode="DCF_roofTop_red_01" 			filename="lights/usRooftops/roofLight_red.xml"/>
+        <sharedLight linkNode="DCF_roofTop_red_02" 			filename="lights/usRooftops/roofLight_red.xml"/>
+        <sharedLight linkNode="DCF_roofTop_red_03" 			filename="lights/usRooftops/roofLight_red.xml"/>
+        <sharedLight linkNode="DCF_roofTop_red_04" 			filename="lights/usRooftops/roofLight_red.xml"/>
+        <sharedLight linkNode="DCF_roofTop_red_05" 			filename="lights/usRooftops/roofLight_red.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_red_01" 		filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_red_02" 		filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_red_03" 		filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_red_04" 		filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_red_05" 		filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="DCF_workingLight_red_01" 	filename="lights/Hella3000/hella3000_red.xml"/>
+        <sharedLight linkNode="DCF_workingLight_red_02" 	filename="lights/Hella3000/hella3000_red.xml"/>
+        <sharedLight linkNode="DCF_workingLight_red_03" 	filename="lights/Hella3000/hella3000_red.xml"/>
+        <sharedLight linkNode="DCF_workingLight_red_04" 	filename="lights/Hella3000/hella3000_red.xml"/>
+		
+        <sharedLight linkNode="S48_roofTop_red_01" 			filename="lights/usRooftops/roofLight_red.xml"/>
+        <sharedLight linkNode="S48_roofTop_red_02" 			filename="lights/usRooftops/roofLight_red.xml"/>
+        <sharedLight linkNode="S48_roofTop_red_03" 			filename="lights/usRooftops/roofLight_red.xml"/>
+        <sharedLight linkNode="S48_roofTop_red_04" 			filename="lights/usRooftops/roofLight_red.xml"/>
+        <sharedLight linkNode="S48_roofTop_red_05" 			filename="lights/usRooftops/roofLight_red.xml"/>
+        <sharedLight linkNode="S48_workingLight_red_01" 	filename="lights/Hella3000/hella3000_red.xml"/>
+        <sharedLight linkNode="S48_workingLight_red_02" 	filename="lights/Hella3000/hella3000_red.xml"/>
+		
+        <sharedLight linkNode="S48F_roofTop_red_01" 		filename="lights/usRooftops/roofLight_red.xml"/>
+        <sharedLight linkNode="S48F_roofTop_red_02" 		filename="lights/usRooftops/roofLight_red.xml"/>
+        <sharedLight linkNode="S48F_roofTop_red_03" 		filename="lights/usRooftops/roofLight_red.xml"/>
+        <sharedLight linkNode="S48F_roofTop_red_04" 		filename="lights/usRooftops/roofLight_red.xml"/>
+        <sharedLight linkNode="S48F_roofTop_red_05" 		filename="lights/usRooftops/roofLight_red.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_red_01" 		filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_red_02" 		filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_red_03" 		filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_red_04" 		filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_red_05" 		filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="S48F_workingLight_red_01" 	filename="lights/Hella3000/hella3000_red.xml"/>
+        <sharedLight linkNode="S48F_workingLight_red_02" 	filename="lights/Hella3000/hella3000_red.xml"/>
+        <sharedLight linkNode="S48F_workingLight_red_03" 	filename="lights/Hella3000/hella3000_red.xml"/>
+        <sharedLight linkNode="S48F_workingLight_red_04" 	filename="lights/Hella3000/hella3000_red.xml"/>
+		
+        <sharedLight linkNode="S70_roofTop_red_01" 			filename="lights/usRooftops/roofLight_red.xml"/>
+        <sharedLight linkNode="S70_roofTop_red_02" 			filename="lights/usRooftops/roofLight_red.xml"/>
+        <sharedLight linkNode="S70_roofTop_red_03" 			filename="lights/usRooftops/roofLight_red.xml"/>
+        <sharedLight linkNode="S70_roofTop_red_04" 			filename="lights/usRooftops/roofLight_red.xml"/>
+        <sharedLight linkNode="S70_roofTop_red_05" 			filename="lights/usRooftops/roofLight_red.xml"/>
+        <sharedLight linkNode="S70_sideMarker_red_01" 		filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="S70_sideMarker_red_02" 		filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="S70_sideMarker_red_03" 		filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="S70_sideMarker_red_04" 		filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="S70_sideMarker_red_05" 		filename="lights/sideMarkerLights/sideMarker_red.xml"/>
+        <sharedLight linkNode="S70_workingLight_red_01" 	filename="lights/Hella3000/hella3000_red.xml"/>
+        <sharedLight linkNode="S70_workingLight_red_02" 	filename="lights/Hella3000/hella3000_red.xml"/>
+        <sharedLight linkNode="S70_workingLight_red_03" 	filename="lights/Hella3000/hella3000_red.xml"/>
+        <sharedLight linkNode="S70_workingLight_red_04" 	filename="lights/Hella3000/hella3000_red.xml"/>
+		
+        <sharedLight linkNode="sideMarker_white_01" 		filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="sideMarker_white_02" 		filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="sideMarker_white_03" 		filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="sideMarker_white_04" 		filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="sideMarker_white_05" 		filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="sideMarker_white_06" 		filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="sideMarker_white_07" 		filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="sideMarker_white_08" 		filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="sideMarker_white_09" 		filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="sideMarker_white_10" 		filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="sideMarker_white_11" 		filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="sideMarker_white_12" 		filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="sideMarker_white_13" 		filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="sideMarker_white_14" 		filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="sideMarker_white_15" 		filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="sideMarker_white_16" 		filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="cbAntennaL_white" 			filename="lights/cbAntenna/cbAntenna_white.xml"/>
+        <sharedLight linkNode="cbAntennaR_white" 			filename="lights/cbAntenna/cbAntenna_white.xml"/>
+		
+        <sharedLight linkNode="DC_roofTop_white_01" 		filename="lights/usRooftops/roofLight_white.xml"/>
+        <sharedLight linkNode="DC_roofTop_white_02" 		filename="lights/usRooftops/roofLight_white.xml"/>
+        <sharedLight linkNode="DC_roofTop_white_03" 		filename="lights/usRooftops/roofLight_white.xml"/>
+        <sharedLight linkNode="DC_roofTop_white_04" 		filename="lights/usRooftops/roofLight_white.xml"/>
+        <sharedLight linkNode="DC_roofTop_white_05" 		filename="lights/usRooftops/roofLight_white.xml"/>
+        <sharedLight linkNode="DC_workingLight_white_01" 	filename="lights/Hella3000/hella3000_white.xml"/>
+        <sharedLight linkNode="DC_workingLight_white_02" 	filename="lights/Hella3000/hella3000_white.xml"/>
+		
+        <sharedLight linkNode="DCF_roofTop_white_01" 		filename="lights/usRooftops/roofLight_white.xml"/>
+        <sharedLight linkNode="DCF_roofTop_white_02" 		filename="lights/usRooftops/roofLight_white.xml"/>
+        <sharedLight linkNode="DCF_roofTop_white_03" 		filename="lights/usRooftops/roofLight_white.xml"/>
+        <sharedLight linkNode="DCF_roofTop_white_04" 		filename="lights/usRooftops/roofLight_white.xml"/>
+        <sharedLight linkNode="DCF_roofTop_white_05" 		filename="lights/usRooftops/roofLight_white.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_white_01" 	filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_white_02" 	filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_white_03" 	filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_white_04" 	filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_white_05" 	filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="DCF_workingLight_white_01" 	filename="lights/Hella3000/hella3000_white.xml"/>
+        <sharedLight linkNode="DCF_workingLight_white_02" 	filename="lights/Hella3000/hella3000_white.xml"/>
+        <sharedLight linkNode="DCF_workingLight_white_03" 	filename="lights/Hella3000/hella3000_white.xml"/>
+        <sharedLight linkNode="DCF_workingLight_white_04" 	filename="lights/Hella3000/hella3000_white.xml"/>
+		
+        <sharedLight linkNode="S48_roofTop_white_01" 		filename="lights/usRooftops/roofLight_white.xml"/>
+        <sharedLight linkNode="S48_roofTop_white_02" 		filename="lights/usRooftops/roofLight_white.xml"/>
+        <sharedLight linkNode="S48_roofTop_white_03" 		filename="lights/usRooftops/roofLight_white.xml"/>
+        <sharedLight linkNode="S48_roofTop_white_04" 		filename="lights/usRooftops/roofLight_white.xml"/>
+        <sharedLight linkNode="S48_roofTop_white_05" 		filename="lights/usRooftops/roofLight_white.xml"/>
+        <sharedLight linkNode="S48_workingLight_white_01" 	filename="lights/Hella3000/hella3000_white.xml"/>
+        <sharedLight linkNode="S48_workingLight_white_02" 	filename="lights/Hella3000/hella3000_white.xml"/>
+		
+        <sharedLight linkNode="S48F_roofTop_white_01" 		filename="lights/usRooftops/roofLight_white.xml"/>
+        <sharedLight linkNode="S48F_roofTop_white_02" 		filename="lights/usRooftops/roofLight_white.xml"/>
+        <sharedLight linkNode="S48F_roofTop_white_03" 		filename="lights/usRooftops/roofLight_white.xml"/>
+        <sharedLight linkNode="S48F_roofTop_white_04" 		filename="lights/usRooftops/roofLight_white.xml"/>
+        <sharedLight linkNode="S48F_roofTop_white_05" 		filename="lights/usRooftops/roofLight_white.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_white_01" 	filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_white_02" 	filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_white_03" 	filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_white_04" 	filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_white_05" 	filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="S48F_workingLight_white_01" 	filename="lights/Hella3000/hella3000_white.xml"/>
+        <sharedLight linkNode="S48F_workingLight_white_02" 	filename="lights/Hella3000/hella3000_white.xml"/>
+        <sharedLight linkNode="S48F_workingLight_white_03" 	filename="lights/Hella3000/hella3000_white.xml"/>
+        <sharedLight linkNode="S48F_workingLight_white_04" 	filename="lights/Hella3000/hella3000_white.xml"/>
+		
+        <sharedLight linkNode="S70_roofTop_white_01" 		filename="lights/usRooftops/roofLight_white.xml"/>
+        <sharedLight linkNode="S70_roofTop_white_02" 		filename="lights/usRooftops/roofLight_white.xml"/>
+        <sharedLight linkNode="S70_roofTop_white_03" 		filename="lights/usRooftops/roofLight_white.xml"/>
+        <sharedLight linkNode="S70_roofTop_white_04" 		filename="lights/usRooftops/roofLight_white.xml"/>
+        <sharedLight linkNode="S70_roofTop_white_05" 		filename="lights/usRooftops/roofLight_white.xml"/>
+        <sharedLight linkNode="S70_sideMarker_white_01" 	filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="S70_sideMarker_white_02" 	filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="S70_sideMarker_white_03" 	filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="S70_sideMarker_white_04" 	filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="S70_sideMarker_white_05" 	filename="lights/sideMarkerLights/sideMarker_white.xml"/>
+        <sharedLight linkNode="S70_workingLight_white_01" 	filename="lights/Hella3000/hella3000_white.xml"/>
+        <sharedLight linkNode="S70_workingLight_white_02" 	filename="lights/Hella3000/hella3000_white.xml"/>
+        <sharedLight linkNode="S70_workingLight_white_03" 	filename="lights/Hella3000/hella3000_white.xml"/>
+        <sharedLight linkNode="S70_workingLight_white_04" 	filename="lights/Hella3000/hella3000_white.xml"/>
+		
+        <sharedLight linkNode="sideMarker_yellow_01" 		filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="sideMarker_yellow_02" 		filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="sideMarker_yellow_03" 		filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="sideMarker_yellow_04" 		filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="sideMarker_yellow_05" 		filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="sideMarker_yellow_06" 		filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="sideMarker_yellow_07" 		filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="sideMarker_yellow_08" 		filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="sideMarker_yellow_09" 		filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="sideMarker_yellow_10" 		filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="sideMarker_yellow_11" 		filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="sideMarker_yellow_12" 		filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="sideMarker_yellow_13" 		filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="sideMarker_yellow_14" 		filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="sideMarker_yellow_15" 		filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="sideMarker_yellow_16" 		filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="cbAntennaL_yellow" 			filename="lights/cbAntenna/cbAntenna_yellow.xml"/>
+        <sharedLight linkNode="cbAntennaR_yellow" 			filename="lights/cbAntenna/cbAntenna_yellow.xml"/>
+		
+        <sharedLight linkNode="DC_roofTop_yellow_01" 		filename="lights/usRooftops/roofLight_yellow.xml"/>
+        <sharedLight linkNode="DC_roofTop_yellow_02" 		filename="lights/usRooftops/roofLight_yellow.xml"/>
+        <sharedLight linkNode="DC_roofTop_yellow_03" 		filename="lights/usRooftops/roofLight_yellow.xml"/>
+        <sharedLight linkNode="DC_roofTop_yellow_04" 		filename="lights/usRooftops/roofLight_yellow.xml"/>
+        <sharedLight linkNode="DC_roofTop_yellow_05" 		filename="lights/usRooftops/roofLight_yellow.xml"/>
+        <sharedLight linkNode="DC_workingLight_yellow_01" 	filename="lights/Hella3000/hella3000_yellow.xml"/>
+        <sharedLight linkNode="DC_workingLight_yellow_02" 	filename="lights/Hella3000/hella3000_yellow.xml"/>
+		
+        <sharedLight linkNode="DCF_roofTop_yellow_01" 		filename="lights/usRooftops/roofLight_yellow.xml"/>
+        <sharedLight linkNode="DCF_roofTop_yellow_02" 		filename="lights/usRooftops/roofLight_yellow.xml"/>
+        <sharedLight linkNode="DCF_roofTop_yellow_03" 		filename="lights/usRooftops/roofLight_yellow.xml"/>
+        <sharedLight linkNode="DCF_roofTop_yellow_04" 		filename="lights/usRooftops/roofLight_yellow.xml"/>
+        <sharedLight linkNode="DCF_roofTop_yellow_05" 		filename="lights/usRooftops/roofLight_yellow.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_yellow_01" 	filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_yellow_02" 	filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_yellow_03" 	filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_yellow_04" 	filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="DCF_sideMarker_yellow_05" 	filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="DCF_workingLight_yellow_01" 	filename="lights/Hella3000/hella3000_yellow.xml"/>
+        <sharedLight linkNode="DCF_workingLight_yellow_02" 	filename="lights/Hella3000/hella3000_yellow.xml"/>
+        <sharedLight linkNode="DCF_workingLight_yellow_03" 	filename="lights/Hella3000/hella3000_yellow.xml"/>
+        <sharedLight linkNode="DCF_workingLight_yellow_04" 	filename="lights/Hella3000/hella3000_yellow.xml"/>
+		
+        <sharedLight linkNode="S48_roofTop_yellow_01" 		filename="lights/usRooftops/roofLight_yellow.xml"/>
+        <sharedLight linkNode="S48_roofTop_yellow_02" 		filename="lights/usRooftops/roofLight_yellow.xml"/>
+        <sharedLight linkNode="S48_roofTop_yellow_03" 		filename="lights/usRooftops/roofLight_yellow.xml"/>
+        <sharedLight linkNode="S48_roofTop_yellow_04" 		filename="lights/usRooftops/roofLight_yellow.xml"/>
+        <sharedLight linkNode="S48_roofTop_yellow_05" 		filename="lights/usRooftops/roofLight_yellow.xml"/>
+        <sharedLight linkNode="S48_workingLight_yellow_01" 	filename="lights/Hella3000/hella3000_yellow.xml"/>
+        <sharedLight linkNode="S48_workingLight_yellow_02" 	filename="lights/Hella3000/hella3000_yellow.xml"/>
+		
+        <sharedLight linkNode="S48F_roofTop_yellow_01" 		filename="lights/usRooftops/roofLight_yellow.xml"/>
+        <sharedLight linkNode="S48F_roofTop_yellow_02" 		filename="lights/usRooftops/roofLight_yellow.xml"/>
+        <sharedLight linkNode="S48F_roofTop_yellow_03" 		filename="lights/usRooftops/roofLight_yellow.xml"/>
+        <sharedLight linkNode="S48F_roofTop_yellow_04" 		filename="lights/usRooftops/roofLight_yellow.xml"/>
+        <sharedLight linkNode="S48F_roofTop_yellow_05" 		filename="lights/usRooftops/roofLight_yellow.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_yellow_01" 	filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_yellow_02" 	filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_yellow_03" 	filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_yellow_04" 	filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="S48F_sideMarker_yellow_05" 	filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="S48F_workingLight_yellow_01" filename="lights/Hella3000/hella3000_yellow.xml"/>
+        <sharedLight linkNode="S48F_workingLight_yellow_02" filename="lights/Hella3000/hella3000_yellow.xml"/>
+        <sharedLight linkNode="S48F_workingLight_yellow_03" filename="lights/Hella3000/hella3000_yellow.xml"/>
+        <sharedLight linkNode="S48F_workingLight_yellow_04" filename="lights/Hella3000/hella3000_yellow.xml"/>
+		
+        <sharedLight linkNode="S70_roofTop_yellow_01" 		filename="lights/usRooftops/roofLight_yellow.xml"/>
+        <sharedLight linkNode="S70_roofTop_yellow_02" 		filename="lights/usRooftops/roofLight_yellow.xml"/>
+        <sharedLight linkNode="S70_roofTop_yellow_03" 		filename="lights/usRooftops/roofLight_yellow.xml"/>
+        <sharedLight linkNode="S70_roofTop_yellow_04" 		filename="lights/usRooftops/roofLight_yellow.xml"/>
+        <sharedLight linkNode="S70_roofTop_yellow_05" 		filename="lights/usRooftops/roofLight_yellow.xml"/>
+        <sharedLight linkNode="S70_sideMarker_yellow_01" 	filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="S70_sideMarker_yellow_02" 	filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="S70_sideMarker_yellow_03" 	filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="S70_sideMarker_yellow_04" 	filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="S70_sideMarker_yellow_05" 	filename="lights/sideMarkerLights/sideMarker_yellow.xml"/>
+        <sharedLight linkNode="S70_workingLight_yellow_01" 	filename="lights/Hella3000/hella3000_yellow.xml"/>
+        <sharedLight linkNode="S70_workingLight_yellow_02" 	filename="lights/Hella3000/hella3000_yellow.xml"/>
+        <sharedLight linkNode="S70_workingLight_yellow_03" 	filename="lights/Hella3000/hella3000_yellow.xml"/>
+        <sharedLight linkNode="S70_workingLight_yellow_04" 	filename="lights/Hella3000/hella3000_yellow.xml"/>
+		
+		<states>
+			<aiState 	lightTypes="0 1" 	lightTypesWork="0"/>
+			<aiState 	lightTypes="2" 		lightTypesWork="1"/>
+			
+            <state 		lightTypes="0"/>
+            <state 		lightTypes="0 1"/>	
+            <state 		lightTypes="0 1 2"/>
+            <state 		lightTypes="0 1 2 3"/>
+        </states>
+        
+		<realLights>
+            <low>
+                <light 			node="frontLightLow" 				lightTypes="1"/>
+                <light 			node="highBeamLow" 					lightTypes="2"/>
+            </low>
+            <high>
+                <light 			node="frontLightHigh" 				lightTypes="1"/>
+                <light 			node="backLightsHigh1" 				lightTypes="0"/>
+                <light 			node="sidemarkerOrange_realDC" 		lightTypes="0"/>
+                <light 			node="sidemarkerOrange_realS48" 	lightTypes="0"/>
+                <light 			node="sidemarkerOrange_realS70" 	lightTypes="0"/>
+                <light 			node="DCinteriorLightRed_real" 		lightTypes="0"/>
+                <light 			node="S48interiorLightRed_real" 	lightTypes="0"/>
+                <light 			node="S70interiorLightRed_real" 	lightTypes="0"/>
+                <light 			node="highBeamHigh" 				lightTypes="2"/>
+                <light 			node="DC_workingLight_white_real" 	lightTypes="3"/>
+                <light 			node="DCF_workingLight_white_real" 	lightTypes="3"/>
+                <light 			node="S48_workingLight_white_real" 	lightTypes="3"/>
+                <light 			node="S48F_workingLight_white_real" lightTypes="3"/>
+                <light 			node="S70_workingLight_white_real" 	lightTypes="3"/>
+                <brakeLight 	node="backLightsHigh1"/>
+                <turnLightLeft 	node="turnLightLeftFront"/>
+                <turnLightRight	node="turnLightRightFront"/>
+                <interiorLight 	node="interiorScreenLight"/>
+                <reverseLight 	node="reverseLightHigh1"/>
+            </high>
+        </realLights>
+        
+		<defaultLights>
+            <defaultLight shaderNode="defaultLight01_static" 			lightTypes="0" 		intensity="10"/>
+            <defaultLight shaderNode="defaultLight02_static" 			lightTypes="0" 		intensity="10"/>
+            <defaultLight shaderNode="defaultLight03_static" 			lightTypes="0" 		intensity="30"/>
+            <defaultLight shaderNode="DC_interiorLights_static" 		lightTypes="0" 		intensity="2"/>
+            <defaultLight shaderNode="S48_interiorLights_static" 		lightTypes="0" 		intensity="2"/>
+            <defaultLight shaderNode="S70_interiorLightsGlass_static" 	lightTypes="0" 		intensity="2"/>
+            <!-- <defaultLight shaderNode="dayCabPremiumLight_static"		lightTypes="0"/> -->
+            <!-- <defaultLight shaderNode="sleeper48Light_static" 			lightTypes="0"/> -->
+            <!-- <defaultLight shaderNode="sleeper70Light_static" 			lightTypes="0"		intensity="5"/> -->
+        </defaultLights>
+        
+		<turnLights>
+            <turnLightLeft shaderNode="turnlightLeftFrontGlass_static" intensity="10"/>
+            <turnLightRight shaderNode="turnlightRightFrontGlass_static" intensity="10"/>
+        </turnLights>
+        
+		<beaconLights>
+			<beaconLight node="beaconFBL" 		filename="$data/shared/assets/beaconLights/lizard/beaconLight01.xml"/>
+			<beaconLight node="beaconFBR" 		filename="$data/shared/assets/beaconLights/lizard/beaconLight01.xml"/>
+			<beaconLight node="DC_beaconTL" 	filename="$data/shared/assets/beaconLights/lizard/beaconLight01.xml"/>
+			<beaconLight node="DC_beaconTR" 	filename="$data/shared/assets/beaconLights/lizard/beaconLight01.xml"/>
+			<beaconLight node="DCF_beaconTL" 	filename="$data/shared/assets/beaconLights/lizard/beaconLight01.xml"/>
+			<beaconLight node="DCF_beaconTR" 	filename="$data/shared/assets/beaconLights/lizard/beaconLight01.xml"/>
+			<beaconLight node="S48_beaconTL" 	filename="$data/shared/assets/beaconLights/lizard/beaconLight01.xml"/>
+			<beaconLight node="S48_beaconTR" 	filename="$data/shared/assets/beaconLights/lizard/beaconLight01.xml"/>
+			<beaconLight node="S48F_beaconTL" 	filename="$data/shared/assets/beaconLights/lizard/beaconLight01.xml"/>
+			<beaconLight node="S48F_beaconTR" 	filename="$data/shared/assets/beaconLights/lizard/beaconLight01.xml"/>
+			<beaconLight node="S70F_beaconTL" 	filename="$data/shared/assets/beaconLights/lizard/beaconLight01.xml"/>
+			<beaconLight node="S70F_beaconTR" 	filename="$data/shared/assets/beaconLights/lizard/beaconLight01.xml"/>
+		</beaconLights>
+		
+		<dashboards>
+            <dashboard displayType="EMITTER" valueType="lightState" node="cabinDecalsLight" intensity="0.4" lightTypes="0" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" valueType="lightState" node="steeringWheelDecalsLight" intensity="0.4" lightTypes="0" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" valueType="lightState" node="defaultLightDecal" intensity="3" lightTypes="0" baseColor="BLACK" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" valueType="lightState" node="highBeamDecal" intensity="1" lightTypes="3" baseColor="BLACK" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" valueType="turnLightLeft" node="arrowLeftDecal" intensity="5" baseColor="BLACK" emitColor="GREEN" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" valueType="turnLightRight" node="arrowRightDecal" intensity="5" baseColor="BLACK" emitColor="GREEN" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" valueType="turnLightHazard" node="hazardlight_decal" intensity="0.4" emitColor="RED" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ROT" valueType="turnLight" node="leverTurnlight" minRot="0 10 0" maxRot="0 -10 0" doInterpolation="true"/>
+        </dashboards>
+		
+    </lights>
+    
+	<licensePlates defaultPlacement="BOTH">
+        <licensePlate node="licensePlateFront" position="FRONT" preferedType="SQUARISH" placementArea="0.1 0.15 0.1 0.15"/>
+        <licensePlate node="licensePlateBack" position="BACK" preferedType="SQUARISH" placementArea="0.1 0.17 0.1 0.17"/>
+        <licensePlate node="licensePlateBack2" position="BACK" preferedType="SQUARISH" placementArea="0.1 0.17 0.1 0.17"/>
+        <licensePlate node="licensePlateBack3" position="BACK" preferedType="SQUARISH" placementArea="0.1 0.17 0.1 0.17"/>
+    </licensePlates>
+    
+	<speedRotatingParts>
+        <speedRotatingPart node="pto1" radius="0.2"/>
+        <speedRotatingPart node="pto2" radius="0.2"/>
+        <speedRotatingPart node="pto3" radius="0.2"/>
+        <speedRotatingPart node="pto4" radius="0.2"/>
+        <speedRotatingPart node="pto5" radius="0.2"/>
+        <speedRotatingPart node="pto6" radius="0.2"/>
+    </speedRotatingParts>
+    
+	<attacherJoints comboDuration="2">
+        <attacherJointConfigurations>
+            <attacherJointConfiguration>
+                <attacherJoint node="semitrailerAttacherJoint" jointType="semitrailer" allowsJointLimitMovement="false" allowsLowering="false" lowerRotLimit="0.8 125 15">
+                    <schema position="1 0" rotation="0" invertX="false"/>
+                </attacherJoint>
+            </attacherJointConfiguration>
+        </attacherJointConfigurations>
+    </attacherJoints>
+    
+	<connectionHoses>
+        <target attacherJointIndices="1" type="airDoubleRed" node="airDoubleStorage" socket="air_red" straighteningFactor="2"/>
+        <target attacherJointIndices="1" type="airDoubleYellow" node="airDoubleControl" socket="air_yellow" straighteningFactor="2"/>
+        <target attacherJointIndices="1" type="electric" node="electric" socket="electric" straighteningFactor="2"/>
+        <target attacherJointIndices="1" type="hydraulicIn" node="hydraulicIn" straighteningFactor="2"/>
+        <target attacherJointIndices="1" type="hydraulicOut" node="hydraulicOut" straighteningFactor="2"/>
+    </connectionHoses>
+    
+	<enterable isTabbable="true">
+        <enterReferenceNode node="pinnacle_main_component1"/>
+        <exitPoint node="exitPoint"/>
+        <cameras>
+            <camera node="outdoorCamera1" rotatable="true" rotateNode="outdoorCameraTarget" limit="true" useWorldXZRotation="true" rotMinX="-1.4" rotMaxX="1" transMin="5" transMax="40" translation="0 0 10" rotation="-20 180 0">
+                <raycastNode node="cameraRaycastNode1"/>
+                <raycastNode node="cameraRaycastNode2"/>
+                <raycastNode node="cameraRaycastNode3"/>
+            </camera>
+            <camera node="indoorCamera1" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" useMirror="true" isInside="true" positionSmoothingParameter="0.4" shadowFocusBox="shadowFocusBox"/>
+        </cameras>
+        <characterNode node="playerSkin" cameraMinDistance="0.5" spineRotation="-90 0 90">
+            <target ikChain="rightFoot" targetNode="playerRightFootTarget"/>
+            <target ikChain="leftFoot" targetNode="playerLeftFootTarget"/>
+            <target ikChain="rightArm" targetNode="playerRightHandTarget"/>
+            <target ikChain="leftArm" targetNode="playerLeftHandTarget"/>
+        </characterNode>
+        <characterTargetNodeModifier node="playerRightFootTarget" transitionTime="0.1">
+            <state node="playerRightFootTargetGas" referenceNode="pedalGas" directionReferenceNode="playerRightFootTargetGasRef"/>
+            <state node="playerRightFootTargetBrake" referenceNode="pedalBrake"/>
+        </characterTargetNodeModifier>
+        <passengerSeats>
+            <passengerSeat node="passengerSeat01" exitPoint="passengerSeat01ExitPoint" outdoorCameraIndex="1">
+                <camera node="passengerSeat01Camera" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" useMirror="true" isInside="true" positionSmoothingParameter="0" shadowFocusBox="shadowFocusBox"/>
+                <characterNode node="passengerSeat01PlayerSkin" cameraMinDistance="0.5" spineRotation="-90 0 90">
+                    <target ikChain="leftArm" targetNode="passengerSeat01PlayerLeftHand" poseId="flatFingers"/>
+                    <target ikChain="rightArm" targetNode="passengerSeat01PlayerRightHand" poseId="wideFingers"/>
+                    <target ikChain="leftFoot" targetNode="passengerSeat01PlayerLeftFoot"/>
+                    <target ikChain="rightFoot" targetNode="passengerSeat01PlayerRightFoot"/>
+                </characterNode>
+            </passengerSeat>
+        </passengerSeats>
+        <mirrors>
+            <mirror node="mirrorDecal01" prio="1"/>
+            <mirror node="mirrorDecal02" prio="1"/>
+            <mirror node="mirrorDecal03" prio="1"/>
+            <mirror node="mirrorDecal04" prio="1"/>
+        </mirrors>
+        <dashboards>
+            <dashboard displayType="TEXT" valueType="time" node="numbersTime" textColor="1 1 1 1" textSize="0.004" textMask="00:00" font="GENERIC" textAlignment="CENTER" emissiveScale="0.4" groups="MOTOR_ACTIVE"/>
+        </dashboards>
+    </enterable>
+    
+	<motorized statsType="truck">
+        <consumerConfigurations>
+            <consumerConfiguration>
+                <consumer fillUnitIndex="1" usage="127" fillType="diesel"/>
+                <!-- usage is per hour at max load and max rpm -->
+                <consumer fillUnitIndex="2" usage="300" fillType="air" permanentConsumption="false" refillLitersPerSecond="350" refillCapacityPercentage="0.5"/>
+                <!-- usage per second at full brake power -->
+            </consumerConfiguration>
+            <consumerConfiguration>
+                <consumer fillUnitIndex="1" usage="136" fillType="diesel"/>
+                <!-- usage is per hour at max load and max rpm -->
+                <consumer fillUnitIndex="2" usage="300" fillType="air" permanentConsumption="false" refillLitersPerSecond="350" refillCapacityPercentage="0.5"/>
+                <!-- usage per second at full brake power -->
+            </consumerConfiguration>
+            <consumerConfiguration>
+                <consumer fillUnitIndex="1" usage="151" fillType="diesel"/>
+                <!-- usage is per hour at max load and max rpm -->
+                <consumer fillUnitIndex="2" usage="300" fillType="air" permanentConsumption="false" refillLitersPerSecond="350" refillCapacityPercentage="0.5"/>
+                <!-- usage per second at full brake power -->
+            </consumerConfiguration>
+        </consumerConfigurations>
+        <differentialConfigurations>
+            <differentialConfiguration>
+                <differentials>
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.4" wheelIndex1="1" wheelIndex2="2"/>
+                    <!-- front left-right -->
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.4" wheelIndex1="3" wheelIndex2="4"/>
+                    <!-- middle left-right -->
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.4" wheelIndex1="5" wheelIndex2="6"/>
+                    <!-- back left-right -->
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.4" differentialIndex1="1" differentialIndex2="2"/>
+                    <!-- front-middle -->
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.3" differentialIndex1="3" differentialIndex2="4"/>
+                    <!-- back -front-middle-->
+                </differentials>
+            </differentialConfiguration>
+        </differentialConfigurations>
+        <motorConfigurations>
+            <motorConfiguration name="Pinnacle 6x4 (MP7 425)" hp="425" price="0">
+                <motor torqueScale="2.036" minRpm="850" maxRpm="3500" maxForwardSpeed="95" maxBackwardSpeed="20" brakeForce="4.5" lowBrakeForceScale="0.22" dampingRateScale="1.9">
+                    <!-- <torque rpm="850" torque="0.9"/>
+                    <torque rpm="1000" torque="1"/>
+                    <torque rpm="1450" torque="1"/>
+                    <torque rpm="1900" torque="0.75"/>
+                    <torque rpm="2200" torque="0.63"/>
+                    <torque rpm="2500" torque="0.2"/>
+					 -->
+					<torque rpm="850" torque="0.9"/>
+                    <torque rpm="1200" torque="1"/>
+                    <torque rpm="1750" torque="1"/>
+                    <torque rpm="2500" torque="0.75"/>
+                    <torque rpm="3000" torque="0.63"/>
+                    <torque rpm="3500" torque="0.2"/>
+					
+                </motor>
+                <!-- mDrive 12-speed transmission -->
+                <transmission autoGearChangeTime="0.5" gearChangeTime="0.4" axleRatio="8" name="$l10n_info_transmission_manual">
+                    <directionChange useGear="true" useGroup="false" changeTime="0.5"/>
+                    <forwardGear gearRatio="14.94" actionName="SHIFT_GEAR_SELECT_1"/>
+                    <forwardGear gearRatio="11.73" actionName="SHIFT_GEAR_SELECT_2"/>
+                    <forwardGear gearRatio="9.04" actionName="-"/>
+                    <forwardGear gearRatio="7.09" actionName="SHIFT_GEAR_SELECT_3"/>
+                    <forwardGear gearRatio="5.54" actionName="-"/>
+                    <forwardGear gearRatio="4.35" actionName="SHIFT_GEAR_SELECT_4"/>
+                    <forwardGear gearRatio="3.44" actionName="-"/>
+                    <forwardGear gearRatio="2.70" actionName="SHIFT_GEAR_SELECT_5"/>
+                    <forwardGear gearRatio="2.08" actionName="-"/>
+                    <forwardGear gearRatio="1.63" actionName="SHIFT_GEAR_SELECT_6"/>
+                    <forwardGear gearRatio="1.27" actionName="-"/>
+                    <forwardGear gearRatio="1.00" actionName="SHIFT_GEAR_SELECT_7"/>
+                    <backwardGear gearRatio="12.48" name="R1"/>
+                    <backwardGear gearRatio="9.04" name="R2"/>
+                </transmission>
+            </motorConfiguration>
+            <motorConfiguration name="Pinnacle 6x4 (MP8 455)" hp="455" price="10000" consumerConfigurationIndex="2">
+                <motor torqueScale="2.179" dampingRateScale="2.0"/>
+            </motorConfiguration>
+            <motorConfiguration name="Pinnacle 6x4 (MP8 505)" hp="505" price="26500" consumerConfigurationIndex="3">
+                <motor torqueScale="2.419" dampingRateScale="2.2"/>
+            </motorConfiguration>
+            <motorConfiguration name="Pinnacle 6x4 (MP8 750)" hp="750" price="26500" consumerConfigurationIndex="3">
+                <motor torqueScale="3.592" dampingRateScale="2.2"/>
+            </motorConfiguration>
+        </motorConfigurations>
+        <exhaustEffects>
+            <exhaustEffect node="exhaustParticle" filename="$data/effects/exhaust/exhaust.i3d" minRpmColor="0.1 0.1 0.1 0.05" maxRpmColor="0 0 0 9" minRpmScale="0.09" maxRpmScale="0.8" xzRotationsOffset="0 0" xzRotationsForward="-250 0" xzRotationsBackward="50 0" xzRotationsLeft="0 100" xzRotationsRight="0 -100"/>
+            <exhaustEffect node="exhaustParticle1" filename="$data/effects/exhaust/exhaust.i3d" minRpmColor="0.1 0.1 0.1 0.05" maxRpmColor="0 0 0 9" minRpmScale="0.09" maxRpmScale="0.8" xzRotationsOffset="0 0" xzRotationsForward="-250 0" xzRotationsBackward="50 0" xzRotationsLeft="0 100" xzRotationsRight="0 -100"/>
+        </exhaustEffects>
+        <motorStartDuration>3100</motorStartDuration>
+        <dashboards>
+            <dashboard displayType="ANIMATION" valueType="speed" animName="speedDisplay" minValueAnim="0" maxValueAnim="180" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ANIMATION" valueType="motorTemperature" animName="tempDisplay" minValueAnim="0" maxValueAnim="120" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ANIMATION" valueType="rpm" animName="rpmDisplay" minValueAnim="0" maxValueAnim="3000" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="TEXT" valueType="speed" node="numbersSpeed" textColor="1 1 1 1" textSize="0.007" textMask="00.0" font="GENERIC" groups="MOTOR_ACTIVE" textAlignment="CENTER"/>
+        </dashboards>
+    </motorized>
+    
+	<drivable>
+        <steeringWheel node="steeringWheel" indoorRotation="360" outdoorRotation="15"/>
+        <dashboards>
+            <dashboard displayType="ROT" valueType="decelerationAxis" node="pedalBrake" minRot="0 0 0" maxRot="-20 0 0" doInterpolation="true" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ROT" valueType="accelerationAxis" node="pedalGas" minRot="0 0 0" maxRot="-20 0 0" doInterpolation="true" groups="MOTOR_ACTIVE"/>
+        </dashboards>
+    </drivable>
+    
+	<fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" showOnHud="false" showInShop="false" fillTypes="diesel" capacity="1075">
+                        <dashboard displayType="ANIMATION" valueType="fillLevel" animName="fuelDisplay" groups="MOTOR_ACTIVE"/>
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" showOnHud="false" showInShop="false" showOnInfoHud="false" fillTypes="air" capacity="4000">
+                        <dashboard displayType="ANIMATION" valueType="fillLevel" animName="airDisplay" groups="MOTOR_ACTIVE"/>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" showOnHud="false" showInShop="false" fillTypes="diesel" capacity="886">
+                        <dashboard displayType="ANIMATION" valueType="fillLevel" animName="fuelDisplay" groups="MOTOR_ACTIVE"/>
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" showOnHud="false" showInShop="false" showOnInfoHud="false" fillTypes="air" capacity="4000">
+                        <dashboard displayType="ANIMATION" valueType="fillLevel" animName="airDisplay" groups="MOTOR_ACTIVE"/>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+    
+	<animations>
+        <animation name="tempDisplay">
+            <part node="tempNeedle01" startTime="0" endTime="1" startRot="0 0 0" endRot="0 -60 0"/>
+            <part node="tempNeedle02" startTime="0" endTime="1" startRot="0 0 0" endRot="0 -40 0"/>
+            <part node="tempNeedle03" startTime="0" endTime="1" startRot="0 0 0" endRot="0 -20 0"/>
+        </animation>
+        <animation name="airDisplay">
+            <part node="airNeedle01" startTime="0" endTime="1" startRot="0 0 0" endRot="0 0 -45"/>
+            <part node="airNeedle02" startTime="0" endTime="1" startRot="0 0 0" endRot="0 0 -45"/>
+        </animation>
+        <animation name="fuelDisplay">
+            <part node="fuelNeedle" startTime="0" endTime="1" startRot="0 0 0" endRot="0 0 -88"/>
+        </animation>
+        <animation name="rpmDisplay">
+            <part node="rpmNeedle" startTime="0" endTime="1" startRot="0 0 0" endRot="0 0 -226"/>
+        </animation>
+        <animation name="speedDisplay">
+            <part node="speedNeedle" startTime="0" endTime="0.5" startRot="0 0 0" endRot="0 0 -204.5"/>
+        </animation>
+        <animation name="wiperFrontAnimation">
+            <part node="wiperFrontArm01" startTime="0" endTime="1" startRot="0 0 0" endRot="0 8.713 -81.104"/>
+            <part node="wiperFrontArm02" startTime="0" endTime="1" startRot="0 0 0" endRot="0 8.713 -81.104"/>
+            <sound template="wiper1" startTime="0" endTime="1" direction="1" volumeScale="1.0" pitchScale="0.8" fadeOut="0.1" linkNode="wiperFrontArm01"/>
+            <sound template="wiper2" startTime="0" endTime="1" direction="-1" volumeScale="1.0" pitchScale="0.8" fadeOut="0.1" linkNode="wiperFrontArm01"/>
+        </animation>
+    </animations>
+    
+	<wipers>
+        <wiper animName="wiperFrontAnimation">
+            <state animSpeed="0.75" animPause="2.0"/>
+            <state animSpeed="0.75" animPause="0.0"/>
+            <state animSpeed="1.10" animPause="0.0"/>
+        </wiper>
+    </wipers>
+    
+	<cylindered>
+        <movingParts>
+            <movingPart node="steeringBar" referencePoint="steeringBarRef" referenceFrame="steeringBarRef" isActiveDirty="true" maxUpdateDistance="20"/>
+        </movingParts>
+    </cylindered>
+    
+	<suspensions>
+        <suspension useCharacterTorso="true" weight="90" minRotation="0 -5 -5" maxRotation="0 5 5" suspensionParametersY="7 1" suspensionParametersZ="7 1"/>
+    </suspensions>
+    
+	<ai>
+        <agent width="2.65" length="7.25" height="3.75" lengthOffset="2.78" frontOffset="5.02"/>
+        <collisionTrigger node="aiCollisionNode" width="3" height="4"/>
+    </ai>
+    
+	<dashboard>
+        <groups>
+            <group name="MOTOR_STARTING" isMotorStarting="true"/>
+            <group name="MOTOR_ACTIVE" isMotorStarting="true" isMotorRunning="true"/>
+        </groups>
+        <default>
+            <dashboard displayType="EMITTER" node="dashboardDisplay01" idleValue="-1" intensity="0.2" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" node="startingDecal" baseColor="SHARED_BLACK4" intensity="0.2" groups="MOTOR_STARTING"/>
+            <dashboard displayType="VISIBILITY" node="dashboardDisplay01" idleValue="-1" intensity="0.2" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" node="dashboardDisplay02" idleValue="0" intensity="0.2" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" node="speedNeedle" idleValue="0" intensity="0.2" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" node="rpmNeedle" idleValue="0" intensity="0.2" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" node="fuelNeedle" idleValue="0" intensity="0.2" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" node="airNeedle01" idleValue="0" intensity="0.2" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" node="airNeedle02" idleValue="0" intensity="0.2" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" node="tempNeedle01" idleValue="0" intensity="0.2" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" node="tempNeedle02" idleValue="0" intensity="0.2" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" node="tempNeedle03" idleValue="0" intensity="0.2" groups="MOTOR_ACTIVE"/>
+        </default>
+    </dashboard>
+    
+	<foliageBending>
+        <bendingNode minX="-1.28" maxX="1.28" minZ="-4.45" maxZ="2.8" yOffset="0.5"/>
+    </foliageBending>
+    
+	<baseMaterial>
+        <material name="pinnacle_mat" baseNode="pinnacle_vis">
+            <shaderParameter name="colorMat0" value="MACK_RED1" material="0"/>
+        </material>
+        <material name="dayCabExtension_mat" baseNode="dayCab_FairingVersion">
+            <shaderParameter name="colorMat0" value="MACK_RED1"/>
+        </material>
+        <material name="dayCabShare_mat" baseNode="CabinDayCab">
+            <shaderParameter name="colorMat0" value="MACK_RED1"/>
+        </material>
+        <material name="sleeperExtension_mat" baseNode="exteriorSleeper48">
+            <shaderParameter name="colorMat0" value="MACK_RED1"/>
+        </material>
+        <material name="sleeper_mat" baseNode="Exterior_Sleeper70">
+            <shaderParameter name="colorMat0" value="MACK_RED1"/>
+        </material>
+    </baseMaterial>
+    
+	<baseMaterialConfigurations price="1500" useDefaultColors="true" defaultColorIndex="0">
+        <material name="pinnacle_mat" 			shaderParameter="colorMat0"/>
+        <material name="dayCabExtension_mat" 	shaderParameter="colorMat0"/>
+        <material name="dayCabShare_mat" 		shaderParameter="colorMat0"/>
+        <material name="sleeperExtension_mat"	shaderParameter="colorMat0"/>
+        <material name="sleeper_mat" 			shaderParameter="colorMat0"/>
+		
+		<baseMaterialConfiguration name="DennisK Dark Blue" 	color="0.005 0.001 0.533"/>
+		<baseMaterialConfiguration name="DennisK Light Blue" 	color="0.000 0.776 1.000"/>
+		<baseMaterialConfiguration name="DennisK Black" 		color="0 0 0"/>
+		<baseMaterialConfiguration name="Black Matt" 			color="0.015 0.015 0.015" material="23"/>
+        <baseMaterialConfiguration name="$l10n_ui_colorRed" 	color="MACK_RED1"/>
+    </baseMaterialConfigurations>
+    
+	<configurationSets>
+        <configurationSet name="Day Cab">
+            <configuration name="design" index="1"/>
+            <configuration name="fillUnit" index="2"/>
+        </configurationSet>
+        <configurationSet name="Day Cab Fairing">
+            <configuration name="design" index="2"/>
+            <configuration name="fillUnit" index="2"/>
+        </configurationSet>
+        <configurationSet name="Sleeper 48">
+            <configuration name="design" index="3"/>
+            <configuration name="fillUnit" index="2"/>
+        </configurationSet>
+        <configurationSet name="Sleeper 48 Fairing">
+            <configuration name="design" index="4"/>
+            <configuration name="fillUnit" index="2"/>
+        </configurationSet>
+        <configurationSet name="Sleeper 70">
+            <configuration name="design" index="5"/>
+            <configuration name="fillUnit" index="1"/>
+        </configurationSet>
+    </configurationSets>
+    
+	<designConfigurations preLoad="true">
+        <designConfiguration name="Day Cab">
+            <objectChange node="dayCab" 				visibilityActive="true"/>
+            <objectChange node="dayCabFairing" 			visibilityActive="false"/>
+            <objectChange node="sleeper48" 				visibilityActive="false"/>
+            <objectChange node="sleeper48_fairing"		visibilityActive="false"/>
+            <objectChange node="sleeper70" 				visibilityActive="false"/>
+            <objectChange node="backWheels" 			translationActive="0 0 0"/>
+            <objectChange node="reverseLights" 			translationActive="0 0 0"/>
+            <objectChange node="exhaustParticle" 		translationActive="0 0 0"/>
+            <objectChange node="exhaustParticle1" 		translationActive="0 0 0" 		visibilityActive="false"/>
+            <objectChange node="airConnectors" 			translationActive="0.656 1.192 -0.264"/>
+			
+            <objectChange node="lightBracketsDaycab" 	visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="dayCab_Lights" 			visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="rearLightsDC" 			visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="DC_blue" 				visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="DC_green" 				visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="DC_orange" 				visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="DC_purple" 				visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="DC_red" 				visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="DC_white" 				visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="DC_yellow" 				visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="DC_real" 				visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="DC_airhorn" 			visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="DC_beacons" 			visibilityActive="true"	visibilityInactive="false"/>
+        </designConfiguration>
+        <designConfiguration name="Day Cab Fairing" price="7500">
+            <objectChange node="dayCab" 				visibilityActive="true"/>
+            <objectChange node="dayCabFairing" 			visibilityActive="true"/>
+            <objectChange node="roofParts" 				visibilityActive="false"/>
+            <objectChange node="sleeper48" 				visibilityActive="false"/>
+            <objectChange node="sleeper48_fairing" 		visibilityActive="false"/>
+            <objectChange node="sleeper70" 				visibilityActive="false"/>
+            <objectChange node="backWheels" 			translationActive="0 0 0"/>
+            <objectChange node="reverseLights" 			translationActive="0 0 0"/>
+            <objectChange node="exhaustParticle" 		translationActive="0 0 0" rotationActive="0 0 0"/>
+            <objectChange node="exhaustParticle1" 		translationActive="0 0 0" rotationActive="0 0 0" visibilityActive="false"/>
+            <objectChange node="colPart_dayCabPremium"	compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="airConnectors" 			translationActive="0.656 1.192 -0.264"/>
+			
+            <objectChange node="lightBracketsDaycab" 	visibilityActive="true"		visibilityInactive="false"/>
+            <objectChange node="dayCab_Lights" 			visibilityActive="true"		visibilityInactive="false"/>
+            <objectChange node="fairingDC" 				visibilityActive="true"		visibilityInactive="false"/>
+            <objectChange node="rearLightsDC" 			visibilityActive="true"		visibilityInactive="false"/>
+            <objectChange node="DCF_blue" 				visibilityActive="true"		visibilityInactive="false"/>
+            <objectChange node="DCF_green" 				visibilityActive="true"		visibilityInactive="false"/>
+            <objectChange node="DCF_orange" 			visibilityActive="true"		visibilityInactive="false"/>
+            <objectChange node="DCF_purple" 			visibilityActive="true"		visibilityInactive="false"/>
+            <objectChange node="DCF_red" 				visibilityActive="true"		visibilityInactive="false"/>
+            <objectChange node="DCF_white" 				visibilityActive="true"		visibilityInactive="false"/>
+            <objectChange node="DCF_yellow" 			visibilityActive="true"		visibilityInactive="false"/>
+            <objectChange node="DCF_real" 				visibilityActive="true"		visibilityInactive="false"/>
+            <objectChange node="DCF_airhorn" 			visibilityActive="true"		visibilityInactive="false"/>
+            <objectChange node="DCF_beacons" 			visibilityActive="true"		visibilityInactive="false"/>
+            <aiAgent height="3.8"/>
+        </designConfiguration>
+        <designConfiguration name="Sleeper 48" price="15000">
+            <objectChange node="dayCab" 					visibilityActive="false"/>
+            <objectChange node="dayCabFairing" 				visibilityActive="false"/>
+            <objectChange node="sleeper48" 					visibilityActive="true"/>
+            <objectChange node="sleeper48_fairing" 			visibilityActive="false"/>
+            <objectChange node="sleeper70" 					visibilityActive="false"/>
+            <objectChange node="backWheels" 				translationActive="0 0 -0.787"/>
+            <objectChange node="reverseLights" 				translationActive="0 0 -1"/>
+            <objectChange node="exhaustParticle" 			translationActive="-0.270 0.983 0.162"/>
+            <objectChange node="exhaustParticle1" 			translationActive="0.276 0.982 0.162" visibilityActive="true"/>
+            <objectChange node="colPart_sleeper48" 			compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="airConnectors" 				translationActive="0.656 1.192 -1.301"/>
+            <objectChange node="pinnacle_main_component1"	centerOfMassActive="0 0.45 -0.75"/>
+            <foliageBendingModifier index="1" minZ="-5.2" maxZ="2.8"/>
+            <aiAgent length="8" lengthOffset="3.18" height="3.75" frontOffset="5.8"/>
+			
+            <objectChange node="lightBracketsSleeper48" 	visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="dayCab_Lights" 				visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="sleeper48_Lights" 			visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S48_blue" 					visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S48_green" 					visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S48_orange" 				visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S48_purple" 				visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S48_red" 					visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S48_white" 					visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S48_yellow" 				visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S48_real" 					visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S48_airhorn" 				visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S48_beacons" 				visibilityActive="true"	visibilityInactive="false"/>
+        </designConfiguration>
+        <designConfiguration name="Sleeper 48 Fairing" price="22500">
+            <objectChange node="dayCab" 					visibilityActive="false"/>
+            <objectChange node="dayCabFairing" 				visibilityActive="false"/>
+            <objectChange node="sleeper48" 					visibilityActive="true"/>
+            <objectChange node="sleeper48_fairing" 			visibilityActive="true"/>
+            <objectChange node="sleeper70" 					visibilityActive="false"/>
+            <objectChange node="backWheels" 				translationActive="0 0 -0.787"/>
+            <objectChange node="reverseLights" 				translationActive="0 0 -1"/>
+            <objectChange node="exhaustParticle" 			translationActive="-0.270 0.983 0.162"/>
+            <objectChange node="exhaustParticle1" 			translationActive="0.276 0.982 0.162" visibilityActive="true"/>
+            <objectChange node="colPart_sleeper48Fairing"	compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="airConnectors" 				translationActive="0.656 1.192 -1.301"/>
+            <objectChange node="pinnacle_main_component1"	centerOfMassActive="0 0.45 -0.75"/>
+            <foliageBendingModifier index="1" minZ="-5.2" maxZ="2.8"/>
+            <aiAgent length="8" lengthOffset="3.18" height="3.8" frontOffset="5.8"/>
+			
+            <objectChange node="lightBracketsSleeper48" 	visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="dayCab_Lights" 				visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="sleeper48_Lights" 			visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="fairingS48" 				visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S48F_blue" 					visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S48F_green" 				visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S48F_orange" 				visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S48F_purple" 				visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S48F_red" 					visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S48F_white" 				visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S48F_yellow" 				visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S48F_real" 					visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S48F_airhorn" 				visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S48F_beacons" 				visibilityActive="true"	visibilityInactive="false"/>
+        </designConfiguration>
+        <designConfiguration name="Sleeper 70" price="30000">
+            <objectChange node="dayCab" 					visibilityActive="false"/>
+            <objectChange node="dayCabFairing" 				visibilityActive="false"/>
+            <objectChange node="sleeper48" 					visibilityActive="false"/>
+            <objectChange node="sleeper48_fairing" 			visibilityActive="false"/>
+            <objectChange node="sleeper70" 					visibilityActive="true"/>
+            <objectChange node="backWheels" 				translationActive="0 0 -1.238"/>
+            <objectChange node="reverseLights" 				translationActive="0 0 -1.557"/>
+            <objectChange node="exhaustParticle" 			translationActive="-0.406 1.481 0.244"/>
+            <objectChange node="exhaustParticle1" 			translationActive="0.415 1.479 0.244" visibilityActive="true"/>
+            <objectChange node="colPart_sleeper70" 			compoundChildActive="true" compoundChildInactive="false"/>
+            <objectChange node="airConnectors" 				translationActive="0.656 1.192 -1.812"/>
+            <objectChange node="pinnacle_main_component1"	centerOfMassActive="0 0.45 -0.9"/>
+            <foliageBendingModifier index="1" minZ="-5.65" maxZ="2.8"/>
+            <aiAgent length="8.45" lengthOffset="3.4" height="4.05" frontOffset="6.26"/>
+			
+            <objectChange node="lightBracketsSleeper70" 	visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="dayCab_Lights" 				visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="sleeper48_Lights" 			visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="sleeper70_Lights" 			visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S70_blue" 					visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S70_green" 					visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S70_orange" 				visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S70_purple" 				visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S70_red" 					visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S70_white" 					visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S70_yellow" 				visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S70_real" 					visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S70_airhorn" 				visibilityActive="true"	visibilityInactive="false"/>
+            <objectChange node="S70_beacons" 				visibilityActive="true"	visibilityInactive="false"/>
+        </designConfiguration>
+    </designConfigurations>
+    
+	<design2Configurations price="500" title="Window Tint">
+		<design2Configuration name="0">
+			<objectChange node="windowsBackDC_0"	visibilityActive="true"	visibilityInactive="false"/>
+			<objectChange node="windowsCabin_0"		visibilityActive="true"	visibilityInactive="false"/>
+		</design2Configuration>
+		<design2Configuration name="15">
+			<objectChange node="windowsBackDC_15"	visibilityActive="true"	visibilityInactive="false"/>
+			<objectChange node="windowsCabin_15"	visibilityActive="true"	visibilityInactive="false"/>
+		</design2Configuration>
+		<design2Configuration name="45">
+			<objectChange node="windowsBackDC_45"	visibilityActive="true"	visibilityInactive="false"/>
+			<objectChange node="windowsCabin_45"	visibilityActive="true"	visibilityInactive="false"/>
+		</design2Configuration>
+		<design2Configuration name="80">
+			<objectChange node="windowsBackDC_80"	visibilityActive="true"	visibilityInactive="false"/>
+			<objectChange node="windowsCabin_80"	visibilityActive="true"	visibilityInactive="false"/>
+		</design2Configuration>
+	</design2Configurations>
+	
+	<design3Configurations price="500" title="Additional Lights">
+		<design3Configuration name="No">
+			<objectChange node="additionalHighbeams"	visibilityActive="false"	visibilityInactive="true"/>
+		</design3Configuration>
+		<design3Configuration name="Blue">
+			<objectChange node="blueLightsBase"			visibilityActive="true"		visibilityInactive="false"/>
+		</design3Configuration>
+		<design3Configuration name="Green">
+			<objectChange node="greenLightsBase"		visibilityActive="true"		visibilityInactive="false"/>
+		</design3Configuration>
+		<design3Configuration name="Orange">
+			<objectChange node="orangeLightsBase"		visibilityActive="true"		visibilityInactive="false"/>
+		</design3Configuration>
+		<design3Configuration name="Purple">
+			<objectChange node="purpleLightsBase"		visibilityActive="true"		visibilityInactive="false"/>
+		</design3Configuration>
+		<design3Configuration name="Red">
+			<objectChange node="redLightsBase"			visibilityActive="true"		visibilityInactive="false"/>
+		</design3Configuration>
+		<design3Configuration name="White">
+			<objectChange node="whiteLightsBase"		visibilityActive="true"		visibilityInactive="false"/>
+		</design3Configuration>
+		<design3Configuration name="Yellow">
+			<objectChange node="yellowLightsBase"		visibilityActive="true"		visibilityInactive="false"/>
+		</design3Configuration>
+	</design3Configurations>
+	
+	<design4Configurations price="500" title="Beacons">
+		<design4Configuration name="No">
+			<objectChange node="beacons"		visibilityActive="false"	visibilityInactive="true"/>
+		</design4Configuration>
+		<design4Configuration name="Top">
+			<objectChange node="beaconsTop"		visibilityActive="true"	visibilityInactive="false"/>
+		</design4Configuration>
+		<design4Configuration name="Bottom">
+			<objectChange node="beaconsBottom"	visibilityActive="true"	visibilityInactive="false"/>
+		</design4Configuration>
+		<design4Configuration name="Top and Bottom">
+			<objectChange node="beaconsBottom"	visibilityActive="true"	visibilityInactive="false"/>
+			<objectChange node="beaconsTop"		visibilityActive="true"	visibilityInactive="false"/>
+		</design4Configuration>
+	</design4Configurations>
+	
+	<design5Configurations price="500" title="Airhorns">
+		<design5Configuration name="No">
+			<objectChange node="airHorns"	visibilityActive="false"	visibilityInactive="true"/>
+		</design5Configuration>
+		<design5Configuration name="Yes">
+			<objectChange node="airHorns"	visibilityActive="true"	visibilityInactive="false"/>
+		</design5Configuration>
+	</design5Configurations>
+	
+	<rimColorConfigurations useDefaultColors="true">
+        <rimColorConfiguration name="$l10n_ui_colorChrome"	color="SHARED_WHITE2" material="3" price="3000"/>
+        <rimColorConfiguration name="$l10n_ui_colorGrey" 	color="SHARED_WHITE1" material="18" price="0"/>
+        <rimColorConfiguration name="$l10n_ui_colorWhite" 	color="SHARED_WHITE2" material="0" price="0"/>
+        <rimColorConfiguration name="$l10n_ui_colorBlack" 	color="SHARED_BLACK0" material="0" price="0"/>
+    </rimColorConfigurations>
+    
+	<wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    
+	<washable dirtDuration="90" washDuration="1" workMultiplier="3" fieldMultiplier="2"/>
+    
+	<i3dMappings>
+        <i3dMapping id="pinnacle_main_component1" 			node="0>"/>
+		
+        <i3dMapping id="pinnacle_vis" 						node="0>0"/>
+		
+        <i3dMapping id="axisFrontLeft" 						node="0>0|0|0|0"/>
+        <i3dMapping id="wheelFrontLeft" 					node="0>0|0|0|0|0|0"/>
+        <i3dMapping id="steeringBar" 						node="0>0|0|0|0|1"/>
+        <i3dMapping id="axisFrontRight" 					node="0>0|0|1|0"/>
+        <i3dMapping id="wheelFrontRight" 					node="0>0|0|1|0|0|0"/>
+        <i3dMapping id="steeringBarRef" 					node="0>0|0|1|0|1"/>
+        <i3dMapping id="backWheels" 						node="0>0|0|2"/>
+        <i3dMapping id="wheelMiddleLeft" 					node="0>0|0|2|0"/>
+        <i3dMapping id="wheelMiddleRight" 					node="0>0|0|2|1"/>
+        <i3dMapping id="wheelBackLeft" 						node="0>0|0|2|2"/>
+        <i3dMapping id="wheelBackRight" 					node="0>0|0|2|3"/>
+        <i3dMapping id="rearLight26White_01" 				node="0>0|0|2|4|0"/>
+        <i3dMapping id="rearLight26Red_01" 					node="0>0|0|2|4|1"/>
+        <i3dMapping id="rearLight26Red_02" 					node="0>0|0|2|4|2"/>
+        <i3dMapping id="backLightsHigh1" 					node="0>0|0|2|5|0"/>
+        <i3dMapping id="semitrailerAttacherJoint" 			node="0>0|0|2|6|0"/>
+		
+        <i3dMapping id="outdoorCameraTarget" 				node="0>0|1|0"/>
+        <i3dMapping id="outdoorCamera1" 					node="0>0|1|0|0"/>
+        <i3dMapping id="indoorCamera1" 						node="0>0|1|1"/>
+        <i3dMapping id="cameraRaycastNode1" 				node="0>0|1|2"/>
+        <i3dMapping id="cameraRaycastNode2" 				node="0>0|1|3"/>
+        <i3dMapping id="cameraRaycastNode3" 				node="0>0|1|4"/>
+        <i3dMapping id="shadowFocusBox" 					node="0>0|1|5"/>
+		
+        <i3dMapping id="defaultLight01_static" 				node="0>0|2|0|0"/>
+        <i3dMapping id="defaultLight02_static" 				node="0>0|2|0|1"/>
+        <i3dMapping id="defaultLight03_static" 				node="0>0|2|0|2"/>
+        <i3dMapping id="turnlightRightFrontGlass_static" 	node="0>0|2|0|3"/>
+        <i3dMapping id="turnlightLeftFrontGlass_static" 	node="0>0|2|0|4"/>
+        <i3dMapping id="frontLightLow"						node="0>0|2|1|0"/>
+        <i3dMapping id="highBeamLow" 						node="0>0|2|1|1"/>
+        <i3dMapping id="frontLightHigh" 					node="0>0|2|1|2"/>
+        <i3dMapping id="highBeamHigh" 						node="0>0|2|1|3"/>
+        <i3dMapping id="interiorScreenLight" 				node="0>0|2|1|4"/>
+        <i3dMapping id="turnLightLeftFront" 				node="0>0|2|2|0"/>
+        <i3dMapping id="turnLightRightFront" 				node="0>0|2|2|1"/>
+        <i3dMapping id="reverseLights" 						node="0>0|2|3"/>
+        <i3dMapping id="reverseLightHigh1" 					node="0>0|2|3|0"/>
+        <i3dMapping id="highBeamL" 							node="0>0|2|5|1|0"/>
+        <i3dMapping id="highBeamR" 							node="0>0|2|5|1|1"/>
+		
+        <i3dMapping id="dayCab" 							node="0>0|3|0"/>
+        <i3dMapping id="DCinteriorLightRed_real" 			node="0>0|3|0|0|0|0"/>
+        <i3dMapping id="DC_interiorLights_static" 			node="0>0|3|0|0|1|0"/>
+        <i3dMapping id="licensePlateBack" 					node="0>0|3|0|1"/>
+        <i3dMapping id="CabinDayCab" 						node="0>0|3|0|2|3"/>
+        <i3dMapping id="pto1" 								node="0>0|3|0|2|10|0"/>
+        <i3dMapping id="pto2" 								node="0>0|3|0|2|11|0"/>
+        <i3dMapping id="roofParts" 							node="0>0|3|0|2|12"/>
+        <!-- <i3dMapping id="dayCabPremiumLight_static" 			node="0>0|3|0|2|12|1"/> -->
+        <i3dMapping id="windowsBackDC_0" 					node="0>0|3|0|2|20|0"/>
+        <i3dMapping id="windowsBackDC_15" 					node="0>0|3|0|2|20|1"/>
+        <i3dMapping id="windowsBackDC_45" 					node="0>0|3|0|2|20|2"/>
+        <i3dMapping id="windowsBackDC_80" 					node="0>0|3|0|2|20|3"/>
+        <i3dMapping id="redRound_03" 						node="0>0|3|0|3"/>
+        <i3dMapping id="redRound_04" 						node="0>0|3|0|4"/>
+        <i3dMapping id="dayCabFairing" 						node="0>0|3|1"/>
+        <i3dMapping id="dayCab_FairingVersion" 				node="0>0|3|1|0|6"/>
+        <i3dMapping id="sleeper48" 							node="0>0|3|2"/>
+        <i3dMapping id="S48interiorLightRed_real" 			node="0>0|3|2|0|0|0"/>
+        <i3dMapping id="S48_interiorLights_static" 			node="0>0|3|2|0|1|1"/>
+        <i3dMapping id="licensePlateBack2" 					node="0>0|3|2|1"/>
+        <i3dMapping id="exteriorSleeper48" 					node="0>0|3|2|2|0"/>
+        <i3dMapping id="pto3" 								node="0>0|3|2|2|11|0"/>
+        <i3dMapping id="pto4" 								node="0>0|3|2|2|12|0"/>
+        <i3dMapping id="redRound_05" 						node="0>0|3|2|3"/>
+        <i3dMapping id="redRound_06" 						node="0>0|3|2|4"/>
+        <i3dMapping id="sleeper48_fairing" 					node="0>0|3|3"/>
+        <i3dMapping id="sleeper48Light_static"				node="0>0|3|3|0|1"/>
+        <i3dMapping id="sleeper70" 							node="0>0|3|4"/>
+        <i3dMapping id="S70interiorLightRed_real" 			node="0>0|3|4|0|0|0"/>
+        <i3dMapping id="sleeper70Light_static" 				node="0>0|3|4|0|1|1"/>
+        <i3dMapping id="S70_interiorLightsGlass_static" 	node="0>0|3|4|0|2|1"/>
+        <i3dMapping id="licensePlateBack3" 					node="0>0|3|4|1"/>
+        <i3dMapping id="Exterior_Sleeper70" 				node="0>0|3|4|2|2"/>
+        <i3dMapping id="pto5" 								node="0>0|3|4|2|13|0"/>
+        <i3dMapping id="pto6" 								node="0>0|3|4|2|14|0"/>
+        <i3dMapping id="redRound_07" 						node="0>0|3|4|3"/>
+        <i3dMapping id="redRound_08"						node="0>0|3|4|4"/>
+		
+        <i3dMapping id="lightBracketsDaycab"				node="0>0|3|5|0|0"/>
+        <i3dMapping id="lightBracketsSleeper48"				node="0>0|3|5|0|1"/>
+        <i3dMapping id="lightBracketsSleeper70"				node="0>0|3|5|0|2"/>
+		
+        <i3dMapping id="dayCab_Lights"						node="0>0|3|5|1|0|0"/>
+        <i3dMapping id="fairingDC"							node="0>0|3|5|1|0|0|0"/>
+        <i3dMapping id="rearLightDCF_01"					node="0>0|3|5|1|0|0|0|0"/>
+        <i3dMapping id="rearLightDCF_02"					node="0>0|3|5|1|0|0|0|1"/>
+        <i3dMapping id="rearLightDCF_03"					node="0>0|3|5|1|0|0|0|2"/>
+        <i3dMapping id="rearLightDCF_04"					node="0>0|3|5|1|0|0|0|3"/>
+        <i3dMapping id="rearLightDCF_05"					node="0>0|3|5|1|0|0|0|4"/>
+        <i3dMapping id="rearLightDCF_06"					node="0>0|3|5|1|0|0|0|5"/>
+        <i3dMapping id="rearLightDCF_07"					node="0>0|3|5|1|0|0|0|6"/>
+        <i3dMapping id="rearLightDCF_08"					node="0>0|3|5|1|0|0|0|7"/>
+        <i3dMapping id="rearLightDCF_09"					node="0>0|3|5|1|0|0|0|8"/>
+        <i3dMapping id="rearLightDCF_10"					node="0>0|3|5|1|0|0|0|9"/>
+        <i3dMapping id="sideMarkerDC_L01"					node="0>0|3|5|1|0|0|1"/>
+        <i3dMapping id="sideMarkerDC_L02"					node="0>0|3|5|1|0|0|2"/>
+        <i3dMapping id="sideMarkerDC_L03"					node="0>0|3|5|1|0|0|3"/>
+        <i3dMapping id="sideMarkerDC_R01"					node="0>0|3|5|1|0|0|4"/>
+        <i3dMapping id="sideMarkerDC_R02"					node="0>0|3|5|1|0|0|5"/>
+        <i3dMapping id="sideMarkerDC_R03"					node="0>0|3|5|1|0|0|6"/>
+        <i3dMapping id="sidemarkerOrange_realDC"			node="0>0|3|5|1|0|0|7"/>
+        <i3dMapping id="rearLightsDC"						node="0>0|3|5|1|0|0|8"/>
+        <i3dMapping id="rearLightDC_01"						node="0>0|3|5|1|0|0|8|0"/>
+        <i3dMapping id="rearLightDC_02"						node="0>0|3|5|1|0|0|8|1"/>
+        <i3dMapping id="rearLightDC_03"						node="0>0|3|5|1|0|0|8|2"/>
+		
+        <i3dMapping id="sleeper48_Lights"					node="0>0|3|5|1|0|1"/>
+        <i3dMapping id="fairingS48"							node="0>0|3|5|1|0|1|0"/>
+        <i3dMapping id="rearLightS48F_01"					node="0>0|3|5|1|0|1|0|0"/>
+        <i3dMapping id="rearLightS48F_02"					node="0>0|3|5|1|0|1|0|1"/>
+        <i3dMapping id="rearLightS48F_03"					node="0>0|3|5|1|0|1|0|2"/>
+        <i3dMapping id="rearLightS48F_04"					node="0>0|3|5|1|0|1|0|3"/>
+        <i3dMapping id="sideMarkerS48_L01"					node="0>0|3|5|1|0|1|1"/>
+        <i3dMapping id="sideMarkerS48_L02"					node="0>0|3|5|1|0|1|2"/>
+        <i3dMapping id="sideMarkerS48_R01"					node="0>0|3|5|1|0|1|3"/>
+        <i3dMapping id="sideMarkerS48_R02"					node="0>0|3|5|1|0|1|4"/>
+        <i3dMapping id="sidemarkerOrange_realS48"			node="0>0|3|5|1|0|1|5"/>
+        <i3dMapping id="rearLightS48_01"					node="0>0|3|5|1|0|1|6"/>
+        <i3dMapping id="rearLightS48_02"					node="0>0|3|5|1|0|1|7"/>
+        <i3dMapping id="rearLightS48_03"					node="0>0|3|5|1|0|1|8"/>
+        <i3dMapping id="rearLightS48_04"					node="0>0|3|5|1|0|1|9"/>
+        <i3dMapping id="rearLightS48_05"					node="0>0|3|5|1|0|1|10"/>
+        <i3dMapping id="rearLightS48_06"					node="0>0|3|5|1|0|1|11"/>
+        <i3dMapping id="rearLightS48_07"					node="0>0|3|5|1|0|1|12"/>
+        <i3dMapping id="rearLightS48_08"					node="0>0|3|5|1|0|1|13"/>
+        <i3dMapping id="rearLightS48_09"					node="0>0|3|5|1|0|1|14"/>
+		
+        <i3dMapping id="sleeper70_Lights"					node="0>0|3|5|1|0|2"/>
+        <i3dMapping id="sideMarkerS70_L01"					node="0>0|3|5|1|0|2|0"/>
+        <i3dMapping id="sideMarkerS70_R01"					node="0>0|3|5|1|0|2|1"/>
+        <i3dMapping id="sidemarkerOrange_realS70"			node="0>0|3|5|1|0|2|2"/>
+        <i3dMapping id="rearLightS70_01"					node="0>0|3|5|1|0|2|3"/>
+        <i3dMapping id="rearLightS70_02"					node="0>0|3|5|1|0|2|4"/>
+        <i3dMapping id="rearLightS70_03"					node="0>0|3|5|1|0|2|5"/>
+        <i3dMapping id="rearLightS70_04"					node="0>0|3|5|1|0|2|6"/>
+        <i3dMapping id="rearLightS70_05"					node="0>0|3|5|1|0|2|7"/>
+        <i3dMapping id="rearLightS70_06"					node="0>0|3|5|1|0|2|8"/>
+        <i3dMapping id="rearLightS70_07"					node="0>0|3|5|1|0|2|9"/>
+        <i3dMapping id="rearLightS70_08"					node="0>0|3|5|1|0|2|10"/>
+        <i3dMapping id="rearLightS70_09"					node="0>0|3|5|1|0|2|11"/>
+        <i3dMapping id="rearLightS70_10"					node="0>0|3|5|1|0|2|12"/>
+		
+        <i3dMapping id="windowsCabin_0"						node="0>0|4|7|2"/>
+        <i3dMapping id="windowsCabin_15"					node="0>0|4|7|3"/>
+        <i3dMapping id="windowsCabin_45"					node="0>0|4|7|4"/>
+        <i3dMapping id="windowsCabin_80"					node="0>0|4|7|5"/>
+		
+        <i3dMapping id="exhaustParticle" 					node="0>0|5|0|0"/>
+        <i3dMapping id="exhaustParticle1" 					node="0>0|5|1|0"/>
+		
+        <i3dMapping id="steeringWheel" 						node="0>0|6|0|0"/>
+        <i3dMapping id="steeringWheelDecalsLight" 			node="0>0|6|0|0|0|0"/>
+        <i3dMapping id="playerLeftHandTarget" 				node="0>0|6|0|0|1"/>
+        <i3dMapping id="playerRightHandTarget" 				node="0>0|6|0|0|2"/>
+        <i3dMapping id="playerSkin" 						node="0>0|6|1|0"/>
+        <i3dMapping id="playerRightFootTarget" 				node="0>0|6|1|1"/>
+        <i3dMapping id="playerLeftFootTarget" 				node="0>0|6|1|2"/>
+        <i3dMapping id="playerRightFootTargetGas" 			node="0>0|6|1|3"/>
+        <i3dMapping id="pedalGas" 							node="0>0|6|2|0"/>
+        <i3dMapping id="playerRightFootTargetGasRef" 		node="0>0|6|2|0|0"/>
+        <i3dMapping id="pedalBrake" 						node="0>0|6|2|1"/>
+        <i3dMapping id="playerRightFootTargetBrake" 		node="0>0|6|2|1|0"/>
+        <i3dMapping id="mirrorDecal01" 						node="0>0|6|3|0"/>
+        <i3dMapping id="mirrorDecal02" 						node="0>0|6|3|1"/>
+        <i3dMapping id="mirrorDecal03" 						node="0>0|6|3|2"/>
+        <i3dMapping id="mirrorDecal04" 						node="0>0|6|3|3"/>
+        <i3dMapping id="cabinDecalsLight" 					node="0>0|6|4|0"/>
+        <i3dMapping id="startingDecal" 						node="0>0|6|4|1"/>
+        <i3dMapping id="arrowLeftDecal" 					node="0>0|6|4|2"/>
+        <i3dMapping id="arrowRightDecal" 					node="0>0|6|4|3"/>
+        <i3dMapping id="hazardlight_decal" 					node="0>0|6|4|4"/>
+        <i3dMapping id="defaultLightDecal" 					node="0>0|6|4|5"/>
+        <i3dMapping id="highBeamDecal" 						node="0>0|6|4|6"/>
+        <i3dMapping id="workLightBackDecal" 				node="0>0|6|4|7"/>
+        <i3dMapping id="dashboardDisplay01" 				node="0>0|6|4|8"/>
+        <i3dMapping id="dashboardDisplay02" 				node="0>0|6|4|9"/>
+        <i3dMapping id="rpmNeedle" 							node="0>0|6|4|10|0|0"/>
+        <i3dMapping id="speedNeedle" 						node="0>0|6|4|10|1|0"/>
+        <i3dMapping id="fuelNeedle" 						node="0>0|6|4|10|2|0"/>
+        <i3dMapping id="airNeedle01" 						node="0>0|6|4|10|3|0"/>
+        <i3dMapping id="airNeedle02" 						node="0>0|6|4|10|4|0"/>
+        <i3dMapping id="tempNeedle01" 						node="0>0|6|4|10|5|0"/>
+        <i3dMapping id="tempNeedle02" 						node="0>0|6|4|10|6|0"/>
+        <i3dMapping id="tempNeedle03" 						node="0>0|6|4|10|7|0"/>
+        <i3dMapping id="numbersSpeed" 						node="0>0|6|4|11"/>
+        <i3dMapping id="numbersTime" 						node="0>0|6|4|12"/>
+        <i3dMapping id="leverTurnlight" 					node="0>0|6|4|13|0"/>
+        <i3dMapping id="wiperFrontArm01" 					node="0>0|6|5|0|0"/>
+        <i3dMapping id="wiperFrontArm02" 					node="0>0|6|5|1|0"/>
+        <i3dMapping id="passengerSeat01" 					node="0>0|6|6|0"/>
+        <i3dMapping id="passengerSeat01Camera" 				node="0>0|6|6|0|0"/>
+        <i3dMapping id="passengerSeat01PlayerSkin" 			node="0>0|6|6|0|1"/>
+        <i3dMapping id="passengerSeat01PlayerLeftFoot" 		node="0>0|6|6|0|2"/>
+        <i3dMapping id="passengerSeat01PlayerRightFoot" 	node="0>0|6|6|0|3"/>
+        <i3dMapping id="passengerSeat01ExitPoint" 			node="0>0|6|6|0|4"/>
+        <i3dMapping id="passengerSeat01PlayerLeftHand" 		node="0>0|6|6|0|5"/>
+        <i3dMapping id="passengerSeat01PlayerRightHand"		node="0>0|6|6|0|6"/>
+		
+        <i3dMapping id="airConnectors" 						node="0>0|7|0"/>
+        <i3dMapping id="airDoubleControl" 					node="0>0|7|0|0"/>
+        <i3dMapping id="airDoubleStorage" 					node="0>0|7|0|1"/>
+        <i3dMapping id="electric" 							node="0>0|7|0|2"/>
+        <i3dMapping id="hydraulicIn" 						node="0>0|7|0|3"/>
+        <i3dMapping id="hydraulicOut" 						node="0>0|7|0|4"/>
+		
+        <i3dMapping id="aiCollisionNode" 					node="0>0|8|0"/>
+		
+        <i3dMapping id="exitPoint" 							node="0>0|9"/>
+		
+        <i3dMapping id="licensePlateFront" 					node="0>0|10"/>
+		
+        <i3dMapping id="colPart_dayCabPremium" 				node="0>1|1"/>
+        <i3dMapping id="colPart_sleeper48" 					node="0>1|2"/>
+        <i3dMapping id="colPart_sleeper48Fairing" 			node="0>1|3"/>
+        <i3dMapping id="colPart_sleeper70" 					node="0>1|4"/>
+
+        <i3dMapping id="blueLightsBase" 					node="0>0|2|5|2"/>
+		
+        <i3dMapping id="sideMarker_blue_01" 				node="0>0|2|5|2|0|0"/>
+        <i3dMapping id="sideMarker_blue_02" 				node="0>0|2|5|2|0|1"/>
+        <i3dMapping id="sideMarker_blue_03" 				node="0>0|2|5|2|0|2"/>
+        <i3dMapping id="sideMarker_blue_04" 				node="0>0|2|5|2|0|3"/>
+        <i3dMapping id="sideMarker_blue_05" 				node="0>0|2|5|2|0|4"/>
+        <i3dMapping id="sideMarker_blue_06" 				node="0>0|2|5|2|0|5"/>
+        <i3dMapping id="sideMarker_blue_07" 				node="0>0|2|5|2|0|6"/>
+        <i3dMapping id="sideMarker_blue_08" 				node="0>0|2|5|2|0|7"/>
+        <i3dMapping id="sideMarker_blue_09" 				node="0>0|2|5|2|0|8"/>
+        <i3dMapping id="sideMarker_blue_10" 				node="0>0|2|5|2|0|9"/>
+        <i3dMapping id="sideMarker_blue_11" 				node="0>0|2|5|2|0|10"/>
+        <i3dMapping id="sideMarker_blue_12" 				node="0>0|2|5|2|0|11"/>
+        <i3dMapping id="sideMarker_blue_13" 				node="0>0|2|5|2|0|12"/>
+        <i3dMapping id="sideMarker_blue_14" 				node="0>0|2|5|2|0|13"/>
+        <i3dMapping id="sideMarker_blue_15" 				node="0>0|2|5|2|0|14"/>
+        <i3dMapping id="sideMarker_blue_16" 				node="0>0|2|5|2|0|15"/>
+        <i3dMapping id="cbAntennaL_blue" 					node="0>0|2|5|2|1|0"/>
+        <i3dMapping id="cbAntennaR_blue" 					node="0>0|2|5|2|1|1"/>
+		
+        <i3dMapping id="DC_blue" 							node="0>0|2|5|2|2"/>
+        <i3dMapping id="DC_roofTop_blue_01" 				node="0>0|2|5|2|2|0|0"/>
+        <i3dMapping id="DC_roofTop_blue_02" 				node="0>0|2|5|2|2|0|1"/>
+        <i3dMapping id="DC_roofTop_blue_03" 				node="0>0|2|5|2|2|0|2"/>
+        <i3dMapping id="DC_roofTop_blue_04" 				node="0>0|2|5|2|2|0|3"/>
+        <i3dMapping id="DC_roofTop_blue_05" 				node="0>0|2|5|2|2|0|4"/>
+        <i3dMapping id="DC_workingLight_blue_01" 			node="0>0|2|5|2|2|1|0"/>
+        <i3dMapping id="DC_workingLight_blue_02" 			node="0>0|2|5|2|2|1|1"/>
+		
+        <i3dMapping id="DCF_blue" 							node="0>0|2|5|2|3"/>
+        <i3dMapping id="DCF_roofTop_blue_01" 				node="0>0|2|5|2|3|0|0"/>
+        <i3dMapping id="DCF_roofTop_blue_02" 				node="0>0|2|5|2|3|0|1"/>
+        <i3dMapping id="DCF_roofTop_blue_03" 				node="0>0|2|5|2|3|0|2"/>
+        <i3dMapping id="DCF_roofTop_blue_04" 				node="0>0|2|5|2|3|0|3"/>
+        <i3dMapping id="DCF_roofTop_blue_05" 				node="0>0|2|5|2|3|0|4"/>
+        <i3dMapping id="DCF_sideMarker_blue_01" 			node="0>0|2|5|2|3|0|5"/>
+        <i3dMapping id="DCF_sideMarker_blue_02" 			node="0>0|2|5|2|3|0|6"/>
+        <i3dMapping id="DCF_sideMarker_blue_03" 			node="0>0|2|5|2|3|0|7"/>
+        <i3dMapping id="DCF_sideMarker_blue_04" 			node="0>0|2|5|2|3|0|8"/>
+        <i3dMapping id="DCF_sideMarker_blue_05" 			node="0>0|2|5|2|3|0|9"/>
+        <i3dMapping id="DCF_workingLight_blue_01" 			node="0>0|2|5|2|3|1|1"/>
+        <i3dMapping id="DCF_workingLight_blue_02" 			node="0>0|2|5|2|3|1|2"/>
+        <i3dMapping id="DCF_workingLight_blue_03" 			node="0>0|2|5|2|3|1|3"/>
+        <i3dMapping id="DCF_workingLight_blue_04" 			node="0>0|2|5|2|3|1|4"/>
+		
+        <i3dMapping id="S48_blue" 							node="0>0|2|5|2|4"/>
+        <i3dMapping id="S48_roofTop_blue_01" 				node="0>0|2|5|2|4|0|0"/>
+        <i3dMapping id="S48_roofTop_blue_02" 				node="0>0|2|5|2|4|0|1"/>
+        <i3dMapping id="S48_roofTop_blue_03" 				node="0>0|2|5|2|4|0|2"/>
+        <i3dMapping id="S48_roofTop_blue_04" 				node="0>0|2|5|2|4|0|3"/>
+        <i3dMapping id="S48_roofTop_blue_05" 				node="0>0|2|5|2|4|0|4"/>
+        <i3dMapping id="S48_workingLight_blue_01" 			node="0>0|2|5|2|4|1|0"/>
+        <i3dMapping id="S48_workingLight_blue_02" 			node="0>0|2|5|2|4|1|1"/>
+		
+        <i3dMapping id="S48F_blue" 							node="0>0|2|5|2|5"/>
+        <i3dMapping id="S48F_roofTop_blue_01" 				node="0>0|2|5|2|5|0|0"/>
+        <i3dMapping id="S48F_roofTop_blue_02" 				node="0>0|2|5|2|5|0|1"/>
+        <i3dMapping id="S48F_roofTop_blue_03" 				node="0>0|2|5|2|5|0|2"/>
+        <i3dMapping id="S48F_roofTop_blue_04" 				node="0>0|2|5|2|5|0|3"/>
+        <i3dMapping id="S48F_roofTop_blue_05" 				node="0>0|2|5|2|5|0|4"/>
+        <i3dMapping id="S48F_sideMarker_blue_01" 			node="0>0|2|5|2|5|0|5"/>
+        <i3dMapping id="S48F_sideMarker_blue_02" 			node="0>0|2|5|2|5|0|6"/>
+        <i3dMapping id="S48F_sideMarker_blue_03" 			node="0>0|2|5|2|5|0|7"/>
+        <i3dMapping id="S48F_sideMarker_blue_04" 			node="0>0|2|5|2|5|0|8"/>
+        <i3dMapping id="S48F_sideMarker_blue_05" 			node="0>0|2|5|2|5|0|9"/>
+        <i3dMapping id="S48F_workingLight_blue_01" 			node="0>0|2|5|2|5|1|1"/>
+        <i3dMapping id="S48F_workingLight_blue_02" 			node="0>0|2|5|2|5|1|2"/>
+        <i3dMapping id="S48F_workingLight_blue_03" 			node="0>0|2|5|2|5|1|3"/>
+        <i3dMapping id="S48F_workingLight_blue_04" 			node="0>0|2|5|2|5|1|4"/>
+		
+        <i3dMapping id="S70_blue" 							node="0>0|2|5|2|6"/>
+        <i3dMapping id="S70_roofTop_blue_01" 				node="0>0|2|5|2|6|0|0"/>
+        <i3dMapping id="S70_roofTop_blue_02" 				node="0>0|2|5|2|6|0|1"/>
+        <i3dMapping id="S70_roofTop_blue_03" 				node="0>0|2|5|2|6|0|2"/>
+        <i3dMapping id="S70_roofTop_blue_04" 				node="0>0|2|5|2|6|0|3"/>
+        <i3dMapping id="S70_roofTop_blue_05" 				node="0>0|2|5|2|6|0|4"/>
+        <i3dMapping id="S70_sideMarker_blue_01" 			node="0>0|2|5|2|6|0|5"/>
+        <i3dMapping id="S70_sideMarker_blue_02" 			node="0>0|2|5|2|6|0|6"/>
+        <i3dMapping id="S70_sideMarker_blue_03" 			node="0>0|2|5|2|6|0|7"/>
+        <i3dMapping id="S70_sideMarker_blue_04" 			node="0>0|2|5|2|6|0|8"/>
+        <i3dMapping id="S70_sideMarker_blue_05" 			node="0>0|2|5|2|6|0|9"/>
+        <i3dMapping id="S70_workingLight_blue_01" 			node="0>0|2|5|2|6|1|1"/>
+        <i3dMapping id="S70_workingLight_blue_02" 			node="0>0|2|5|2|6|1|2"/>
+        <i3dMapping id="S70_workingLight_blue_03" 			node="0>0|2|5|2|6|1|3"/>
+        <i3dMapping id="S70_workingLight_blue_04" 			node="0>0|2|5|2|6|1|4"/>
+		
+        <i3dMapping id="greenLightsBase" 					node="0>0|2|5|3"/>
+		
+        <i3dMapping id="sideMarker_green_01" 				node="0>0|2|5|3|0|0"/>
+        <i3dMapping id="sideMarker_green_02" 				node="0>0|2|5|3|0|1"/>
+        <i3dMapping id="sideMarker_green_03" 				node="0>0|2|5|3|0|2"/>
+        <i3dMapping id="sideMarker_green_04" 				node="0>0|2|5|3|0|3"/>
+        <i3dMapping id="sideMarker_green_05" 				node="0>0|2|5|3|0|4"/>
+        <i3dMapping id="sideMarker_green_06" 				node="0>0|2|5|3|0|5"/>
+        <i3dMapping id="sideMarker_green_07" 				node="0>0|2|5|3|0|6"/>
+        <i3dMapping id="sideMarker_green_08" 				node="0>0|2|5|3|0|7"/>
+        <i3dMapping id="sideMarker_green_09" 				node="0>0|2|5|3|0|8"/>
+        <i3dMapping id="sideMarker_green_10" 				node="0>0|2|5|3|0|9"/>
+        <i3dMapping id="sideMarker_green_11" 				node="0>0|2|5|3|0|10"/>
+        <i3dMapping id="sideMarker_green_12" 				node="0>0|2|5|3|0|11"/>
+        <i3dMapping id="sideMarker_green_13" 				node="0>0|2|5|3|0|12"/>
+        <i3dMapping id="sideMarker_green_14" 				node="0>0|2|5|3|0|13"/>
+        <i3dMapping id="sideMarker_green_15" 				node="0>0|2|5|3|0|14"/>
+        <i3dMapping id="sideMarker_green_16" 				node="0>0|2|5|3|0|15"/>
+        <i3dMapping id="cbAntennaL_green" 					node="0>0|2|5|3|1|0"/>
+        <i3dMapping id="cbAntennaR_green" 					node="0>0|2|5|3|1|1"/>
+		
+        <i3dMapping id="DC_green" 							node="0>0|2|5|3|2"/>
+        <i3dMapping id="DC_roofTop_green_01" 				node="0>0|2|5|3|2|0|0"/>
+        <i3dMapping id="DC_roofTop_green_02" 				node="0>0|2|5|3|2|0|1"/>
+        <i3dMapping id="DC_roofTop_green_03" 				node="0>0|2|5|3|2|0|2"/>
+        <i3dMapping id="DC_roofTop_green_04" 				node="0>0|2|5|3|2|0|3"/>
+        <i3dMapping id="DC_roofTop_green_05" 				node="0>0|2|5|3|2|0|4"/>
+        <i3dMapping id="DC_workingLight_green_01" 			node="0>0|2|5|3|2|1|0"/>
+        <i3dMapping id="DC_workingLight_green_02" 			node="0>0|2|5|3|2|1|1"/>
+		
+        <i3dMapping id="DCF_green" 							node="0>0|2|5|3|3"/>
+        <i3dMapping id="DCF_roofTop_green_01" 				node="0>0|2|5|3|3|0|0"/>
+        <i3dMapping id="DCF_roofTop_green_02" 				node="0>0|2|5|3|3|0|1"/>
+        <i3dMapping id="DCF_roofTop_green_03" 				node="0>0|2|5|3|3|0|2"/>
+        <i3dMapping id="DCF_roofTop_green_04" 				node="0>0|2|5|3|3|0|3"/>
+        <i3dMapping id="DCF_roofTop_green_05" 				node="0>0|2|5|3|3|0|4"/>
+        <i3dMapping id="DCF_sideMarker_green_01" 			node="0>0|2|5|3|3|0|5"/>
+        <i3dMapping id="DCF_sideMarker_green_02" 			node="0>0|2|5|3|3|0|6"/>
+        <i3dMapping id="DCF_sideMarker_green_03" 			node="0>0|2|5|3|3|0|7"/>
+        <i3dMapping id="DCF_sideMarker_green_04" 			node="0>0|2|5|3|3|0|8"/>
+        <i3dMapping id="DCF_sideMarker_green_05" 			node="0>0|2|5|3|3|0|9"/>
+        <i3dMapping id="DCF_workingLight_green_01" 			node="0>0|2|5|3|3|1|1"/>
+        <i3dMapping id="DCF_workingLight_green_02" 			node="0>0|2|5|3|3|1|2"/>
+        <i3dMapping id="DCF_workingLight_green_03" 			node="0>0|2|5|3|3|1|3"/>
+        <i3dMapping id="DCF_workingLight_green_04" 			node="0>0|2|5|3|3|1|4"/>
+		
+        <i3dMapping id="S48_green" 							node="0>0|2|5|3|4"/>
+        <i3dMapping id="S48_roofTop_green_01" 				node="0>0|2|5|3|4|0|0"/>
+        <i3dMapping id="S48_roofTop_green_02" 				node="0>0|2|5|3|4|0|1"/>
+        <i3dMapping id="S48_roofTop_green_03" 				node="0>0|2|5|3|4|0|2"/>
+        <i3dMapping id="S48_roofTop_green_04" 				node="0>0|2|5|3|4|0|3"/>
+        <i3dMapping id="S48_roofTop_green_05" 				node="0>0|2|5|3|4|0|4"/>
+        <i3dMapping id="S48_workingLight_green_01" 			node="0>0|2|5|3|4|1|0"/>
+        <i3dMapping id="S48_workingLight_green_02" 			node="0>0|2|5|3|4|1|1"/>
+		
+        <i3dMapping id="S48F_green" 						node="0>0|2|5|3|5"/>
+        <i3dMapping id="S48F_roofTop_green_01" 				node="0>0|2|5|3|5|0|0"/>
+        <i3dMapping id="S48F_roofTop_green_02" 				node="0>0|2|5|3|5|0|1"/>
+        <i3dMapping id="S48F_roofTop_green_03" 				node="0>0|2|5|3|5|0|2"/>
+        <i3dMapping id="S48F_roofTop_green_04" 				node="0>0|2|5|3|5|0|3"/>
+        <i3dMapping id="S48F_roofTop_green_05" 				node="0>0|2|5|3|5|0|4"/>
+        <i3dMapping id="S48F_sideMarker_green_01" 			node="0>0|2|5|3|5|0|5"/>
+        <i3dMapping id="S48F_sideMarker_green_02" 			node="0>0|2|5|3|5|0|6"/>
+        <i3dMapping id="S48F_sideMarker_green_03" 			node="0>0|2|5|3|5|0|7"/>
+        <i3dMapping id="S48F_sideMarker_green_04" 			node="0>0|2|5|3|5|0|8"/>
+        <i3dMapping id="S48F_sideMarker_green_05" 			node="0>0|2|5|3|5|0|9"/>
+        <i3dMapping id="S48F_workingLight_green_01" 		node="0>0|2|5|3|5|1|1"/>
+        <i3dMapping id="S48F_workingLight_green_02" 		node="0>0|2|5|3|5|1|2"/>
+        <i3dMapping id="S48F_workingLight_green_03" 		node="0>0|2|5|3|5|1|3"/>
+        <i3dMapping id="S48F_workingLight_green_04" 		node="0>0|2|5|3|5|1|4"/>
+		
+        <i3dMapping id="S70_green" 							node="0>0|2|5|3|6"/>
+        <i3dMapping id="S70_roofTop_green_01" 				node="0>0|2|5|3|6|0|0"/>
+        <i3dMapping id="S70_roofTop_green_02" 				node="0>0|2|5|3|6|0|1"/>
+        <i3dMapping id="S70_roofTop_green_03" 				node="0>0|2|5|3|6|0|2"/>
+        <i3dMapping id="S70_roofTop_green_04" 				node="0>0|2|5|3|6|0|3"/>
+        <i3dMapping id="S70_roofTop_green_05" 				node="0>0|2|5|3|6|0|4"/>
+        <i3dMapping id="S70_sideMarker_green_01" 			node="0>0|2|5|3|6|0|5"/>
+        <i3dMapping id="S70_sideMarker_green_02" 			node="0>0|2|5|3|6|0|6"/>
+        <i3dMapping id="S70_sideMarker_green_03" 			node="0>0|2|5|3|6|0|7"/>
+        <i3dMapping id="S70_sideMarker_green_04" 			node="0>0|2|5|3|6|0|8"/>
+        <i3dMapping id="S70_sideMarker_green_05" 			node="0>0|2|5|3|6|0|9"/>
+        <i3dMapping id="S70_workingLight_green_01" 			node="0>0|2|5|3|6|1|1"/>
+        <i3dMapping id="S70_workingLight_green_02" 			node="0>0|2|5|3|6|1|1"/>
+        <i3dMapping id="S70_workingLight_green_03" 			node="0>0|2|5|3|6|1|1"/>
+        <i3dMapping id="S70_workingLight_green_04" 			node="0>0|2|5|3|6|1|1"/>
+		
+        <i3dMapping id="orangeLightsBase" 					node="0>0|2|5|4"/>
+        <i3dMapping id="sideMarker_orange_01" 				node="0>0|2|5|4|0|0"/>
+        <i3dMapping id="sideMarker_orange_02" 				node="0>0|2|5|4|0|1"/>
+        <i3dMapping id="sideMarker_orange_03" 				node="0>0|2|5|4|0|2"/>
+        <i3dMapping id="sideMarker_orange_04" 				node="0>0|2|5|4|0|3"/>
+        <i3dMapping id="sideMarker_orange_05" 				node="0>0|2|5|4|0|4"/>
+        <i3dMapping id="sideMarker_orange_06" 				node="0>0|2|5|4|0|5"/>
+        <i3dMapping id="sideMarker_orange_07" 				node="0>0|2|5|4|0|6"/>
+        <i3dMapping id="sideMarker_orange_08" 				node="0>0|2|5|4|0|7"/>
+        <i3dMapping id="sideMarker_orange_09" 				node="0>0|2|5|4|0|8"/>
+        <i3dMapping id="sideMarker_orange_10" 				node="0>0|2|5|4|0|9"/>
+        <i3dMapping id="sideMarker_orange_11" 				node="0>0|2|5|4|0|10"/>
+        <i3dMapping id="sideMarker_orange_12" 				node="0>0|2|5|4|0|11"/>
+        <i3dMapping id="sideMarker_orange_13" 				node="0>0|2|5|4|0|12"/>
+        <i3dMapping id="sideMarker_orange_14" 				node="0>0|2|5|4|0|13"/>
+        <i3dMapping id="sideMarker_orange_15" 				node="0>0|2|5|4|0|14"/>
+        <i3dMapping id="sideMarker_orange_16" 				node="0>0|2|5|4|0|15"/>
+        <i3dMapping id="cbAntennaL_orange" 					node="0>0|2|5|4|1|0"/>
+        <i3dMapping id="cbAntennaR_orange" 					node="0>0|2|5|4|1|1"/>
+		
+        <i3dMapping id="DC_orange" 							node="0>0|2|5|4|2"/>
+        <i3dMapping id="DC_roofTop_orange_01" 				node="0>0|2|5|4|2|0|0"/>
+        <i3dMapping id="DC_roofTop_orange_02" 				node="0>0|2|5|4|2|0|1"/>
+        <i3dMapping id="DC_roofTop_orange_03" 				node="0>0|2|5|4|2|0|2"/>
+        <i3dMapping id="DC_roofTop_orange_04" 				node="0>0|2|5|4|2|0|3"/>
+        <i3dMapping id="DC_roofTop_orange_05" 				node="0>0|2|5|4|2|0|4"/>
+        <i3dMapping id="DC_workingLight_orange_01" 			node="0>0|2|5|4|2|1|0"/>
+        <i3dMapping id="DC_workingLight_orange_02" 			node="0>0|2|5|4|2|1|1"/>
+		
+        <i3dMapping id="DCF_orange" 						node="0>0|2|5|4|3"/>
+        <i3dMapping id="DCF_roofTop_orange_01" 				node="0>0|2|5|4|3|0|0"/>
+        <i3dMapping id="DCF_roofTop_orange_02" 				node="0>0|2|5|4|3|0|1"/>
+        <i3dMapping id="DCF_roofTop_orange_03" 				node="0>0|2|5|4|3|0|2"/>
+        <i3dMapping id="DCF_roofTop_orange_04" 				node="0>0|2|5|4|3|0|3"/>
+        <i3dMapping id="DCF_roofTop_orange_05" 				node="0>0|2|5|4|3|0|4"/>
+        <i3dMapping id="DCF_sideMarker_orange_01" 			node="0>0|2|5|4|3|0|5"/>
+        <i3dMapping id="DCF_sideMarker_orange_02" 			node="0>0|2|5|4|3|0|6"/>
+        <i3dMapping id="DCF_sideMarker_orange_03" 			node="0>0|2|5|4|3|0|7"/>
+        <i3dMapping id="DCF_sideMarker_orange_04" 			node="0>0|2|5|4|3|0|8"/>
+        <i3dMapping id="DCF_sideMarker_orange_05" 			node="0>0|2|5|4|3|0|9"/>
+        <i3dMapping id="DCF_workingLight_orange_01" 		node="0>0|2|5|4|3|1|1"/>
+        <i3dMapping id="DCF_workingLight_orange_02" 		node="0>0|2|5|4|3|1|2"/>
+        <i3dMapping id="DCF_workingLight_orange_03" 		node="0>0|2|5|4|3|1|3"/>
+        <i3dMapping id="DCF_workingLight_orange_04" 		node="0>0|2|5|4|3|1|4"/>
+		
+        <i3dMapping id="S48_orange" 						node="0>0|2|5|4|4"/>
+        <i3dMapping id="S48_roofTop_orange_01" 				node="0>0|2|5|4|4|0|0"/>
+        <i3dMapping id="S48_roofTop_orange_02" 				node="0>0|2|5|4|4|0|1"/>
+        <i3dMapping id="S48_roofTop_orange_03" 				node="0>0|2|5|4|4|0|2"/>
+        <i3dMapping id="S48_roofTop_orange_04" 				node="0>0|2|5|4|4|0|3"/>
+        <i3dMapping id="S48_roofTop_orange_05" 				node="0>0|2|5|4|4|0|4"/>
+        <i3dMapping id="S48_workingLight_orange_01" 		node="0>0|2|5|4|4|1|0"/>
+        <i3dMapping id="S48_workingLight_orange_02" 		node="0>0|2|5|4|4|1|1"/>
+		
+        <i3dMapping id="S48F_orange" 						node="0>0|2|5|4|5"/>
+        <i3dMapping id="S48F_roofTop_orange_01" 			node="0>0|2|5|4|5|0|0"/>
+        <i3dMapping id="S48F_roofTop_orange_02" 			node="0>0|2|5|4|5|0|1"/>
+        <i3dMapping id="S48F_roofTop_orange_03" 			node="0>0|2|5|4|5|0|2"/>
+        <i3dMapping id="S48F_roofTop_orange_04" 			node="0>0|2|5|4|5|0|3"/>
+        <i3dMapping id="S48F_roofTop_orange_05" 			node="0>0|2|5|4|5|0|4"/>
+        <i3dMapping id="S48F_sideMarker_orange_01" 			node="0>0|2|5|4|5|0|5"/>
+        <i3dMapping id="S48F_sideMarker_orange_02" 			node="0>0|2|5|4|5|0|6"/>
+        <i3dMapping id="S48F_sideMarker_orange_03" 			node="0>0|2|5|4|5|0|7"/>
+        <i3dMapping id="S48F_sideMarker_orange_04" 			node="0>0|2|5|4|5|0|8"/>
+        <i3dMapping id="S48F_sideMarker_orange_05" 			node="0>0|2|5|4|5|0|9"/>
+        <i3dMapping id="S48F_workingLight_orange_01" 		node="0>0|2|5|4|5|1|1"/>
+        <i3dMapping id="S48F_workingLight_orange_02" 		node="0>0|2|5|4|5|1|2"/>
+        <i3dMapping id="S48F_workingLight_orange_03" 		node="0>0|2|5|4|5|1|3"/>
+        <i3dMapping id="S48F_workingLight_orange_04" 		node="0>0|2|5|4|5|1|4"/>
+		
+        <i3dMapping id="S70_orange" 						node="0>0|2|5|4|6"/>
+        <i3dMapping id="S70_roofTop_orange_01" 				node="0>0|2|5|4|6|0|0"/>
+        <i3dMapping id="S70_roofTop_orange_02" 				node="0>0|2|5|4|6|0|1"/>
+        <i3dMapping id="S70_roofTop_orange_03" 				node="0>0|2|5|4|6|0|2"/>
+        <i3dMapping id="S70_roofTop_orange_04" 				node="0>0|2|5|4|6|0|3"/>
+        <i3dMapping id="S70_roofTop_orange_05" 				node="0>0|2|5|4|6|0|4"/>
+        <i3dMapping id="S70_sideMarker_orange_01" 			node="0>0|2|5|4|6|0|5"/>
+        <i3dMapping id="S70_sideMarker_orange_02" 			node="0>0|2|5|4|6|0|6"/>
+        <i3dMapping id="S70_sideMarker_orange_03" 			node="0>0|2|5|4|6|0|7"/>
+        <i3dMapping id="S70_sideMarker_orange_04" 			node="0>0|2|5|4|6|0|8"/>
+        <i3dMapping id="S70_sideMarker_orange_05" 			node="0>0|2|5|4|6|0|9"/>
+        <i3dMapping id="S70_workingLight_orange_01" 		node="0>0|2|5|4|6|1|1"/>
+        <i3dMapping id="S70_workingLight_orange_02" 		node="0>0|2|5|4|6|1|2"/>
+        <i3dMapping id="S70_workingLight_orange_03" 		node="0>0|2|5|4|6|1|3"/>
+        <i3dMapping id="S70_workingLight_orange_04" 		node="0>0|2|5|4|6|1|4"/>
+		
+        <i3dMapping id="purpleLightsBase" 					node="0>0|2|5|5"/>
+        <i3dMapping id="sideMarker_purple_01" 				node="0>0|2|5|5|0|0"/>
+        <i3dMapping id="sideMarker_purple_02" 				node="0>0|2|5|5|0|1"/>
+        <i3dMapping id="sideMarker_purple_03" 				node="0>0|2|5|5|0|2"/>
+        <i3dMapping id="sideMarker_purple_04" 				node="0>0|2|5|5|0|3"/>
+        <i3dMapping id="sideMarker_purple_05" 				node="0>0|2|5|5|0|4"/>
+        <i3dMapping id="sideMarker_purple_06" 				node="0>0|2|5|5|0|5"/>
+        <i3dMapping id="sideMarker_purple_07" 				node="0>0|2|5|5|0|6"/>
+        <i3dMapping id="sideMarker_purple_08" 				node="0>0|2|5|5|0|7"/>
+        <i3dMapping id="sideMarker_purple_09" 				node="0>0|2|5|5|0|8"/>
+        <i3dMapping id="sideMarker_purple_10" 				node="0>0|2|5|5|0|9"/>
+        <i3dMapping id="sideMarker_purple_11" 				node="0>0|2|5|5|0|10"/>
+        <i3dMapping id="sideMarker_purple_12" 				node="0>0|2|5|5|0|11"/>
+        <i3dMapping id="sideMarker_purple_13" 				node="0>0|2|5|5|0|12"/>
+        <i3dMapping id="sideMarker_purple_14" 				node="0>0|2|5|5|0|13"/>
+        <i3dMapping id="sideMarker_purple_15" 				node="0>0|2|5|5|0|14"/>
+        <i3dMapping id="sideMarker_purple_16" 				node="0>0|2|5|5|0|15"/>
+        <i3dMapping id="cbAntennaL_purple" 					node="0>0|2|5|5|1|0"/>
+        <i3dMapping id="cbAntennaR_purple" 					node="0>0|2|5|5|1|1"/>
+		
+        <i3dMapping id="DC_purple" 							node="0>0|2|5|5|2"/>
+        <i3dMapping id="DC_roofTop_purple_01" 				node="0>0|2|5|5|2|0|0"/>
+        <i3dMapping id="DC_roofTop_purple_02" 				node="0>0|2|5|5|2|0|1"/>
+        <i3dMapping id="DC_roofTop_purple_03" 				node="0>0|2|5|5|2|0|2"/>
+        <i3dMapping id="DC_roofTop_purple_04" 				node="0>0|2|5|5|2|0|3"/>
+        <i3dMapping id="DC_roofTop_purple_05" 				node="0>0|2|5|5|2|0|4"/>
+        <i3dMapping id="DC_workingLight_purple_01" 			node="0>0|2|5|5|2|1|0"/>
+        <i3dMapping id="DC_workingLight_purple_02" 			node="0>0|2|5|5|2|1|1"/>
+		
+        <i3dMapping id="DCF_purple" 						node="0>0|2|5|5|3"/>
+        <i3dMapping id="DCF_roofTop_purple_01" 				node="0>0|2|5|5|3|0|0"/>
+        <i3dMapping id="DCF_roofTop_purple_02" 				node="0>0|2|5|5|3|0|1"/>
+        <i3dMapping id="DCF_roofTop_purple_03" 				node="0>0|2|5|5|3|0|2"/>
+        <i3dMapping id="DCF_roofTop_purple_04" 				node="0>0|2|5|5|3|0|3"/>
+        <i3dMapping id="DCF_roofTop_purple_05" 				node="0>0|2|5|5|3|0|4"/>
+        <i3dMapping id="DCF_sideMarker_purple_01" 			node="0>0|2|5|5|3|0|5"/>
+        <i3dMapping id="DCF_sideMarker_purple_02" 			node="0>0|2|5|5|3|0|6"/>
+        <i3dMapping id="DCF_sideMarker_purple_03" 			node="0>0|2|5|5|3|0|7"/>
+        <i3dMapping id="DCF_sideMarker_purple_04" 			node="0>0|2|5|5|3|0|8"/>
+        <i3dMapping id="DCF_sideMarker_purple_05" 			node="0>0|2|5|5|3|0|9"/>
+        <i3dMapping id="DCF_workingLight_purple_01" 		node="0>0|2|5|5|3|1|1"/>
+        <i3dMapping id="DCF_workingLight_purple_02" 		node="0>0|2|5|5|3|1|2"/>
+        <i3dMapping id="DCF_workingLight_purple_03" 		node="0>0|2|5|5|3|1|3"/>
+        <i3dMapping id="DCF_workingLight_purple_04" 		node="0>0|2|5|5|3|1|4"/>
+		
+        <i3dMapping id="S48_purple" 						node="0>0|2|5|5|4"/>
+        <i3dMapping id="S48_roofTop_purple_01" 				node="0>0|2|5|5|4|0|0"/>
+        <i3dMapping id="S48_roofTop_purple_02" 				node="0>0|2|5|5|4|0|1"/>
+        <i3dMapping id="S48_roofTop_purple_03" 				node="0>0|2|5|5|4|0|2"/>
+        <i3dMapping id="S48_roofTop_purple_04" 				node="0>0|2|5|5|4|0|3"/>
+        <i3dMapping id="S48_roofTop_purple_05" 				node="0>0|2|5|5|4|0|4"/>
+        <i3dMapping id="S48_workingLight_purple_01" 		node="0>0|2|5|5|4|1|0"/>
+        <i3dMapping id="S48_workingLight_purple_02" 		node="0>0|2|5|5|4|1|1"/>
+		
+        <i3dMapping id="S48F_purple" 						node="0>0|2|5|5|5"/>
+        <i3dMapping id="S48F_roofTop_purple_01" 			node="0>0|2|5|5|5|0|0"/>
+        <i3dMapping id="S48F_roofTop_purple_02" 			node="0>0|2|5|5|5|0|1"/>
+        <i3dMapping id="S48F_roofTop_purple_03" 			node="0>0|2|5|5|5|0|2"/>
+        <i3dMapping id="S48F_roofTop_purple_04" 			node="0>0|2|5|5|5|0|3"/>
+        <i3dMapping id="S48F_roofTop_purple_05" 			node="0>0|2|5|5|5|0|4"/>
+        <i3dMapping id="S48F_sideMarker_purple_01" 			node="0>0|2|5|5|5|0|5"/>
+        <i3dMapping id="S48F_sideMarker_purple_02" 			node="0>0|2|5|5|5|0|6"/>
+        <i3dMapping id="S48F_sideMarker_purple_03" 			node="0>0|2|5|5|5|0|7"/>
+        <i3dMapping id="S48F_sideMarker_purple_04" 			node="0>0|2|5|5|5|0|8"/>
+        <i3dMapping id="S48F_sideMarker_purple_05" 			node="0>0|2|5|5|5|0|9"/>
+        <i3dMapping id="S48F_workingLight_purple_01" 		node="0>0|2|5|5|5|1|1"/>
+        <i3dMapping id="S48F_workingLight_purple_02" 		node="0>0|2|5|5|5|1|2"/>
+        <i3dMapping id="S48F_workingLight_purple_03" 		node="0>0|2|5|5|5|1|3"/>
+        <i3dMapping id="S48F_workingLight_purple_04" 		node="0>0|2|5|5|5|1|4"/>
+		
+        <i3dMapping id="S70_purple" 						node="0>0|2|5|5|6"/>
+        <i3dMapping id="S70_roofTop_purple_01" 				node="0>0|2|5|5|6|0|0"/>
+        <i3dMapping id="S70_roofTop_purple_02" 				node="0>0|2|5|5|6|0|1"/>
+        <i3dMapping id="S70_roofTop_purple_03" 				node="0>0|2|5|5|6|0|2"/>
+        <i3dMapping id="S70_roofTop_purple_04" 				node="0>0|2|5|5|6|0|3"/>
+        <i3dMapping id="S70_roofTop_purple_05" 				node="0>0|2|5|5|6|0|4"/>
+        <i3dMapping id="S70_sideMarker_purple_01" 			node="0>0|2|5|5|6|0|5"/>
+        <i3dMapping id="S70_sideMarker_purple_02" 			node="0>0|2|5|5|6|0|6"/>
+        <i3dMapping id="S70_sideMarker_purple_03" 			node="0>0|2|5|5|6|0|7"/>
+        <i3dMapping id="S70_sideMarker_purple_04" 			node="0>0|2|5|5|6|0|8"/>
+        <i3dMapping id="S70_sideMarker_purple_05" 			node="0>0|2|5|5|6|0|9"/>
+        <i3dMapping id="S70_workingLight_purple_01" 		node="0>0|2|5|5|6|1|1"/>
+        <i3dMapping id="S70_workingLight_purple_02" 		node="0>0|2|5|5|6|1|2"/>
+        <i3dMapping id="S70_workingLight_purple_03" 		node="0>0|2|5|5|6|1|3"/>
+        <i3dMapping id="S70_workingLight_purple_04" 		node="0>0|2|5|5|6|1|4"/>
+		
+        <i3dMapping id="redLightsBase" 						node="0>0|2|5|6"/>
+        <i3dMapping id="sideMarker_red_01" 					node="0>0|2|5|6|0|0"/>
+        <i3dMapping id="sideMarker_red_02" 					node="0>0|2|5|6|0|1"/>
+        <i3dMapping id="sideMarker_red_03" 					node="0>0|2|5|6|0|2"/>
+        <i3dMapping id="sideMarker_red_04" 					node="0>0|2|5|6|0|3"/>
+        <i3dMapping id="sideMarker_red_05" 					node="0>0|2|5|6|0|4"/>
+        <i3dMapping id="sideMarker_red_06" 					node="0>0|2|5|6|0|5"/>
+        <i3dMapping id="sideMarker_red_07" 					node="0>0|2|5|6|0|6"/>
+        <i3dMapping id="sideMarker_red_08" 					node="0>0|2|5|6|0|7"/>
+        <i3dMapping id="sideMarker_red_09" 					node="0>0|2|5|6|0|8"/>
+        <i3dMapping id="sideMarker_red_10" 					node="0>0|2|5|6|0|9"/>
+        <i3dMapping id="sideMarker_red_11" 					node="0>0|2|5|6|0|10"/>
+        <i3dMapping id="sideMarker_red_12" 					node="0>0|2|5|6|0|11"/>
+        <i3dMapping id="sideMarker_red_13" 					node="0>0|2|5|6|0|12"/>
+        <i3dMapping id="sideMarker_red_14" 					node="0>0|2|5|6|0|13"/>
+        <i3dMapping id="sideMarker_red_15" 					node="0>0|2|5|6|0|14"/>
+        <i3dMapping id="sideMarker_red_16" 					node="0>0|2|5|6|0|15"/>
+        <i3dMapping id="cbAntennaL_red" 					node="0>0|2|5|6|1|0"/>
+        <i3dMapping id="cbAntennaR_red" 					node="0>0|2|5|6|1|1"/>
+		
+        <i3dMapping id="DC_red" 							node="0>0|2|5|6|2"/>
+        <i3dMapping id="DC_roofTop_red_01" 					node="0>0|2|5|6|2|0|0"/>
+        <i3dMapping id="DC_roofTop_red_02" 					node="0>0|2|5|6|2|0|1"/>
+        <i3dMapping id="DC_roofTop_red_03" 					node="0>0|2|5|6|2|0|2"/>
+        <i3dMapping id="DC_roofTop_red_04" 					node="0>0|2|5|6|2|0|3"/>
+        <i3dMapping id="DC_roofTop_red_05" 					node="0>0|2|5|6|2|0|4"/>
+        <i3dMapping id="DC_workingLight_red_01" 			node="0>0|2|5|6|2|1|0"/>
+        <i3dMapping id="DC_workingLight_red_02" 			node="0>0|2|5|6|2|1|1"/>
+		
+        <i3dMapping id="DCF_red" 							node="0>0|2|5|6|3"/>
+        <i3dMapping id="DCF_roofTop_red_01" 				node="0>0|2|5|6|3|0|0"/>
+        <i3dMapping id="DCF_roofTop_red_02" 				node="0>0|2|5|6|3|0|1"/>
+        <i3dMapping id="DCF_roofTop_red_03" 				node="0>0|2|5|6|3|0|2"/>
+        <i3dMapping id="DCF_roofTop_red_04" 				node="0>0|2|5|6|3|0|3"/>
+        <i3dMapping id="DCF_roofTop_red_05" 				node="0>0|2|5|6|3|0|4"/>
+        <i3dMapping id="DCF_sideMarker_red_01" 				node="0>0|2|5|6|3|0|5"/>
+        <i3dMapping id="DCF_sideMarker_red_02" 				node="0>0|2|5|6|3|0|6"/>
+        <i3dMapping id="DCF_sideMarker_red_03" 				node="0>0|2|5|6|3|0|7"/>
+        <i3dMapping id="DCF_sideMarker_red_04" 				node="0>0|2|5|6|3|0|8"/>
+        <i3dMapping id="DCF_sideMarker_red_05" 				node="0>0|2|5|6|3|0|9"/>
+        <i3dMapping id="DCF_workingLight_red_01" 			node="0>0|2|5|6|3|1|1"/>
+        <i3dMapping id="DCF_workingLight_red_02" 			node="0>0|2|5|6|3|1|2"/>
+        <i3dMapping id="DCF_workingLight_red_03" 			node="0>0|2|5|6|3|1|3"/>
+        <i3dMapping id="DCF_workingLight_red_04" 			node="0>0|2|5|6|3|1|4"/>
+		
+        <i3dMapping id="S48_red" 							node="0>0|2|5|6|4"/>
+        <i3dMapping id="S48_roofTop_red_01" 				node="0>0|2|5|6|4|0|0"/>
+        <i3dMapping id="S48_roofTop_red_02" 				node="0>0|2|5|6|4|0|1"/>
+        <i3dMapping id="S48_roofTop_red_03" 				node="0>0|2|5|6|4|0|2"/>
+        <i3dMapping id="S48_roofTop_red_04" 				node="0>0|2|5|6|4|0|3"/>
+        <i3dMapping id="S48_roofTop_red_05" 				node="0>0|2|5|6|4|0|4"/>
+        <i3dMapping id="S48_workingLight_red_01" 			node="0>0|2|5|6|4|1|0"/>
+        <i3dMapping id="S48_workingLight_red_02" 			node="0>0|2|5|6|4|1|1"/>
+		
+        <i3dMapping id="S48F_red" 							node="0>0|2|5|6|5"/>
+        <i3dMapping id="S48F_roofTop_red_01" 				node="0>0|2|5|6|5|0|0"/>
+        <i3dMapping id="S48F_roofTop_red_02" 				node="0>0|2|5|6|5|0|1"/>
+        <i3dMapping id="S48F_roofTop_red_03" 				node="0>0|2|5|6|5|0|2"/>
+        <i3dMapping id="S48F_roofTop_red_04" 				node="0>0|2|5|6|5|0|3"/>
+        <i3dMapping id="S48F_roofTop_red_05" 				node="0>0|2|5|6|5|0|4"/>
+        <i3dMapping id="S48F_sideMarker_red_01" 			node="0>0|2|5|6|5|0|5"/>
+        <i3dMapping id="S48F_sideMarker_red_02" 			node="0>0|2|5|6|5|0|6"/>
+        <i3dMapping id="S48F_sideMarker_red_03" 			node="0>0|2|5|6|5|0|7"/>
+        <i3dMapping id="S48F_sideMarker_red_04" 			node="0>0|2|5|6|5|0|8"/>
+        <i3dMapping id="S48F_sideMarker_red_05" 			node="0>0|2|5|6|5|0|9"/>
+        <i3dMapping id="S48F_workingLight_red_01" 			node="0>0|2|5|6|5|1|1"/>
+        <i3dMapping id="S48F_workingLight_red_02" 			node="0>0|2|5|6|5|1|2"/>
+        <i3dMapping id="S48F_workingLight_red_03" 			node="0>0|2|5|6|5|1|3"/>
+        <i3dMapping id="S48F_workingLight_red_04" 			node="0>0|2|5|6|5|1|4"/>
+		
+        <i3dMapping id="S70_red" 							node="0>0|2|5|6|6"/>
+        <i3dMapping id="S70_roofTop_red_01" 				node="0>0|2|5|6|6|0|0"/>
+        <i3dMapping id="S70_roofTop_red_02" 				node="0>0|2|5|6|6|0|1"/>
+        <i3dMapping id="S70_roofTop_red_03" 				node="0>0|2|5|6|6|0|2"/>
+        <i3dMapping id="S70_roofTop_red_04" 				node="0>0|2|5|6|6|0|3"/>
+        <i3dMapping id="S70_roofTop_red_05" 				node="0>0|2|5|6|6|0|4"/>
+        <i3dMapping id="S70_sideMarker_red_01" 				node="0>0|2|5|6|6|0|5"/>
+        <i3dMapping id="S70_sideMarker_red_02" 				node="0>0|2|5|6|6|0|6"/>
+        <i3dMapping id="S70_sideMarker_red_03" 				node="0>0|2|5|6|6|0|7"/>
+        <i3dMapping id="S70_sideMarker_red_04" 				node="0>0|2|5|6|6|0|8"/>
+        <i3dMapping id="S70_sideMarker_red_05" 				node="0>0|2|5|6|6|0|9"/>
+        <i3dMapping id="S70_workingLight_red_01" 			node="0>0|2|5|6|6|1|1"/>
+        <i3dMapping id="S70_workingLight_red_02" 			node="0>0|2|5|6|6|1|2"/>
+        <i3dMapping id="S70_workingLight_red_03" 			node="0>0|2|5|6|6|1|3"/>
+        <i3dMapping id="S70_workingLight_red_04" 			node="0>0|2|5|6|6|1|4"/>
+		
+        <i3dMapping id="whiteLightsBase" 					node="0>0|2|5|7"/>
+        <i3dMapping id="sideMarker_white_01" 				node="0>0|2|5|7|0|0"/>
+        <i3dMapping id="sideMarker_white_02" 				node="0>0|2|5|7|0|1"/>
+        <i3dMapping id="sideMarker_white_03" 				node="0>0|2|5|7|0|2"/>
+        <i3dMapping id="sideMarker_white_04" 				node="0>0|2|5|7|0|3"/>
+        <i3dMapping id="sideMarker_white_05" 				node="0>0|2|5|7|0|4"/>
+        <i3dMapping id="sideMarker_white_06" 				node="0>0|2|5|7|0|5"/>
+        <i3dMapping id="sideMarker_white_07" 				node="0>0|2|5|7|0|6"/>
+        <i3dMapping id="sideMarker_white_08" 				node="0>0|2|5|7|0|7"/>
+        <i3dMapping id="sideMarker_white_09" 				node="0>0|2|5|7|0|8"/>
+        <i3dMapping id="sideMarker_white_10" 				node="0>0|2|5|7|0|9"/>
+        <i3dMapping id="sideMarker_white_11" 				node="0>0|2|5|7|0|10"/>
+        <i3dMapping id="sideMarker_white_12" 				node="0>0|2|5|7|0|11"/>
+        <i3dMapping id="sideMarker_white_13" 				node="0>0|2|5|7|0|12"/>
+        <i3dMapping id="sideMarker_white_14" 				node="0>0|2|5|7|0|13"/>
+        <i3dMapping id="sideMarker_white_15" 				node="0>0|2|5|7|0|14"/>
+        <i3dMapping id="sideMarker_white_16" 				node="0>0|2|5|7|0|15"/>
+        <i3dMapping id="cbAntennaL_white" 					node="0>0|2|5|7|1|0"/>
+        <i3dMapping id="cbAntennaR_white" 					node="0>0|2|5|7|1|1"/>
+		
+        <i3dMapping id="DC_white" 							node="0>0|2|5|7|2"/>
+        <i3dMapping id="DC_roofTop_white_01" 				node="0>0|2|5|7|2|0|0"/>
+        <i3dMapping id="DC_roofTop_white_02" 				node="0>0|2|5|7|2|0|1"/>
+        <i3dMapping id="DC_roofTop_white_03" 				node="0>0|2|5|7|2|0|2"/>
+        <i3dMapping id="DC_roofTop_white_04" 				node="0>0|2|5|7|2|0|3"/>
+        <i3dMapping id="DC_roofTop_white_05" 				node="0>0|2|5|7|2|0|4"/>
+        <i3dMapping id="DC_workingLight_white_01" 			node="0>0|2|5|7|2|1|0"/>
+        <i3dMapping id="DC_workingLight_white_02" 			node="0>0|2|5|7|2|1|1"/>
+		
+        <i3dMapping id="DCF_white" 							node="0>0|2|5|7|3"/>
+        <i3dMapping id="DCF_roofTop_white_01" 				node="0>0|2|5|7|3|0|0"/>
+        <i3dMapping id="DCF_roofTop_white_02" 				node="0>0|2|5|7|3|0|1"/>
+        <i3dMapping id="DCF_roofTop_white_03" 				node="0>0|2|5|7|3|0|2"/>
+        <i3dMapping id="DCF_roofTop_white_04" 				node="0>0|2|5|7|3|0|3"/>
+        <i3dMapping id="DCF_roofTop_white_05" 				node="0>0|2|5|7|3|0|4"/>
+        <i3dMapping id="DCF_sideMarker_white_01" 			node="0>0|2|5|7|3|0|5"/>
+        <i3dMapping id="DCF_sideMarker_white_02" 			node="0>0|2|5|7|3|0|6"/>
+        <i3dMapping id="DCF_sideMarker_white_03" 			node="0>0|2|5|7|3|0|7"/>
+        <i3dMapping id="DCF_sideMarker_white_04" 			node="0>0|2|5|7|3|0|8"/>
+        <i3dMapping id="DCF_sideMarker_white_05" 			node="0>0|2|5|7|3|0|9"/>
+        <i3dMapping id="DCF_workingLight_white_01" 			node="0>0|2|5|7|3|1|1"/>
+        <i3dMapping id="DCF_workingLight_white_02" 			node="0>0|2|5|7|3|1|2"/>
+        <i3dMapping id="DCF_workingLight_white_03" 			node="0>0|2|5|7|3|1|3"/>
+        <i3dMapping id="DCF_workingLight_white_04" 			node="0>0|2|5|7|3|1|4"/>
+		
+        <i3dMapping id="S48_white" 							node="0>0|2|5|7|4"/>
+        <i3dMapping id="S48_roofTop_white_01" 				node="0>0|2|5|7|4|0|0"/>
+        <i3dMapping id="S48_roofTop_white_02" 				node="0>0|2|5|7|4|0|1"/>
+        <i3dMapping id="S48_roofTop_white_03" 				node="0>0|2|5|7|4|0|2"/>
+        <i3dMapping id="S48_roofTop_white_04" 				node="0>0|2|5|7|4|0|3"/>
+        <i3dMapping id="S48_roofTop_white_05" 				node="0>0|2|5|7|4|0|4"/>
+        <i3dMapping id="S48_workingLight_white_01" 			node="0>0|2|5|7|4|1|0"/>
+        <i3dMapping id="S48_workingLight_white_02" 			node="0>0|2|5|7|4|1|1"/>
+		
+        <i3dMapping id="S48F_white" 						node="0>0|2|5|7|5"/>
+        <i3dMapping id="S48F_roofTop_white_01" 				node="0>0|2|5|7|5|0|0"/>
+        <i3dMapping id="S48F_roofTop_white_02" 				node="0>0|2|5|7|5|0|1"/>
+        <i3dMapping id="S48F_roofTop_white_03" 				node="0>0|2|5|7|5|0|2"/>
+        <i3dMapping id="S48F_roofTop_white_04" 				node="0>0|2|5|7|5|0|3"/>
+        <i3dMapping id="S48F_roofTop_white_05" 				node="0>0|2|5|7|5|0|4"/>
+        <i3dMapping id="S48F_sideMarker_white_01" 			node="0>0|2|5|7|5|0|5"/>
+        <i3dMapping id="S48F_sideMarker_white_02" 			node="0>0|2|5|7|5|0|6"/>
+        <i3dMapping id="S48F_sideMarker_white_03" 			node="0>0|2|5|7|5|0|7"/>
+        <i3dMapping id="S48F_sideMarker_white_04" 			node="0>0|2|5|7|5|0|8"/>
+        <i3dMapping id="S48F_sideMarker_white_05" 			node="0>0|2|5|7|5|0|9"/>
+        <i3dMapping id="S48F_workingLight_white_01" 		node="0>0|2|5|7|5|1|1"/>
+        <i3dMapping id="S48F_workingLight_white_02" 		node="0>0|2|5|7|5|1|2"/>
+        <i3dMapping id="S48F_workingLight_white_03" 		node="0>0|2|5|7|5|1|3"/>
+        <i3dMapping id="S48F_workingLight_white_04" 		node="0>0|2|5|7|5|1|4"/>
+		
+        <i3dMapping id="S70_white" 							node="0>0|2|5|7|6"/>
+        <i3dMapping id="S70_roofTop_white_01" 				node="0>0|2|5|7|6|0|0"/>
+        <i3dMapping id="S70_roofTop_white_02" 				node="0>0|2|5|7|6|0|1"/>
+        <i3dMapping id="S70_roofTop_white_03" 				node="0>0|2|5|7|6|0|2"/>
+        <i3dMapping id="S70_roofTop_white_04" 				node="0>0|2|5|7|6|0|3"/>
+        <i3dMapping id="S70_roofTop_white_05" 				node="0>0|2|5|7|6|0|4"/>
+        <i3dMapping id="S70_sideMarker_white_01" 			node="0>0|2|5|7|6|0|5"/>
+        <i3dMapping id="S70_sideMarker_white_02" 			node="0>0|2|5|7|6|0|6"/>
+        <i3dMapping id="S70_sideMarker_white_03" 			node="0>0|2|5|7|6|0|7"/>
+        <i3dMapping id="S70_sideMarker_white_04" 			node="0>0|2|5|7|6|0|8"/>
+        <i3dMapping id="S70_sideMarker_white_05" 			node="0>0|2|5|7|6|0|9"/>
+        <i3dMapping id="S70_workingLight_white_01" 			node="0>0|2|5|7|6|1|1"/>
+        <i3dMapping id="S70_workingLight_white_02" 			node="0>0|2|5|7|6|1|2"/>
+        <i3dMapping id="S70_workingLight_white_03" 			node="0>0|2|5|7|6|1|3"/>
+        <i3dMapping id="S70_workingLight_white_04" 			node="0>0|2|5|7|6|1|4"/>
+		
+        <i3dMapping id="yellowLightsBase" 					node="0>0|2|5|8"/>
+        <i3dMapping id="sideMarker_yellow_01" 				node="0>0|2|5|8|0|0"/>
+        <i3dMapping id="sideMarker_yellow_02" 				node="0>0|2|5|8|0|1"/>
+        <i3dMapping id="sideMarker_yellow_03" 				node="0>0|2|5|8|0|2"/>
+        <i3dMapping id="sideMarker_yellow_04" 				node="0>0|2|5|8|0|3"/>
+        <i3dMapping id="sideMarker_yellow_05" 				node="0>0|2|5|8|0|4"/>
+        <i3dMapping id="sideMarker_yellow_06" 				node="0>0|2|5|8|0|5"/>
+        <i3dMapping id="sideMarker_yellow_07" 				node="0>0|2|5|8|0|6"/>
+        <i3dMapping id="sideMarker_yellow_08" 				node="0>0|2|5|8|0|7"/>
+        <i3dMapping id="sideMarker_yellow_09" 				node="0>0|2|5|8|0|8"/>
+        <i3dMapping id="sideMarker_yellow_10" 				node="0>0|2|5|8|0|9"/>
+        <i3dMapping id="sideMarker_yellow_11" 				node="0>0|2|5|8|0|10"/>
+        <i3dMapping id="sideMarker_yellow_12" 				node="0>0|2|5|8|0|11"/>
+        <i3dMapping id="sideMarker_yellow_13" 				node="0>0|2|5|8|0|12"/>
+        <i3dMapping id="sideMarker_yellow_14" 				node="0>0|2|5|8|0|13"/>
+        <i3dMapping id="sideMarker_yellow_15" 				node="0>0|2|5|8|0|14"/>
+        <i3dMapping id="sideMarker_yellow_16" 				node="0>0|2|5|8|0|15"/>
+        <i3dMapping id="cbAntennaL_yellow" 					node="0>0|2|5|8|1|0"/>
+        <i3dMapping id="cbAntennaR_yellow" 					node="0>0|2|5|8|1|1"/>
+		
+        <i3dMapping id="DC_yellow" 							node="0>0|2|5|8|2"/>
+        <i3dMapping id="DC_roofTop_yellow_01" 				node="0>0|2|5|8|2|0|0"/>
+        <i3dMapping id="DC_roofTop_yellow_02" 				node="0>0|2|5|8|2|0|1"/>
+        <i3dMapping id="DC_roofTop_yellow_03" 				node="0>0|2|5|8|2|0|2"/>
+        <i3dMapping id="DC_roofTop_yellow_04" 				node="0>0|2|5|8|2|0|3"/>
+        <i3dMapping id="DC_roofTop_yellow_05" 				node="0>0|2|5|8|2|0|4"/>
+        <i3dMapping id="DC_workingLight_yellow_01" 			node="0>0|2|5|8|2|1|0"/>
+        <i3dMapping id="DC_workingLight_yellow_02" 			node="0>0|2|5|8|2|1|1"/>
+		
+        <i3dMapping id="DCF_yellow" 						node="0>0|2|5|8|3"/>
+        <i3dMapping id="DCF_roofTop_yellow_01" 				node="0>0|2|5|8|3|0|0"/>
+        <i3dMapping id="DCF_roofTop_yellow_02" 				node="0>0|2|5|8|3|0|1"/>
+        <i3dMapping id="DCF_roofTop_yellow_03" 				node="0>0|2|5|8|3|0|2"/>
+        <i3dMapping id="DCF_roofTop_yellow_04" 				node="0>0|2|5|8|3|0|3"/>
+        <i3dMapping id="DCF_roofTop_yellow_05" 				node="0>0|2|5|8|3|0|4"/>
+        <i3dMapping id="DCF_sideMarker_yellow_01" 			node="0>0|2|5|8|3|0|5"/>
+        <i3dMapping id="DCF_sideMarker_yellow_02" 			node="0>0|2|5|8|3|0|6"/>
+        <i3dMapping id="DCF_sideMarker_yellow_03" 			node="0>0|2|5|8|3|0|7"/>
+        <i3dMapping id="DCF_sideMarker_yellow_04" 			node="0>0|2|5|8|3|0|8"/>
+        <i3dMapping id="DCF_sideMarker_yellow_05" 			node="0>0|2|5|8|3|0|9"/>
+        <i3dMapping id="DCF_workingLight_yellow_01" 		node="0>0|2|5|8|3|1|1"/>
+        <i3dMapping id="DCF_workingLight_yellow_02" 		node="0>0|2|5|8|3|1|2"/>
+        <i3dMapping id="DCF_workingLight_yellow_03" 		node="0>0|2|5|8|3|1|3"/>
+        <i3dMapping id="DCF_workingLight_yellow_04" 		node="0>0|2|5|8|3|1|4"/>
+		
+        <i3dMapping id="S48_yellow" 						node="0>0|2|5|8|4"/>
+        <i3dMapping id="S48_roofTop_yellow_01" 				node="0>0|2|5|8|4|0|0"/>
+        <i3dMapping id="S48_roofTop_yellow_02" 				node="0>0|2|5|8|4|0|1"/>
+        <i3dMapping id="S48_roofTop_yellow_03" 				node="0>0|2|5|8|4|0|2"/>
+        <i3dMapping id="S48_roofTop_yellow_04" 				node="0>0|2|5|8|4|0|3"/>
+        <i3dMapping id="S48_roofTop_yellow_05" 				node="0>0|2|5|8|4|0|4"/>
+        <i3dMapping id="S48_workingLight_yellow_01" 		node="0>0|2|5|8|4|1|0"/>
+        <i3dMapping id="S48_workingLight_yellow_02" 		node="0>0|2|5|8|4|1|1"/>
+		
+        <i3dMapping id="S48F_yellow" 						node="0>0|2|5|8|5"/>
+        <i3dMapping id="S48F_roofTop_yellow_01" 			node="0>0|2|5|8|5|0|0"/>
+        <i3dMapping id="S48F_roofTop_yellow_02" 			node="0>0|2|5|8|5|0|1"/>
+        <i3dMapping id="S48F_roofTop_yellow_03" 			node="0>0|2|5|8|5|0|2"/>
+        <i3dMapping id="S48F_roofTop_yellow_04" 			node="0>0|2|5|8|5|0|3"/>
+        <i3dMapping id="S48F_roofTop_yellow_05" 			node="0>0|2|5|8|5|0|4"/>
+        <i3dMapping id="S48F_sideMarker_yellow_01" 			node="0>0|2|5|8|5|0|5"/>
+        <i3dMapping id="S48F_sideMarker_yellow_02" 			node="0>0|2|5|8|5|0|6"/>
+        <i3dMapping id="S48F_sideMarker_yellow_03" 			node="0>0|2|5|8|5|0|7"/>
+        <i3dMapping id="S48F_sideMarker_yellow_04" 			node="0>0|2|5|8|5|0|8"/>
+        <i3dMapping id="S48F_sideMarker_yellow_05" 			node="0>0|2|5|8|5|0|9"/>
+        <i3dMapping id="S48F_workingLight_yellow_01" 		node="0>0|2|5|8|5|1|1"/>
+        <i3dMapping id="S48F_workingLight_yellow_02" 		node="0>0|2|5|8|5|1|2"/>
+        <i3dMapping id="S48F_workingLight_yellow_03" 		node="0>0|2|5|8|5|1|3"/>
+        <i3dMapping id="S48F_workingLight_yellow_04" 		node="0>0|2|5|8|5|1|4"/>
+		
+        <i3dMapping id="S70_yellow" 						node="0>0|2|5|8|6"/>
+        <i3dMapping id="S70_roofTop_yellow_01" 				node="0>0|2|5|8|6|0|0"/>
+        <i3dMapping id="S70_roofTop_yellow_02" 				node="0>0|2|5|8|6|0|1"/>
+        <i3dMapping id="S70_roofTop_yellow_03" 				node="0>0|2|5|8|6|0|2"/>
+        <i3dMapping id="S70_roofTop_yellow_04" 				node="0>0|2|5|8|6|0|3"/>
+        <i3dMapping id="S70_roofTop_yellow_05" 				node="0>0|2|5|8|6|0|4"/>
+        <i3dMapping id="S70_sideMarker_yellow_01" 			node="0>0|2|5|8|6|0|5"/>
+        <i3dMapping id="S70_sideMarker_yellow_02" 			node="0>0|2|5|8|6|0|6"/>
+        <i3dMapping id="S70_sideMarker_yellow_03" 			node="0>0|2|5|8|6|0|7"/>
+        <i3dMapping id="S70_sideMarker_yellow_04" 			node="0>0|2|5|8|6|0|8"/>
+        <i3dMapping id="S70_sideMarker_yellow_05" 			node="0>0|2|5|8|6|0|9"/>
+        <i3dMapping id="S70_workingLight_yellow_01" 		node="0>0|2|5|8|6|1|1"/>
+        <i3dMapping id="S70_workingLight_yellow_02" 		node="0>0|2|5|8|6|1|2"/>
+        <i3dMapping id="S70_workingLight_yellow_03" 		node="0>0|2|5|8|6|1|3"/>
+        <i3dMapping id="S70_workingLight_yellow_04" 		node="0>0|2|5|8|6|1|4"/>
+		
+        <i3dMapping id="additionalHighbeams" 				node="0>0|2|5|0|0"/>
+        <i3dMapping id="DC_real" 							node="0>0|2|5|0|0|0"/>
+        <i3dMapping id="DC_workingLight_white_real" 		node="0>0|2|5|0|0|0|0"/>
+        <i3dMapping id="DCF_real" 							node="0>0|2|5|0|0|1"/>
+        <i3dMapping id="DCF_workingLight_white_real" 		node="0>0|2|5|0|0|1|0"/>
+        <i3dMapping id="S48_real" 							node="0>0|2|5|0|0|2"/>
+        <i3dMapping id="S48_workingLight_white_real" 		node="0>0|2|5|0|0|2|0"/>
+        <i3dMapping id="S48F_real" 							node="0>0|2|5|0|0|3"/>
+        <i3dMapping id="S48F_workingLight_white_real" 		node="0>0|2|5|0|0|3|0"/>
+        <i3dMapping id="S70_real" 							node="0>0|2|5|0|0|4"/>
+        <i3dMapping id="S70_workingLight_white_real" 		node="0>0|2|5|0|0|4|0"/>
+		
+        <i3dMapping id="airHorns" 							node="0>0|4|9"/>
+        <i3dMapping id="DC_airhorn" 						node="0>0|4|9|0"/>
+        <i3dMapping id="DCF_airhorn" 						node="0>0|4|9|1"/>
+        <i3dMapping id="S48_airhorn" 						node="0>0|4|9|2"/>
+        <i3dMapping id="S48F_airhorn" 						node="0>0|4|9|3"/>
+        <i3dMapping id="S70_airhorn" 						node="0>0|4|9|4"/>
+		
+        <i3dMapping id="beacons" 							node="0>0|2|5|9"/>
+        <i3dMapping id="beaconsBottom" 						node="0>0|2|5|9|0"/>
+        <i3dMapping id="beaconFBL" 							node="0>0|2|5|9|0|2"/>
+        <i3dMapping id="beaconFBR" 							node="0>0|2|5|9|0|3"/>
+        <i3dMapping id="beaconsTop" 						node="0>0|2|5|9|1"/>
+        <i3dMapping id="DC_beacons" 						node="0>0|2|5|9|1|0"/>
+        <i3dMapping id="DC_beaconTL" 						node="0>0|2|5|9|1|0|2"/>
+        <i3dMapping id="DC_beaconTR" 						node="0>0|2|5|9|1|0|3"/>
+        <i3dMapping id="DCF_beacons" 						node="0>0|2|5|9|1|1"/>
+        <i3dMapping id="DCF_beaconTL" 						node="0>0|2|5|9|1|1|2"/>
+        <i3dMapping id="DCF_beaconTR" 						node="0>0|2|5|9|1|1|3"/>
+        <i3dMapping id="S48_beacons" 						node="0>0|2|5|9|1|2"/>
+        <i3dMapping id="S48_beaconTL" 						node="0>0|2|5|9|1|2|0"/>
+        <i3dMapping id="S48_beaconTR" 						node="0>0|2|5|9|1|2|1"/>
+        <i3dMapping id="S48F_beacons" 						node="0>0|2|5|9|1|3"/>
+        <i3dMapping id="S48F_beaconTL" 						node="0>0|2|5|9|1|3|2"/>
+        <i3dMapping id="S48F_beaconTR" 						node="0>0|2|5|9|1|3|3"/>
+        <i3dMapping id="S70_beacons" 						node="0>0|2|5|9|1|4"/>
+        <i3dMapping id="S70F_beaconTL" 						node="0>0|2|5|9|1|4|2"/>
+        <i3dMapping id="S70F_beaconTR" 						node="0>0|2|5|9|1|4|3"/>
+		
+		
+		
+    </i3dMappings>
+</vehicle>

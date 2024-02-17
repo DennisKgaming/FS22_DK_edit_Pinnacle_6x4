@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="sideMarker_purple.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="2" filename="$data/shared/assets/lights/lizard/sideMarker05_normal.png"/>
+    <File fileId="3" filename="$data/shared/assets/lights/lizard/sideMarker05_vmask.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="sideMarker05_mat1" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1" alphaBlending="true" customShaderId="4" customShaderVariation="staticLight">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="colorMat0" value="1 1 1 2"/>
+      <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+      <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+    </Material>
+    <Material name="staticLight_purple" materialId="6" diffuseColor="0.8 0.8 0.8 1" alphaBlending="true" customShaderId="4" customShaderVariation="staticLight">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="colorMat0" value="1 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="0.292 0.003 0.871 2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="sideMarker_purple.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="sideMarker" clipDistance="300" nodeId="10" materialIds="5" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="2" name="sideMarker_purple" rotation="90 -0 0" nodeId="11" materialIds="6"/>
+      </Shape>
+  </Scene>
+
+</i3D>

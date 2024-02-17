@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<light>
+    <filename>lights/Hella3000/hella3000_yellow.i3d</filename>
+    <rootNode node="0" />
+    <defaultLight node="0|0" lightTypes="3" intensity="25" />
+    <defaultLight node="0|1" lightTypes="0" intensity="50" />
+</light>

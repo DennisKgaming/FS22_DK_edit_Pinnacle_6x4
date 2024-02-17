@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="topLight_green.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="7" filename="$data/shared/clearPlastic_diffuse.dds"/>
+    <File fileId="2" filename="textures/Toplight.dds"/>
+    <File fileId="8" filename="textures/workingLightCircle_02_normal.dds"/>
+    <File fileId="9" filename="textures/workingLightCircle_02_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert2" materialId="11" diffuseColor="0 0 0 1" customShaderId="3" customShaderVariation="colorMask">
+      <Glossmap fileId="2"/>
+      <CustomParameter name="colorMat0" value="0.8 1 0.05 1"/>
+    </Material>
+    <Material name="staticLight_green" materialId="5" alphaBlending="true" customShaderId="3" customShaderVariation="staticLight">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+      <CustomParameter name="colorMat0" value="0.024 0.871 0.003 1"/>
+      <CustomParameter name="lightControl" value="10 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="topLight_green.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="Toplight" nodeId="15" materialIds="11" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="2" name="topLight_static_green" rotation="90 -0 0" nodeId="8" materialIds="5"/>
+      </Shape>
+  </Scene>
+
+</i3D>
