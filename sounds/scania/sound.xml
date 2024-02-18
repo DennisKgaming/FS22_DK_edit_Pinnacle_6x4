@@ -2,12 +2,12 @@
 <sounds xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/vehicle_sounds.xsd">
     <motorized>
         <sounds>
-			<motorStart template="TRUCK_MOTOR_START" 		file="sounds/scania/scaniaStart.ogg" 	linkNode="0>"/>
-			<motorStop 	template="TRUCK_MOTOR_STOP" 		file="sounds/scania/scaniaStopNew.ogg"	linkNode="0>"/>
+			<motorStart template="TRUCK_MOTOR_START" 		file="sounds/scania/scaniaStart.ogg" 	linkNode="0>" volumeScale="5"/>
+			<motorStop 	template="TRUCK_MOTOR_STOP" 		file="sounds/scania/scaniaStopNew.ogg"	linkNode="0>" volumeScale="5"/>
 
-			<motor 		template="TRUCK_MOTOR_IDLE" 		file="sounds/scania/scaniaIdle.ogg" 	linkNode="0>"/>
-			<motor 		template="TRUCK_MOTOR_OFFLOAD_RUN"	file="sounds/scania/scaniaRun.ogg" 		linkNode="0>"/>
-			<motor 		template="TRUCK_MOTOR_ONLOAD_RUN" 	file="sounds/scania/scaniaLoad.ogg" 	linkNode="0>"/>
+			<motor 		template="TRUCK_MOTOR_IDLE" 		file="sounds/scania/scaniaIdle.ogg" 	linkNode="0>" volumeScale="5"/>
+			<motor 		template="TRUCK_MOTOR_OFFLOAD_RUN"	file="sounds/scania/scaniaRun.ogg" 		linkNode="0>" volumeScale="5"/>
+			<motor 		template="TRUCK_MOTOR_ONLOAD_RUN" 	file="sounds/scania/scaniaLoad.ogg" 	linkNode="0>" volumeScale="5"/>
 			
 			<retarder file="sounds/scania/scaniaJakebrake.ogg" linkNode="0>" innerRadius="23.5" outerRadius="110.0" >
 				<volume indoor="1.0" outdoor="1.0" >
