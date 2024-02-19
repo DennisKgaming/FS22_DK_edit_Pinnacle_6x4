@@ -96,7 +96,7 @@
     <File fileId="71" filename="../textures/windowTint_mat/window15_diffuse.dds"/>
     <File fileId="72" filename="../textures/windowTint_mat/window45_diffuse.dds"/>
     <File fileId="73" filename="../textures/windowTint_mat/window80_diffuse.dds"/>
-    <File fileId="99" filename="../../../DennsiK prefabs/airHorn/textures/airHorn/Witcreme.png"/>
+    <File fileId="99" filename="../textures/airHorn/Witcreme.png"/>
   </Files>
 
 
