@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+
+<!-- Sound designer: Erlan10 (eFarmer). [eSounds designer Erlan10 (eFarmer)] https://www.facebook.com/eFarmer10 /// https://vk.com/fsgiantssoftware -->
+
+<!-- YouTube channel: https://www.youtube.com/@eFarmings -->
+
+<!-- Sound files & sound.xml made by Erlan10 (eFarmer) [eSounds designer Erlan10 (eFarmer)] since 2020. -->
+
+<sounds xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/vehicle_sounds.xsd">
+    <motorized>
+        <sounds>
+<!-- ENGINE & EXHAUST GROUP -->
+			<motor template="engineLarge" file="sounds/detroit_d60/dd60_engine_eSounds_loop.gls" pitchScale="1" volumeScale="2.0">
+                <volume indoor="0.0" outdoor="1.0"/>
+            </motor>
+			<motor template="engineLarge" file="sounds/detroit_d60/dd60_exhaust_eSounds_loop.gls" pitchScale="1" volumeScale="2.5">
+                <volume indoor="0.7" outdoor="1.0"/>
+            </motor>
+			<motor template="engineLarge" file="sounds/detroit_d60/engine_turbo_eSounds_loop.gls" pitchScale="1.2" volumeScale="0.2">
+                <volume indoor="0.5" outdoor="1.0"/>
+            </motor>
+<!-- INTERIOR CABIN GROUP -->
+		    <motor template="engineLarge" file="sounds/detroit_d60/dd60_interior_eSounds_loop.gls" pitchScale="1" volumeScale="2.5" supportsReverb="false">
+				<volume indoor="1.0" outdoor="0.0"/>
+			</motor>
+			<motor template="engineLarge" file="sounds/detroit_d60/ambient_interior_eSounds_loop.gls" pitchScale="1" volumeScale="1.5" fadeIn="0.5" fadeOut="0.5" supportsReverb="false">
+                <volume indoor="1.0" outdoor="0.0"/>
+            </motor>
+			<motor template="indoorCabinOldVehicle" volumeScale="5.5" supportsReverb="false"/>
+			<gearLeverStart template="gearDisengaged" volumeScale="0.2"/>
+            <gearLeverEnd template="gearEngaged" volumeScale="0.2"/>
+            <gearGroupLeverStart template="gearDisengaged" volumeScale="0.2"/>
+            <gearGroupLeverEnd template="gearEngaged" volumeScale="0.2"/>
+			<gearbox template="engineLarge" file="sounds/detroit_d60/gearbox_interior_eSounds_loop.gls" volumeScale="0.8" fadeIn="0.5" fadeOut="0.5" supportsReverb="false">
+			    <volume indoor="1.0" outdoor="0.0" >
+			        <modifier type="SPEED" value="0.0"  modifiedValue="0.00" />
+					<modifier type="SPEED" value="0.20"  modifiedValue="0.10" />
+					<modifier type="SPEED" value="0.30"  modifiedValue="0.30" />
+					<modifier type="SPEED" value="0.60"  modifiedValue="0.60" />
+                    <modifier type="SPEED" value="85.0" modifiedValue="1.00" />
+					<modifier type="DRIVING_DIRECTION" value="-1.0" modifiedValue="1.0" />
+					<modifier type="DRIVING_DIRECTION" value="0.00" modifiedValue="0.0" />
+					<modifier type="DRIVING_DIRECTION" value="1.00" modifiedValue="1.0" />
+			    </volume>
+			    <pitch>
+                    <modifier type="SUSPENSION" value="-0.08" modifiedValue="1.05" />
+                    <modifier type="SUSPENSION" value="-0.02" modifiedValue="1.03" />
+                    <modifier type="SUSPENSION" value="0.0"   modifiedValue="1.0" />
+                    <modifier type="SUSPENSION" value="0.02"  modifiedValue="0.98" />
+                    <modifier type="SUSPENSION" value="0.08"  modifiedValue="0.95" />
+                </pitch>
+                <loopSynthesisRpm>
+                    <modifier type="DIFFERENTIAL_SPEED" value="0.0" modifiedValue="0.0" />
+                    <modifier type="DIFFERENTIAL_SPEED" value="40.0" modifiedValue="0.5" />
+                    <modifier type="DIFFERENTIAL_SPEED" value="85.0" modifiedValue="1.0" />
+                </loopSynthesisRpm>
+			</gearbox>
+<!-- TRANSMISSION GROUPS -->
+			<gearbox template="engineLarge" file="sounds/detroit_d60/truck_transmission_eSounds_loop.gls" volumeScale="1.5" fadeIn="0.3" fadeOut="0.3" supportsReverb="false">
+			    <volume indoor="0.7" outdoor="1.0" >
+			        <modifier type="SPEED" value="0.0"  modifiedValue="0.00" />
+					<modifier type="SPEED" value="0.15"  modifiedValue="0.10" />
+					<modifier type="SPEED" value="0.30"  modifiedValue="0.30" />
+					<modifier type="SPEED" value="0.60"  modifiedValue="0.60" />
+                    <modifier type="SPEED" value="85.0" modifiedValue="1.00" />
+					<modifier type="DRIVING_DIRECTION" value="-1.0" modifiedValue="1.0" />
+					<modifier type="DRIVING_DIRECTION" value="0.00" modifiedValue="0.0" />
+					<modifier type="DRIVING_DIRECTION" value="1.00" modifiedValue="1.0" />
+			    </volume>
+			    <pitch>
+                    <modifier type="SUSPENSION" value="-0.08" modifiedValue="1.05" />
+                    <modifier type="SUSPENSION" value="-0.02" modifiedValue="1.03" />
+                    <modifier type="SUSPENSION" value="0.0"   modifiedValue="1.0" />
+                    <modifier type="SUSPENSION" value="0.02"  modifiedValue="0.98" />
+                    <modifier type="SUSPENSION" value="0.08"  modifiedValue="0.95" />
+                </pitch>
+                <loopSynthesisRpm>
+                    <modifier type="DIFFERENTIAL_SPEED" value="0.0" modifiedValue="0.0" />
+                    <modifier type="DIFFERENTIAL_SPEED" value="40.0" modifiedValue="0.5" />
+                    <modifier type="DIFFERENTIAL_SPEED" value="85.0" modifiedValue="1.0" />
+                </loopSynthesisRpm>
+			</gearbox>
+			<retarder template="engineLarge" file="sounds/detroit_d60/dd60_brakeEngine_exhaust_eSounds.ogg" fadeIn="0.1" fadeOut="0.1" volumeScale="4.5">	
+			    <volume indoor="0.7" outdoor="1.0">
+			        <modifier type="SPEED" value="0.0" modifiedValue="0.0"/>
+					<modifier type="SPEED" value="25.0" modifiedValue="0.0"/>
+					<modifier type="SPEED" value="30.0" modifiedValue="1.0"/>
+			        <modifier type="SPEED" value="85.0" modifiedValue="1.0"/>
+			        <modifier type="ACCELERATE" value="0" modifiedValue="1.0"/>
+			        <modifier type="ACCELERATE" value="0.01" modifiedValue="0.0"/>
+			        <modifier type="CRUISECONTROL" value="0" modifiedValue="1.0"/>
+			        <modifier type="CRUISECONTROL" value="0.01" modifiedValue="0.0"/>
+			    </volume>
+			    <pitch indoor="1.0" outdoor="1.0">
+			        <modifier type="SPEED" value="0.0"  modifiedValue="0.85"/>
+			        <modifier type="SPEED" value="85.0" modifiedValue="1.50"/>
+			    </pitch>
+			    <lowpassGain indoor="0.6" outdoor="1.0"/>
+			</retarder>
+<!-- AIR COMPRESSOR GROUPS -->		
+			<compressedAir template="compressedAir" volumeScale="1.7" pitchScale="0.7"/>
+            <airRelease template="TRUCK_BRAKE_REGULATOR_VALVE" volumeScale="1.6" pitchScale="0.8"/>
+			<reverseDrive template="REVERSE_BEEP_03"/>
+			<clutchCracking template="DEFAULT_CLUTCH_CRACKING"/>
+        </sounds>
+    </motorized>
+    <lights>
+        <sounds>
+            <toggleLights template="SWITCH_01"  />
+            <turnLight template="SWITCH_TURNLIGHT" volumeScale="2"/>
+        </sounds>
+    </lights>
+    <attacherJoints>
+        <attacherJointConfigurations>
+            <attacherJointConfiguration>
+                <attacherJoint>
+                    <attachSound template="truckAttach"/>
+                    <detachSound template="truckDetach"/>
+                </attacherJoint>
+            </attacherJointConfiguration>
+        </attacherJointConfigurations>
+        <sounds>
+            <attach template="ATTACH_01"/>
+            <hydraulic template="defaultHydraulicSound"/>
+        </sounds>
+    </attacherJoints>
+    <drivable>
+        <sounds>
+            <waterSplash template="WATER_SPLASH_01"/>
+        </sounds>
+    </drivable>
+	<honk>
+        <sound file="sounds/detroit_d60/dd60_honk_eSounds.ogg" pitchScale="1.0" volumeScale="3.0" fadeOut="0.2">
+            <volume indoor="0.2" outdoor="1.0"/>
+		</sound>
+    </honk>
+</sounds>
+
+<!-- [eSounds's studio by Erlan10 (eFarmer)] since 2020. -->

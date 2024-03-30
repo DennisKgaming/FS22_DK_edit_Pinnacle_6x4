@@ -46,9 +46,7 @@
 	<base>
         <typeDesc>$l10n_typeDesc_truck</typeDesc>
         <filename>i3d/pinnacle.i3d</filename>
-        <!-- <sounds filename="$data/vehicles/mack/pinnacle/sounds/pinnacle.xml"/> -->
-        <!-- <sounds filename="sounds/sound.xml"/> -->
-        <sounds filename="sounds/scania/sound.xml"/>
+        <sounds filename="sounds/detroit_d60/sound.xml"/>
         <size width="4" length="9" height="4.2" lengthOffset="-1.5"/>
         <components>
             <component centerOfMass="0 0.45 -0.5" solverIterationCount="10" mass="6850"/>
@@ -171,6 +169,7 @@
         <sharedLight linkNode="rearLightDC_01" 				filename="lights/rearLight25.xml"/>
         <sharedLight linkNode="rearLightDC_02" 				filename="lights/rearLight25.xml"/>
         <sharedLight linkNode="rearLightDC_03" 				filename="lights/rearLight25.xml"/>
+        <sharedLight linkNode="DC_workingLight15_reverse" 	filename="lights/workingLight15_Reverse.xml"/>
         <sharedLight linkNode="rearLightDCF_01" 			filename="lights/rearLight60Red.xml"/>
         <sharedLight linkNode="rearLightDCF_02" 			filename="lights/rearLight60Red.xml"/>
         <sharedLight linkNode="rearLightDCF_03" 			filename="lights/rearLight60Red.xml"/>
@@ -195,6 +194,8 @@
         <sharedLight linkNode="rearLightS48_07" 			filename="lights/rearLight25.xml"/>
         <sharedLight linkNode="rearLightS48_08" 			filename="lights/rearLight25.xml"/>
         <sharedLight linkNode="rearLightS48_09" 			filename="lights/rearLight25.xml"/>
+        <sharedLight linkNode="S48workingLight15_reverseL" 	filename="lights/workingLight15_Reverse.xml"/>
+        <sharedLight linkNode="S48workingLight15_reverseR" 	filename="lights/workingLight15_Reverse.xml"/>
         <sharedLight linkNode="rearLightS48F_01" 			filename="lights/rearLight60Red.xml"/>
         <sharedLight linkNode="rearLightS48F_02" 			filename="lights/rearLight60Red.xml"/>
         <sharedLight linkNode="rearLightS48F_03" 			filename="lights/rearLight60Red.xml"/>
@@ -211,7 +212,9 @@
         <sharedLight linkNode="rearLightS70_07" 			filename="lights/rearLight60Red.xml"/>
         <sharedLight linkNode="rearLightS70_08" 			filename="lights/rearLight60Red.xml"/>
         <sharedLight linkNode="rearLightS70_09" 			filename="lights/rearLight60Red.xml"/>
-        <sharedLight linkNode="rearLightS70_10" 			filename="lights/rearLight60Red.xml"/>	
+        <sharedLight linkNode="rearLightS70_10" 			filename="lights/rearLight60Red.xml"/>
+        <sharedLight linkNode="S70workingLight15_reverseL" 	filename="lights/workingLight15_Reverse.xml"/>
+        <sharedLight linkNode="S70workingLight15_reverseR" 	filename="lights/workingLight15_Reverse.xml"/>
 		
         <sharedLight linkNode="highBeamL" 					filename="lights/frontLight11_HB.xml"/>		
         <sharedLight linkNode="highBeamR" 					filename="lights/frontLight11_HB.xml"/>		
@@ -807,12 +810,19 @@
                 <light 			node="DCF_workingLight_white_real" 	lightTypes="3"/>
                 <light 			node="S48_workingLight_white_real" 	lightTypes="3"/>
                 <light 			node="S48F_workingLight_white_real" lightTypes="3"/>
+				
                 <light 			node="S70_workingLight_white_real" 	lightTypes="3"/>
                 <brakeLight 	node="backLightsHigh1"/>
+				
                 <turnLightLeft 	node="turnLightLeftFront"/>
                 <turnLightRight	node="turnLightRightFront"/>
+				
                 <interiorLight 	node="interiorScreenLight"/>
+				
                 <reverseLight 	node="reverseLightHigh1"/>
+                <reverseLight 	node="DC_reverseLight_white_real"/>
+                <reverseLight 	node="S48reverseLight_white_real"/>
+                <reverseLight 	node="S70reverseLight_white_real"/>
             </high>
         </realLights>
         
@@ -977,7 +987,7 @@
         </differentialConfigurations>
         <motorConfigurations>
             <motorConfiguration name="Pinnacle 6x4 (MP7 425)" hp="425" price="0">
-                <motor torqueScale="2.036" minRpm="850" maxRpm="3500" maxForwardSpeed="95" maxBackwardSpeed="20" brakeForce="15" lowBrakeForceScale="0.5" dampingRateScale="1.9">
+                <motor torqueScale="2.036" minRpm="850" maxRpm="3500" maxForwardSpeed="95" maxBackwardSpeed="20" brakeForce="15" lowBrakeForceScale="0.2" dampingRateScale="1.9">
                     <!-- <torque rpm="850" torque="0.9"/>
                     <torque rpm="1000" torque="1"/>
                     <torque rpm="1450" torque="1"/>
@@ -1480,7 +1490,9 @@
 		
         <i3dMapping id="dayCab" 							node="0>0|3|0"/>
         <i3dMapping id="DCinteriorLightRed_real" 			node="0>0|3|0|0|0|0"/>
+        <i3dMapping id="DC_reverseLight_white_real" 		node="0>0|3|0|0|0|1"/>
         <i3dMapping id="DC_interiorLights_static" 			node="0>0|3|0|0|1|0"/>
+        <i3dMapping id="DC_workingLight15_reverse" 			node="0>0|3|0|0|2|0"/>
         <i3dMapping id="licensePlateBack" 					node="0>0|3|0|1"/>
         <i3dMapping id="CabinDayCab" 						node="0>0|3|0|2|3"/>
         <i3dMapping id="pto1" 								node="0>0|3|0|2|10|0"/>
@@ -1497,7 +1509,10 @@
         <i3dMapping id="dayCab_FairingVersion" 				node="0>0|3|1|0|6"/>
         <i3dMapping id="sleeper48" 							node="0>0|3|2"/>
         <i3dMapping id="S48interiorLightRed_real" 			node="0>0|3|2|0|0|0"/>
+        <i3dMapping id="S48reverseLight_white_real" 		node="0>0|3|2|0|0|1"/>
         <i3dMapping id="S48_interiorLights_static" 			node="0>0|3|2|0|1|1"/>
+        <i3dMapping id="S48workingLight15_reverseL" 		node="0>0|3|2|0|2|0"/>
+        <i3dMapping id="S48workingLight15_reverseR" 		node="0>0|3|2|0|2|1"/>
         <i3dMapping id="licensePlateBack2" 					node="0>0|3|2|1"/>
         <i3dMapping id="exteriorSleeper48" 					node="0>0|3|2|2|0"/>
         <i3dMapping id="pto3" 								node="0>0|3|2|2|11|0"/>
@@ -1508,8 +1523,11 @@
         <i3dMapping id="sleeper48Light_static"				node="0>0|3|3|0|1"/>
         <i3dMapping id="sleeper70" 							node="0>0|3|4"/>
         <i3dMapping id="S70interiorLightRed_real" 			node="0>0|3|4|0|0|0"/>
+        <i3dMapping id="S70reverseLight_white_real" 		node="0>0|3|4|0|0|1"/>
         <i3dMapping id="sleeper70Light_static" 				node="0>0|3|4|0|1|1"/>
         <i3dMapping id="S70_interiorLightsGlass_static" 	node="0>0|3|4|0|2|1"/>
+        <i3dMapping id="S70workingLight15_reverseL" 		node="0>0|3|4|0|3|0"/>
+        <i3dMapping id="S70workingLight15_reverseR" 		node="0>0|3|4|0|3|1"/>
         <i3dMapping id="licensePlateBack3" 					node="0>0|3|4|1"/>
         <i3dMapping id="Exterior_Sleeper70" 				node="0>0|3|4|2|2"/>
         <i3dMapping id="pto5" 								node="0>0|3|4|2|13|0"/>
