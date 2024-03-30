@@ -15,15 +15,15 @@
 
 
   <Materials>
-    <Material name="lambert2" materialId="11" diffuseColor="0 0 0 1" customShaderId="3" customShaderVariation="colorMask">
+    <Material name="lambert2" materialId="5" diffuseColor="0 0 0 1" customShaderId="3" customShaderVariation="colorMask">
       <Glossmap fileId="2"/>
       <CustomParameter name="colorMat0" value="0.8 1 0.05 1"/>
     </Material>
-    <Material name="staticLight_green" materialId="5" alphaBlending="true" customShaderId="3" customShaderVariation="staticLight">
+    <Material name="staticLight_green" materialId="6" alphaBlending="true" customShaderId="3" customShaderVariation="staticLight">
       <Texture fileId="7"/>
       <Normalmap fileId="8"/>
       <Glossmap fileId="9"/>
-      <CustomParameter name="colorMat0" value="0.024 0.871 0.003 1"/>
+      <CustomParameter name="colorMat0" value="0.024 0.871 0.003 27"/>
       <CustomParameter name="lightControl" value="10 0 0 0"/>
     </Material>
   </Materials>
@@ -37,8 +37,8 @@
   </Dynamics>
 
   <Scene>
-      <Shape shapeId="1" name="Toplight" nodeId="15" materialIds="11" castsShadows="true" receiveShadows="true">
-        <Shape shapeId="2" name="topLight_static_green" rotation="90 -0 0" nodeId="8" materialIds="5"/>
+      <Shape shapeId="1" name="Toplight" nodeId="10" materialIds="5" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="2" name="topLight_static_green" rotation="90 -0 0" nodeId="11" materialIds="6"/>
       </Shape>
   </Scene>
 

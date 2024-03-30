@@ -23,7 +23,7 @@
       <Texture fileId="7"/>
       <Normalmap fileId="8"/>
       <Glossmap fileId="9"/>
-      <CustomParameter name="colorMat0" value="0.831 0.871 0.003 1"/>
+      <CustomParameter name="colorMat0" value="0.831 0.871 0.003 27"/>
     </Material>
   </Materials>
 
